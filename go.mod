@@ -1,6 +1,6 @@
 module github.com/jeonck/toolian
 
-go 1.26.4
+go 1.23
 
 require (
 	github.com/colinwilson/lotusdocs v0.3.0 // indirect
