@@ -1,0 +1,48 @@
+{{ define "main" }}
+    <!-- override Prism's default copy messages to 'empty'. Required by CSS styling.
+         see: https://prismjs.com/plugins/copy-to-clipboard/#styling -->
+    <div data-prismjs-copy="" data-prismjs-copy-success="" data-prismjs-copy-error="">
+        {{ .Content }}
+    </div>
+
+    {{ if and .GitInfo .Site.Params.docs.repoURL -}}
+        {{ partial (printf "%s/%s" ($.Scratch.Get "pathName") "gitinfo") . }}
+    {{ end -}}
+
+    {{ if .Page.Store.Get "hasMermaid" }}
+    {{ $mermaid := resources.Get (printf "%s/%s" ($.Scratch.Get "pathName") "js/mermaid.min.js") }}
+    {{ if hugo.IsProduction }}
+        {{ $mermaid = $mermaid | fingerprint "sha384" }}
+    {{ end }}
+    <script src="{{ $mermaid.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $mermaid.Data.Integrity }}"{{ end }}></script>
+    <script>
+        // 테마 기본 설정에 gantt.useWidth 를 추가한 것 외에는 Lotus Docs 원본과 동일하다.
+        // gantt 차트는 렌더링 시점의 컨테이너 폭을 읽어 시간축을 계산하는데,
+        // mermaid 가 화면 밖 임시 컨테이너에서 렌더링하는 탓에 폭이 0 으로 잡혀
+        // viewBox="0 0 0 ..." 인 빈 SVG 가 나오고 콘솔에 음수 rect 에러가 쌓인다.
+        // 고정 폭을 주면 이 문제가 사라진다.
+        const config = {
+            startOnLoad: true,
+            logLevel: "error",
+            align: "center",
+            theme: "null",
+            gantt: {
+                useWidth: 900,
+                useMaxWidth: true
+            }
+        };
+        mermaid.initialize(config);
+    </script>
+    {{ end }}
+
+    {{ if .Site.Params.feedback.enabled | default false -}}
+        {{ if or (.Site.Params.plausible.scriptPath) (.Site.Params.plausible.src) (.Site.Config.Services.GoogleAnalytics.ID) }}
+            {{- partial (printf "%s/%s" ($.Scratch.Get "pathName") "footer/feedback.html") . -}}
+        {{ else if and (.Site.Params.plausible.scriptURL | default "https://plausible.io") (.Site.Params.plausible.dataDomain) -}}
+            {{- partial (printf "%s/%s" ($.Scratch.Get "pathName") "footer/feedback.html") . -}}
+        {{ else }}
+            {{ errorf "Either Google Analytics or Plausible Analytics must be configured before enabling the Feedback Widget." }}
+        {{ end }}
+    {{ end -}}
+
+{{ end }}

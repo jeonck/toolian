@@ -103,3 +103,11 @@ featureGrid:
       ctaLink:
         text: 둘러보기
         url: /docs/writing/
+
+# 테마가 기본 제공하는 imageCompare 블록을 끈다.
+# Hugo는 모듈의 data/ 디렉터리를 사이트 data/ 와 병합하므로,
+# 여기서 명시적으로 끄지 않으면 테마 데모 섹션이 홈페이지에 남는다.
+imageCompare:
+  enable: false
+  weight: 30
+  template: image compare

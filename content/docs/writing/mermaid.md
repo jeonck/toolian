@@ -54,7 +54,7 @@ flowchart TD
 | 실선 | `-->` |
 | 점선 | `-.->` |
 | 굵은 선 | `==>` |
-| 라벨 | `-->|텍스트|` |
+| 라벨 | `-->\|텍스트\|` |
 
 ## 시퀀스 다이어그램
 
@@ -144,12 +144,13 @@ erDiagram
 gantt
     title 릴리스 일정
     dateFormat YYYY-MM-DD
+    axisFormat %m/%d
     section 개발
-    API 구현       :done, a1, 2026-08-01, 10d
-    프론트 연동     :active, a2, 2026-08-11, 7d
+    API 구현 :done, a1, 2026-08-01, 10d
+    프론트 연동 :active, a2, 2026-08-11, 7d
     section 검증
-    QA            :a3, after a2, 5d
-    배포           :milestone, after a3, 0d
+    QA :a3, after a2, 5d
+    배포 :crit, a4, after a3, 2d
 ```
 ````
 
@@ -157,12 +158,13 @@ gantt
 gantt
     title 릴리스 일정
     dateFormat YYYY-MM-DD
+    axisFormat %m/%d
     section 개발
-    API 구현       :done, a1, 2026-08-01, 10d
-    프론트 연동     :active, a2, 2026-08-11, 7d
+    API 구현 :done, a1, 2026-08-01, 10d
+    프론트 연동 :active, a2, 2026-08-11, 7d
     section 검증
-    QA            :a3, after a2, 5d
-    배포           :milestone, after a3, 0d
+    QA :a3, after a2, 5d
+    배포 :crit, a4, after a3, 2d
 ```
 
 ## 실전 요령
