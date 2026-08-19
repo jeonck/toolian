@@ -30,25 +30,28 @@ jobs:
           curl -sSLf "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb" -o /tmp/hugo.deb \
           && sudo dpkg -i /tmp/hugo.deb
 
+      # Checkout must come BEFORE setup-go: setup-go looks for go.sum to key its
+      # module cache, and without a checked-out tree it logs
+      # "Dependencies file is not found" and skips caching entirely.
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
       # REQUIRED: Lotus Docs is a Hugo Module (github.com/colinwilson/lotusdocs),
       # not a git submodule theme. `hugo mod`/module resolution needs a real Go
       # toolchain in the runner even though the site itself has no Go code.
       # Skipping this step fails the build with "go.mod file not found" or
       # module-download errors.
       - name: Install Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v7
         with:
-          go-version: "1.22"
-
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
+          go-version: "1.23"
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Build with Hugo
         env:
@@ -59,7 +62,7 @@ jobs:
           hugo --gc --minify
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
 
@@ -72,4 +75,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
