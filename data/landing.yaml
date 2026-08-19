@@ -1,0 +1,105 @@
+# Lotus Docs 랜딩 페이지 구성. 블록은 weight 오름차순으로 렌더링된다.
+
+hero:
+  enable: true
+  weight: 10
+  template: hero
+
+  badge:
+    text: "IT 생산성 도구 가이드"
+    color: primary
+    pill: true
+    soft: true
+
+  title: "Toolian"
+  subtitle: "매일 반복하는 작업을 줄여주는 도구들을 **왜 필요한지 → 어떻게 설치하는지 → 오늘 바로 쓸 명령 몇 개** 순서로 정리했습니다. 각 문서는 5분이면 읽고 따라 할 수 있습니다."
+
+  ctaButton:
+    icon: rocket_launch
+    btnText: "문서 둘러보기"
+    url: "/docs/"
+  cta2Button:
+    icon: hub
+    btnText: "GitHub 저장소"
+    url: "https://github.com/jeonck/toolian"
+
+  info: "**Hugo**와 **Lotus Docs**로 만들었습니다."
+
+featureGrid:
+  enable: true
+  weight: 20
+  template: feature grid
+
+  title: "카테고리"
+  subtitle: "관심 있는 곳부터 골라 읽으세요. 순서대로 읽으면 터미널에서 배포까지 한 바퀴가 됩니다."
+
+  items:
+    - title: "시작하기"
+      icon: "rocket_launch"
+      description: "도구를 고르는 기준, 패키지 매니저로 설치하기, 설정을 dotfiles로 관리하기."
+      ctaLink:
+        text: 둘러보기
+        url: /docs/getting-started/
+
+    - title: "터미널 & 셸"
+      icon: "terminal"
+      description: "터미널 앱, zsh와 Starship 프롬프트, tmux 세션, fzf 퍼지 검색, zoxide 이동."
+      ctaLink:
+        text: 둘러보기
+        url: /docs/terminal/
+
+    - title: "파일 & 검색"
+      icon: "search"
+      description: "ripgrep, fd, bat, eza, jq — grep·find·cat·ls를 대체하는 현대적 CLI."
+      ctaLink:
+        text: 둘러보기
+        url: /docs/files/
+
+    - title: "에디터 & IDE"
+      icon: "code"
+      description: "VS Code, Neovim, JetBrains의 최소 설정과 어디서나 통하는 편집 기술."
+      ctaLink:
+        text: 둘러보기
+        url: /docs/editor/
+
+    - title: "AI 코딩 도구"
+      icon: "auto_awesome"
+      description: "Claude Code, GitHub Copilot, Cursor, Ollama — 성격이 다른 네 가지 접근."
+      ctaLink:
+        text: 둘러보기
+        url: /docs/ai/
+
+    - title: "Git & 협업"
+      icon: "hub"
+      description: "실전 Git 워크플로와 되돌리기, gh, lazygit, delta, pre-commit 훅."
+      ctaLink:
+        text: 둘러보기
+        url: /docs/git/
+
+    - title: "네트워크 & API"
+      icon: "api"
+      description: "curl, HTTPie, Bruno와 Postman, 로컬 서버를 외부에 여는 터널링."
+      ctaLink:
+        text: 둘러보기
+        url: /docs/network/
+
+    - title: "컨테이너 & 배포"
+      icon: "deployed_code"
+      description: "Docker, Compose, kubectl과 k9s, GitHub Actions, Terraform."
+      ctaLink:
+        text: 둘러보기
+        url: /docs/devops/
+
+    - title: "자동화 & 단축키"
+      icon: "bolt"
+      description: "Raycast, PowerToys, Makefile, cron과 launchd, n8n 워크플로."
+      ctaLink:
+        text: 둘러보기
+        url: /docs/automation/
+
+    - title: "문서 & 노트"
+      icon: "description"
+      description: "Obsidian, Markdown 기본기, Mermaid 다이어그램, Excalidraw."
+      ctaLink:
+        text: 둘러보기
+        url: /docs/writing/
