@@ -1,46 +1,48 @@
 ---
 weight: 1010
-title: "도구를 고르는 기준"
-description: "새 도구를 설치하기 전에 5분만 따져보면 되는 여섯 가지 질문."
+title: "Choosing a Tool"
+description: "Six questions worth five minutes before you install anything new."
 icon: "checklist"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-도구를 늘리는 것 자체는 생산성이 아닙니다. 설치·설정·학습·유지보수에 드는 비용이
-있고, 도구가 늘수록 팀에 설명해야 할 것도 늘어납니다. 새 도구를 넣기 전에 아래
-여섯 가지만 확인하면 대부분의 후회를 피할 수 있습니다.
+Adding tools is not productivity by itself. Each one costs installation, configuration,
+learning, and maintenance, and the more you have, the more you have to explain to your
+team. Run through these six questions before adopting anything and you'll avoid most
+of the regret.
 
-## 여섯 가지 질문
+## Six questions
 
-| 질문 | 통과 기준 |
+| Question | Passing answer |
 |---|---|
-| 얼마나 자주 하는 일인가? | 하루 3회 이상 또는 주 1회라도 30분 이상 |
-| 기존 도구로 안 되나? | 이미 쓰는 도구의 미사용 기능으로 해결되면 그것부터 |
-| 학습 비용은? | 30분 안에 첫 성과가 나오면 합격 |
-| 팀에 강요되는가? | 나만 쓰면 되는 도구가 팀 표준보다 도입이 쉽다 |
-| 빠져나올 수 있나? | 데이터를 표준 포맷(텍스트, Markdown, JSON)으로 내보낼 수 있는가 |
-| 유지되는 프로젝트인가? | 최근 6개월 내 릴리스, 이슈에 답변이 달리는가 |
+| How often do I do this? | At least three times a day, or 30+ minutes even once a week |
+| Can my current tools do it? | If an unused feature of something you already run covers it, start there |
+| What's the learning cost? | If you get a first win within 30 minutes, it passes |
+| Is anyone else forced into it? | A tool only you use is far easier to adopt than a team standard |
+| Can I get back out? | Can the data be exported as text, Markdown, or JSON? |
+| Is the project alive? | A release in the last six months, and issues that get replies |
 
-## 도입 순서 권장
+## Suggested order of adoption
 
-1. **개인 도구 먼저.** 터미널·검색·에디터처럼 나 혼자 쓰고 끝나는 것부터.
-   실패해도 되돌리기 쉽고, 효과는 매일 체감됩니다.
-2. **팀 도구는 그다음.** CI, 린터, 훅처럼 남에게 영향이 가는 것은 개인 도구로
-   충분히 검증한 뒤에 제안합니다.
-3. **플랫폼 도구는 마지막.** 오케스트레이션이나 IaC는 되돌리는 비용이 가장 큽니다.
+1. **Personal tools first.** Terminal, search, editor — things that start and end with
+   you. Cheap to reverse, and you feel the benefit daily.
+2. **Team tools next.** CI, linters, hooks — anything that affects other people. Prove
+   it as a personal tool before proposing it.
+3. **Platform tools last.** Orchestration and IaC carry the highest cost to undo.
 
-## 흔한 함정
+## Common traps
 
-- **설정 완벽주의.** 프롬프트 테마를 두 시간 만지는 대신, 기본값으로 일주일 써보고
-  불편한 부분만 고칩니다.
-- **중복 도구 방치.** 같은 일을 하는 도구를 둘 이상 두면 어느 쪽 설정을 고쳤는지
-  헷갈립니다. 새 도구가 자리 잡으면 옛 도구는 지웁니다.
-- **문서 없는 별칭.** 나만 아는 alias를 잔뜩 만들면 다른 사람 컴퓨터에서 아무것도
-  못 합니다. 팀 공유 스크립트는 원래 명령을 그대로 쓰세요.
+- **Configuration perfectionism.** Instead of spending two hours on a prompt theme,
+  run the defaults for a week and fix only what actually annoyed you.
+- **Leaving duplicates around.** Two tools doing the same job means you will never
+  remember which config you edited. Once a new one sticks, delete the old one.
+- **Undocumented aliases.** A pile of aliases only you know leaves you helpless on
+  anyone else's machine. Scripts you share should use the real commands.
 
-## 다음 단계
+## Next
 
-기준이 섰다면 [패키지 매니저로 설치하기](/docs/getting-started/package-managers/)로
-넘어가, 이후 문서의 설치 명령을 그대로 실행할 수 있는 환경을 만듭니다.
+With a bar in place, move on to
+[Package Managers](/docs/getting-started/package-managers/) and build an environment
+where the install commands in the rest of this site just work.

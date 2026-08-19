@@ -1,68 +1,68 @@
 ---
 weight: 9030
-title: "Make와 Makefile"
-description: "프로젝트의 모든 명령을 한 파일에 모아 `make test` 한 줄로 통일하기."
+title: "Make and Makefiles"
+description: "Gathering every project command into one file so everything becomes `make test`."
 icon: "play_arrow"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-README에 적힌 긴 명령을 매번 복사해 붙여넣고 있다면 Makefile 하나로 정리할 수
-있습니다. Make는 어느 유닉스 계열에나 있고, 언어를 가리지 않습니다.
+If you copy long commands out of a README every time, a single Makefile tidies that up.
+Make exists on every Unix-like system and doesn't care what language you write in.
 
-## 최소 Makefile
+## A minimal Makefile
 
-프로젝트 루트에 `Makefile` (탭 들여쓰기 필수):
+`Makefile` at the project root (tab indentation is mandatory):
 
 ```makefile
 .PHONY: help install dev test lint build clean
 
-help:  ## 사용 가능한 명령 보기
+help:  ## Show the available commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
 	  awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-12s\033[0m %s\n", $$1, $$2}'
 
-install:  ## 의존성 설치
+install:  ## Install dependencies
 	npm ci
 
-dev:  ## 개발 서버 실행
+dev:  ## Run the development server
 	docker compose up -d
 	npm run dev
 
-test:  ## 테스트 실행
+test:  ## Run the tests
 	npm test
 
-lint:  ## 린트와 포맷 검사
+lint:  ## Lint and check formatting
 	npm run lint
 	npm run format:check
 
-build:  ## 프로덕션 빌드
+build:  ## Production build
 	npm run build
 
-clean:  ## 산출물 정리
+clean:  ## Remove build output
 	rm -rf dist node_modules/.cache
 	docker compose down
 ```
 
-`make` 또는 `make help`를 치면 명령 목록이 설명과 함께 나옵니다. 새 팀원이
-README를 안 읽어도 무엇을 할 수 있는지 보입니다.
+`make` or `make help` prints the commands with their descriptions, so a new teammate can
+see what's possible without reading the README.
 
-## 알아둘 문법
+## Syntax to know
 
-| 문법 | 의미 |
+| Syntax | Meaning |
 |---|---|
-| `.PHONY: 이름` | 같은 이름의 파일이 있어도 항상 실행 |
-| `target: 의존` | 의존 타깃을 먼저 실행 |
-| `@명령` | 명령 자체를 출력하지 않음 |
-| `-명령` | 실패해도 계속 진행 |
-| `$$` | 셸의 `$`를 쓸 때 (Make의 `$`와 구분) |
-| `VAR ?= 값` | 이미 정의됐으면 유지 |
+| `.PHONY: name` | Always run, even if a file of that name exists |
+| `target: deps` | Run the dependency targets first |
+| `@command` | Don't echo the command itself |
+| `-command` | Continue even if it fails |
+| `$$` | A literal `$` for the shell (distinct from Make's `$`) |
+| `VAR ?= value` | Keep an existing definition |
 
-**들여쓰기는 반드시 탭입니다.** 스페이스를 쓰면
-`Makefile:5: *** missing separator` 에러가 납니다. 에디터에서 Makefile은
-탭을 유지하도록 설정하세요 (`.editorconfig`의 `[Makefile] indent_style = tab`).
+**Indentation must be tabs.** Spaces produce
+`Makefile:5: *** missing separator`. Configure your editor to preserve tabs in
+Makefiles (`[Makefile] indent_style = tab` in `.editorconfig`).
 
-## 변수와 인자
+## Variables and arguments
 
 ```makefile
 ENV ?= dev
@@ -79,36 +79,36 @@ deploy:
 make deploy ENV=prod
 ```
 
-## 각 줄은 별도 셸입니다
+## Each line is its own shell
 
 ```makefile
-# 잘못됨 — cd가 다음 줄에 유지되지 않음
+# wrong — the cd does not carry to the next line
 wrong:
 	cd src
 	npm test
 
-# 올바름
+# right
 right:
 	cd src && npm test
 ```
 
-## 대안
+## Alternatives
 
-| 도구 | 특징 |
+| Tool | Character |
 |---|---|
-| **just** | Make 문법의 함정(탭, 별도 셸)이 없음. `justfile` 사용 |
-| **npm scripts** | Node 프로젝트면 이미 있음. 복잡해지면 한계 |
-| **Taskfile** | YAML 기반, 의존성·조건 지원 |
+| **just** | None of Make's traps (tabs, separate shells). Uses a `justfile` |
+| **npm scripts** | Already there in a Node project; strains as things grow |
+| **Taskfile** | YAML based, with dependencies and conditions |
 
 ```bash
 brew install just
 just --list
 ```
 
-Make의 가장 큰 장점은 **어디에나 이미 있다는 것**입니다. 새 도구 설치를 요구하지
-않는 것이 중요하다면 Make, 문법 편의가 우선이면 just를 고릅니다.
+Make's biggest advantage is that **it is already installed everywhere**. Pick Make when
+not requiring a new install matters, and `just` when syntax comfort wins.
 
-## 다음 단계
+## Next
 
-정해진 시각에 도는 작업이 필요하다면 →
-[cron과 launchd](/docs/automation/schedulers/)
+For work that has to run at a set time →
+[cron and launchd](/docs/automation/schedulers/)

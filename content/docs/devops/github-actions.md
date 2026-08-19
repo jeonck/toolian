@@ -1,17 +1,17 @@
 ---
 weight: 8040
 title: "GitHub Actions"
-description: "푸시할 때마다 테스트·빌드·배포를 자동으로 돌리는 CI/CD 구성."
+description: "Running tests, builds, and deploys automatically on every push."
 icon: "play_circle"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-Actions는 저장소 안에 워크플로 YAML을 두면 GitHub가 알아서 실행해 주는 CI/CD
-서비스입니다. 별도 서버 없이 시작할 수 있어 개인 프로젝트에도 부담이 없습니다.
+Actions is CI/CD that runs whenever you put a workflow YAML file in your repository.
+There's no server to stand up, so it's painless even for personal projects.
 
-## 첫 워크플로
+## A first workflow
 
 `.github/workflows/ci.yml`:
 
@@ -39,21 +39,21 @@ jobs:
       - run: npm test
 ```
 
-푸시하면 바로 실행됩니다. `gh run watch`로 터미널에서 진행 상황을 볼 수 있습니다.
+Push and it runs. Follow along from the terminal with `gh run watch`.
 
-## 핵심 개념
+## Core concepts
 
-| 용어 | 의미 |
+| Term | Meaning |
 |---|---|
-| **workflow** | YAML 파일 하나. 트리거와 잡을 정의 |
-| **job** | 독립된 러너에서 실행되는 단위. 기본은 병렬 |
-| **step** | 잡 안의 순차 실행 단위 |
-| **action** | 재사용 가능한 스텝 (`uses:`) |
-| **runner** | 실행 환경 (`ubuntu-latest` 등) |
+| **workflow** | One YAML file defining triggers and jobs |
+| **job** | Runs on its own runner; jobs are parallel by default |
+| **step** | A sequential unit inside a job |
+| **action** | A reusable step (`uses:`) |
+| **runner** | The execution environment (`ubuntu-latest`, etc.) |
 
-## 자주 쓰는 패턴
+## Common patterns
 
-**여러 버전에서 테스트 (매트릭스)**
+**Testing several versions (matrix)**
 
 ```yaml
 strategy:
@@ -63,7 +63,7 @@ strategy:
 runs-on: ${{ matrix.os }}
 ```
 
-**의존성 캐시**
+**Caching dependencies**
 
 ```yaml
 - uses: actions/cache@v4
@@ -72,17 +72,17 @@ runs-on: ${{ matrix.os }}
     key: pip-${{ hashFiles('requirements.txt') }}
 ```
 
-`setup-node`, `setup-python` 등은 `cache:` 옵션으로 더 간단히 처리됩니다.
+`setup-node`, `setup-python`, and friends handle this more simply via `cache:`.
 
-**조건 실행**
+**Conditional steps**
 
 ```yaml
-- name: 배포
+- name: Deploy
   if: github.ref == 'refs/heads/main' && github.event_name == 'push'
   run: ./deploy.sh
 ```
 
-**잡 간 의존성**
+**Job dependencies**
 
 ```yaml
 jobs:
@@ -92,9 +92,9 @@ jobs:
     runs-on: ubuntu-latest
 ```
 
-## 시크릿
+## Secrets
 
-`Settings → Secrets and variables → Actions`에서 등록하고 이렇게 씁니다.
+Register them under `Settings → Secrets and variables → Actions`, then use them:
 
 ```yaml
 - run: ./deploy.sh
@@ -102,12 +102,12 @@ jobs:
     API_TOKEN: ${{ secrets.API_TOKEN }}
 ```
 
-시크릿은 로그에서 자동으로 마스킹되지만, 스크립트가 값을 가공해 출력하면 새어
-나갈 수 있습니다. `echo`로 찍지 마세요.
+Secrets are masked in logs automatically, but a script that transforms and prints the
+value can still leak it. Don't `echo` them.
 
-## 권한 최소화
+## Least privilege
 
-기본 토큰 권한은 워크플로마다 명시하는 편이 안전합니다.
+Declaring token permissions per workflow is the safer default.
 
 ```yaml
 permissions:
@@ -115,32 +115,32 @@ permissions:
   pull-requests: write
 ```
 
-## 디버깅
+## Debugging
 
-| 문제 | 확인 |
+| Problem | Check |
 |---|---|
-| 워크플로가 안 돌음 | 파일 위치(`.github/workflows/`), 브랜치, YAML 문법 |
-| 로컬은 되는데 CI만 실패 | 러너에 없는 도구, 환경 변수, 파일 대소문자 |
-| 캐시가 안 먹음 | key에 잠금 파일 해시가 들어갔는지 |
-| 권한 오류 | `permissions:` 블록, 토큰 스코프 |
+| The workflow never runs | File location (`.github/workflows/`), branch, YAML syntax |
+| Passes locally, fails in CI | Missing tooling, environment variables, filename casing |
+| Cache never hits | Whether the key includes a lockfile hash |
+| Permission errors | The `permissions:` block and token scopes |
 
 ```bash
 gh run list --limit 5
 gh run view <id> --log-failed
 ```
 
-로컬에서 워크플로를 실행해 보려면 [act](https://github.com/nektos/act)를 씁니다.
+To run a workflow locally, use [act](https://github.com/nektos/act).
 
 ```bash
 brew install act
 act -j test
 ```
 
-## 비용 주의
+## Watch the cost
 
-퍼블릭 저장소는 무료지만, 프라이빗 저장소는 실행 시간이 과금됩니다. macOS 러너는
-Linux의 10배 단가이므로 꼭 필요할 때만 씁니다. `concurrency`로 중복 실행을
-취소하면 낭비를 줄일 수 있습니다.
+Public repositories are free, but private ones are billed by minute. macOS runners cost
+around ten times a Linux one, so use them only when you must. Cancelling superseded runs
+with `concurrency` cuts waste.
 
 ```yaml
 concurrency:
@@ -148,6 +148,6 @@ concurrency:
   cancel-in-progress: true
 ```
 
-## 다음 단계
+## Next
 
-인프라 자체를 코드로 관리하려면 → [Terraform](/docs/devops/terraform/)
+To manage the infrastructure itself as code → [Terraform](/docs/devops/terraform/)

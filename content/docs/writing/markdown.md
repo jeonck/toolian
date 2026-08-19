@@ -1,140 +1,141 @@
 ---
 weight: 10020
-title: "Markdown 기본기"
-description: "README·이슈·문서 어디서나 통하는 문법과, 자주 틀리는 지점 정리."
+title: "Markdown"
+description: "The syntax that works in READMEs, issues, and docs everywhere — and the parts people get wrong."
 icon: "article"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-Markdown은 GitHub, Slack, Notion, 정적 사이트 생성기까지 거의 모든 곳에서 통하는
-공통어입니다. 30분이면 다 배우고 평생 씁니다.
+Markdown is the common language of GitHub, Slack, Notion, and every static site
+generator. Thirty minutes to learn, and you use it for the rest of your career.
 
-## 기본 문법
+## The basics
 
 ```markdown
-# 제목 1
-## 제목 2
-### 제목 3
+# Heading 1
+## Heading 2
+### Heading 3
 
-**굵게** *기울임* ~~취소선~~ `인라인 코드`
+**bold** *italic* ~~strikethrough~~ `inline code`
 
-- 목록
-- 항목
-  - 중첩 (스페이스 2칸 이상)
+- a list
+- of items
+  - nested (two or more spaces)
 
-1. 번호 목록
-2. 두 번째
+1. numbered
+2. list
 
-> 인용문
+> a block quote
 
-[링크 텍스트](https://example.com)
-![대체 텍스트](./image.png)
+[link text](https://example.com)
+![alt text](./image.png)
 
 ---
 ```
 
-## 코드 블록
+## Code blocks
 
-언어를 지정하면 문법 강조가 붙습니다.
+Naming the language turns on syntax highlighting.
 
 ````markdown
 ```python
 def hello(name: str) -> str:
-    return f"안녕 {name}"
+    return f"Hello {name}"
 ```
 ````
 
-코드 블록 안에 코드 블록을 넣으려면 바깥 울타리를 백틱 네 개로 씁니다.
+To show a code block inside a code block, use four backticks on the outer fence.
 
-## 표
+## Tables
 
 ```markdown
-| 도구 | 용도 | 플랫폼 |
+| Tool | Purpose | Platform |
 |---|---|---|
-| ripgrep | 코드 검색 | 전부 |
-| fd | 파일 찾기 | 전부 |
+| ripgrep | Code search | All |
+| fd | Finding files | All |
 ```
 
-정렬은 구분선에 콜론으로 지정합니다.
+Alignment goes in the separator row, with colons.
 
 ```markdown
-| 왼쪽 | 가운데 | 오른쪽 |
+| Left | Centre | Right |
 |:---|:---:|---:|
 ```
 
-표는 손으로 정렬하지 말고 에디터 플러그인(VS Code의 Markdown All in One 등)에
-맡기세요.
+Don't align tables by hand — let an editor plugin (VS Code's Markdown All in One and
+friends) do it.
 
-## 자주 틀리는 것
+## What people get wrong
 
-| 문제 | 원인 | 해결 |
+| Problem | Cause | Fix |
 |---|---|---|
-| 줄바꿈이 안 됨 | 한 줄 개행은 무시됨 | 빈 줄을 넣거나 줄 끝에 공백 두 칸 |
-| 목록이 붙어버림 | 목록 앞에 빈 줄 없음 | 목록 전후에 빈 줄 |
-| 중첩 목록이 안 됨 | 들여쓰기 부족 | 스페이스 2~4칸 (탭 대신 스페이스) |
-| `*`가 그대로 보임 | 강조 기호 주변 공백 | `**굵게**` 처럼 붙여쓰기 |
-| 표가 안 그려짐 | 구분선 누락 | 헤더 아래 `\|---\|` 줄 필수 |
-| `<` 가 사라짐 | HTML로 해석됨 | `` `<div>` `` 처럼 코드로 감싸기 |
+| Line break ignored | A single newline is not a break | Add a blank line, or two trailing spaces |
+| List runs into the paragraph | No blank line before it | Blank lines around lists |
+| Nesting doesn't nest | Not enough indentation | Two to four spaces (not tabs) |
+| A literal `*` appears | Space next to the emphasis marker | Write `**bold**` with no gaps |
+| Table doesn't render | Missing separator | The `\|---\|` row is mandatory |
+| A `<` disappears | Parsed as HTML | Wrap it in code: `` `<div>` `` |
 
-## GitHub 확장 문법
+## GitHub extensions
 
 ```markdown
-- [ ] 할 일
-- [x] 끝난 일
+- [ ] to do
+- [x] done
 
-@사용자명  #123  a1b2c3d
+@username  #123  a1b2c3d
 
 ~~~
 > [!NOTE]
-> 참고 사항입니다.
+> Worth knowing.
 
 > [!WARNING]
-> 되돌릴 수 없는 작업입니다.
+> This cannot be undone.
 ~~~
 ```
 
-이슈·PR 본문에서 `Closes #123`이라고 쓰면 머지될 때 이슈가 자동으로 닫힙니다.
+Writing `Closes #123` in a PR body closes that issue on merge.
 
-## 프론트매터
+## Front matter
 
-정적 사이트 생성기는 파일 맨 위의 메타데이터 블록을 읽습니다.
+Static site generators read a metadata block at the very top of the file.
 
 ```markdown
 ---
-title: "문서 제목"
-description: "한 줄 설명"
+title: "Page title"
+description: "One-line summary"
 date: "2026-08-19"
 draft: false
 ---
 ```
 
-## 좋은 문서의 구조
+## The shape of a good document
 
-문법보다 중요한 것은 순서입니다.
+Structure matters more than syntax.
 
-1. **무엇인가** — 한 문장으로
-2. **왜 필요한가** — 어떤 문제를 푸는지
-3. **어떻게 시작하나** — 복사해서 바로 되는 명령
-4. **자주 쓰는 것** — 표로
-5. **막힐 때** — 흔한 문제와 해결
+1. **What it is** — in one sentence
+2. **Why you'd want it** — the problem it solves
+3. **How to start** — commands that work when pasted
+4. **What you'll use often** — as a table
+5. **When you get stuck** — common problems and fixes
 
-README를 쓸 때 이 순서만 지켜도 "설치가 안 돼요" 문의가 크게 줄어듭니다.
+Following that order in a README alone dramatically cuts "I can't get it installed"
+messages.
 
-## 검사 도구
+## Checking tools
 
 ```bash
-# 문법 규칙 검사
+# lint the syntax
 npm install -g markdownlint-cli2
 markdownlint-cli2 "**/*.md"
 
-# 깨진 링크 찾기
+# find broken links
 npm install -g markdown-link-check
 markdown-link-check README.md
 ```
 
-## 다음 단계
+## Next
 
-글로 설명하기 어려운 구조는 그림이 낫습니다 →
-[Mermaid 다이어그램](/docs/writing/mermaid/)
+Structure that resists description is better drawn →
+[Mermaid](/docs/writing/mermaid/)

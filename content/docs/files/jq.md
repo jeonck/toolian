@@ -1,17 +1,17 @@
 ---
 weight: 3050
-title: "jq — JSON 가공"
-description: "API 응답과 설정 파일에서 원하는 값만 뽑고 형태를 바꾸는 JSON 전용 필터."
+title: "jq"
+description: "Pull values out of API responses and config files, and reshape them."
 icon: "data_object"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-API 응답을 눈으로 훑다가 필요한 필드를 놓친 적이 있다면 `jq`가 답입니다. JSON을
-읽기 좋게 정렬하고, 필요한 부분만 뽑고, 다른 구조로 바꿉니다.
+If you have ever scanned an API response by eye and missed the field you needed, `jq`
+is the answer. It pretty-prints JSON, extracts the parts you want, and reshapes them.
 
-## 설치
+## Install
 
 ```bash
 brew install jq
@@ -19,71 +19,72 @@ sudo apt install jq
 winget install jqlang.jq
 ```
 
-## 기본 사용
+## Basics
 
 ```bash
-# 보기 좋게 정렬
+# pretty-print
 curl -s https://api.github.com/repos/jeonck/toolian | jq
 
-# 필드 하나
+# one field
 jq '.name' repo.json
 
-# 중첩 필드
+# a nested field
 jq '.owner.login' repo.json
 
-# 배열 전체 순회
+# iterate an array
 jq '.[] | .name' repos.json
 
-# 여러 필드를 새 객체로
+# build a new object
 jq '.[] | {name, stars: .stargazers_count}' repos.json
 ```
 
-## 자주 쓰는 필터
+## Filters worth knowing
 
-| 필터 | 의미 |
+| Filter | Meaning |
 |---|---|
-| `.` | 입력 전체 |
-| `.foo` | 필드 |
-| `.foo?` | 없으면 에러 대신 null |
-| `.[]` | 배열/객체 순회 |
-| `.[2:5]` | 배열 슬라이스 |
-| `\|` | 파이프 (앞 결과를 뒤로) |
-| `select(조건)` | 조건에 맞는 것만 |
-| `map(식)` | 배열 각 요소에 적용 |
-| `length` | 길이 |
-| `keys` | 키 목록 |
-| `sort_by(.field)` | 정렬 |
-| `group_by(.field)` | 묶기 |
-| `-r` | 따옴표 없는 원시 출력 |
+| `.` | The whole input |
+| `.foo` | A field |
+| `.foo?` | null instead of an error when missing |
+| `.[]` | Iterate an array or object |
+| `.[2:5]` | Array slice |
+| `\|` | Pipe one filter into the next |
+| `select(cond)` | Keep matching items |
+| `map(expr)` | Apply to each array element |
+| `length` | Length |
+| `keys` | Key list |
+| `sort_by(.field)` | Sort |
+| `group_by(.field)` | Group |
+| `-r` | Raw output, no quotes |
 
-## 실전 예시
+## In practice
 
 ```bash
-# 별 100개 넘는 저장소 이름만
+# names of repos with more than 100 stars
 jq -r '.[] | select(.stargazers_count > 100) | .name' repos.json
 
-# 배열을 CSV로
+# array to CSV
 jq -r '.[] | [.name, .language, .stargazers_count] | @csv' repos.json
 
-# 상태 코드별 개수 집계
+# count by status code
 jq -r '.[].status' logs.json | sort | uniq -c | sort -rn
 
-# 값 수정해서 새 파일로
+# edit a value into a new file
 jq '.version = "2.0.0"' package.json > tmp && mv tmp package.json
 
-# 두 파일 합치기
+# merge two files
 jq -s '.[0] * .[1]' base.json override.json
 ```
 
-## 안전하게 쓰는 요령
+## Using it safely
 
-- **원본 덮어쓰기 금지**: `jq ... file.json > file.json` 은 파일을 비웁니다.
-  임시 파일을 거치거나 `sponge`(moreutils)를 씁니다.
-- **없는 키**: `.a.b`에서 `a`가 없으면 에러입니다. `.a?.b?` 또는 `// "기본값"`으로
-  방어합니다.
-- **디버깅**: 긴 필터는 파이프 단계별로 잘라 실행해 보면 원인을 빨리 찾습니다.
+- **Never overwrite in place**: `jq ... file.json > file.json` truncates the file. Use
+  a temp file, or `sponge` from moreutils.
+- **Missing keys**: `.a.b` errors when `a` is absent. Guard with `.a?.b?` or
+  `// "default"`.
+- **Debugging**: for a long filter, run it one pipe stage at a time — you'll find the
+  culprit much faster.
 
-## YAML도 다루려면
+## For YAML too
 
 ```bash
 brew install yq
@@ -91,7 +92,7 @@ yq '.services.web.image' docker-compose.yml
 yq -o=json '.' config.yaml | jq
 ```
 
-## 다음 단계
+## Next
 
-파일 다루기가 익숙해졌다면 이제 코드를 쓰는 자리로 갑니다 →
-[에디터 & IDE](/docs/editor/)
+With files under control, on to where you write the code →
+[Editors & IDEs](/docs/editor/)

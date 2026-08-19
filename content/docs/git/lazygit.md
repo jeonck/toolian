@@ -1,18 +1,17 @@
 ---
 weight: 6030
 title: "lazygit"
-description: "터미널 안의 Git GUI. 스테이징·리베이스·충돌 해결을 키보드로 빠르게."
+description: "A Git UI inside the terminal. Staging, rebasing, and conflict resolution from the keyboard."
 icon: "dashboard"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-lazygit은 `git status`, `git add -p`, `git log`, `git rebase -i`를 한 화면에
-합쳐 놓은 TUI입니다. 특히 **부분 스테이징과 대화형 리베이스**에서 손이 훨씬
-빨라집니다.
+lazygit combines `git status`, `git add -p`, `git log`, and `git rebase -i` into one
+screen. It speeds up **partial staging and interactive rebase** in particular.
 
-## 설치와 실행
+## Install and run
 
 ```bash
 brew install lazygit
@@ -20,66 +19,66 @@ sudo apt install lazygit
 winget install JesseDuffield.lazygit
 
 cd ~/projects/my-app
-lazygit                     # 또는 별칭: alias lg='lazygit'
+lazygit                     # or alias lg='lazygit'
 ```
 
-## 화면 구조
+## Layout
 
-왼쪽 세로로 다섯 개의 패널이 있고, `1`~`5` 또는 `Tab`으로 이동합니다.
+Five panels run down the left; move between them with `1`–`5` or `Tab`.
 
-| 번호 | 패널 | 용도 |
+| Number | Panel | Purpose |
 |---|---|---|
-| 1 | Status | 저장소 상태, 설정 |
-| 2 | Files | 변경 파일, 스테이징 |
-| 3 | Branches | 브랜치 전환·병합 |
-| 4 | Commits | 히스토리, 리베이스 |
-| 5 | Stash | 임시 저장 |
+| 1 | Status | Repository state and settings |
+| 2 | Files | Changed files, staging |
+| 3 | Branches | Switching and merging |
+| 4 | Commits | History and rebasing |
+| 5 | Stash | Temporary storage |
 
-## 필수 키
+## Essential keys
 
-| 키 | 동작 |
+| Key | Action |
 |---|---|
-| `Space` | 파일/조각 스테이징 토글 |
-| `Enter` | 파일 안으로 들어가 줄 단위 스테이징 |
-| `c` | 커밋 |
-| `A` | 직전 커밋에 추가 (amend) |
-| `p` | pull |
-| `P` | push |
-| `d` | 삭제 / 변경 버리기 |
-| `?` | 현재 패널의 키 도움말 |
-| `q` | 나가기 |
+| `Space` | Toggle staging for a file or hunk |
+| `Enter` | Enter a file for line-level staging |
+| `c` | Commit |
+| `A` | Amend the previous commit |
+| `p` | Pull |
+| `P` | Push |
+| `d` | Delete / discard |
+| `?` | Help for the current panel |
+| `q` | Quit |
 
-키를 외울 필요 없이 `?`를 누르면 그 자리에서 목록이 뜹니다.
+You don't have to memorise anything — `?` lists the keys in place.
 
-## 줄 단위 스테이징
+## Line-level staging
 
-`git add -p`보다 직관적입니다.
+More direct than `git add -p`:
 
-1. Files 패널에서 파일 선택 후 `Enter`
-2. 방향키로 조각 이동, `Space`로 조각 스테이징
-3. `v`로 범위 선택 후 `Space`를 누르면 원하는 줄만 스테이징
-4. `Esc`로 나와서 `c`로 커밋
+1. Select a file in the Files panel and press `Enter`
+2. Move between hunks with the arrow keys; `Space` stages a hunk
+3. Press `v` to select a range, then `Space` to stage exactly those lines
+4. `Esc` to come back out, `c` to commit
 
-디버깅 코드가 섞인 파일에서 필요한 변경만 골라 커밋할 때 가장 유용합니다.
+Perfect for committing only the real change out of a file that also has debug code in it.
 
-## 대화형 리베이스
+## Interactive rebase
 
-Commits 패널(`4`)에서:
+In the Commits panel (`4`):
 
-| 키 | 동작 |
+| Key | Action |
 |---|---|
-| `s` | 아래 커밋과 합치기 (squash) |
-| `f` | 합치되 메시지는 버리기 (fixup) |
-| `r` | 메시지 수정 (reword) |
-| `d` | 커밋 삭제 |
-| `Ctrl+J` / `Ctrl+K` | 커밋 순서 이동 |
+| `s` | Squash into the commit below |
+| `f` | Fixup (squash, discard the message) |
+| `r` | Reword |
+| `d` | Drop the commit |
+| `Ctrl+J` / `Ctrl+K` | Move a commit up or down |
 
-정리가 끝나면 자동으로 리베이스가 적용됩니다. 충돌이 나면 Files 패널에서 해결한 뒤
-`m` 메뉴에서 continue를 고릅니다.
+The rebase applies automatically when you're done. On a conflict, fix it in the Files
+panel and choose continue from the `m` menu.
 
-## 설정
+## Configuration
 
-`lazygit --print-config-dir`로 경로를 확인한 뒤 `config.yml`을 만듭니다.
+Find the path with `lazygit --print-config-dir`, then create `config.yml`.
 
 ```yaml
 gui:
@@ -93,8 +92,8 @@ git:
     pager: delta --dark --paging=never
 ```
 
-`delta`를 페이저로 지정하면 diff가 훨씬 읽기 쉬워집니다 → 다음 문서.
+Setting `delta` as the pager makes diffs far easier to read — which is the next page.
 
-## 다음 단계
+## Next
 
-diff 자체를 읽기 좋게 만들기 → [delta — diff 뷰어](/docs/git/delta/)
+Make the diff itself readable → [delta](/docs/git/delta/)

@@ -1,14 +1,14 @@
 ---
 weight: 40
-title: "에디터 & IDE"
-description: "VS Code, Neovim, JetBrains의 강점과 최소 설정, 그리고 에디터를 가리지 않는 공통 편집 기술."
+title: "Editors & IDEs"
+description: "What VS Code, Neovim, and JetBrains are each good at, the settings worth changing first, and editing skills that outlive any of them."
 icon: "code"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-에디터는 취향 논쟁이 가장 뜨거운 영역이지만, 실제로 생산성을 가르는 건 어떤
-에디터를 쓰느냐보다 **하나를 얼마나 깊게 쓰느냐**입니다. 이 카테고리는 대표 세
-가지의 성격과 첫 설정을 정리하고, 마지막에 어떤 에디터에서도 통하는 편집 기술을
-모았습니다.
+Editors attract the fiercest opinions, but what actually separates productive people
+is not which editor they picked — it's **how deeply they use the one they have**. This
+category sketches the character and first setup of the three big options, then closes
+with techniques that work no matter which one you're in.

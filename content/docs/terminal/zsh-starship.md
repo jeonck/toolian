@@ -1,98 +1,97 @@
 ---
 weight: 2020
-title: "zsh와 Starship 프롬프트"
-description: "자동완성·히스토리 설정과, 브랜치·언어 버전을 프롬프트에 띄우는 Starship 설정."
+title: "zsh and Starship"
+description: "Completion and history settings, plus a prompt that shows your branch and language versions."
 icon: "chevron_right"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-프롬프트는 "지금 어디서 무엇을 하고 있는가"를 보여주는 상태 표시줄입니다. 현재
-브랜치나 파이썬 가상환경을 눈으로 확인할 수 있으면 `git branch`, `which python`을
-치는 횟수가 확 줄어듭니다.
+Your prompt is a status bar answering *where am I and what am I doing?* Being able to
+see the current branch or Python virtualenv at a glance cuts out a lot of `git branch`
+and `which python`.
 
-## zsh 기본 설정
+## Baseline zsh settings
 
-macOS는 zsh가 기본 셸입니다. Linux에서 바꾸려면:
+zsh is the default shell on macOS. To switch on Linux:
 
 ```bash
 sudo apt install zsh
 chsh -s $(which zsh)
 ```
 
-`~/.zshrc`에 다음을 넣어두면 체감이 큽니다.
+These lines in `~/.zshrc` make the biggest difference:
 
 ```bash
-# 히스토리를 넉넉히, 중복 없이, 여러 창에서 공유
+# generous history, no duplicates, shared across windows
 HISTSIZE=50000
 SAVEHIST=50000
 setopt SHARE_HISTORY HIST_IGNORE_ALL_DUPS HIST_REDUCE_BLANKS
 
-# cd 없이 디렉터리명만 입력해도 이동
+# type a directory name to cd into it
 setopt AUTO_CD
 
-# 대소문자 구분 없는 탭 자동완성
+# case-insensitive tab completion
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 ```
 
-## 플러그인 두 개면 충분
+## Two plugins are enough
 
-무거운 프레임워크 없이도 체감 효과가 가장 큰 둘만 설치합니다.
+Skip the heavy frameworks; install only the two with the largest payoff.
 
 ```bash
 brew install zsh-autosuggestions zsh-syntax-highlighting
 ```
 
 ```bash
-# ~/.zshrc 맨 아래
+# at the bottom of ~/.zshrc
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 
-- **autosuggestions**: 과거에 쳤던 명령을 회색으로 미리 보여줍니다. `→` 키로 수락.
-- **syntax-highlighting**: 존재하지 않는 명령은 빨갛게 표시되어 오타를 실행 전에
-  알아챕니다.
+- **autosuggestions** greys in a command you ran before. Press `→` to accept it.
+- **syntax-highlighting** turns unknown commands red, so you catch typos before you
+  press Enter.
 
-## Starship 프롬프트
+## Starship
 
-셸 종류와 무관하게 동작하는 프롬프트입니다.
+A prompt that works the same regardless of which shell you use.
 
 ```bash
 brew install starship
 echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 ```
 
-설정은 `~/.config/starship.toml` 하나입니다.
+Configuration is one file, `~/.config/starship.toml`.
 
 ```toml
-# 명령 실행 시간이 오래 걸린 경우에만 표시
+# only show command duration when it was actually slow
 [cmd_duration]
 min_time = 2000
 format = " [$duration]($style)"
 
-# 디렉터리는 3단계까지만
+# keep the path to three segments
 [directory]
 truncation_length = 3
 truncate_to_repo = true
 
-# 실패한 명령을 눈에 띄게
+# make failures obvious
 [character]
 success_symbol = "[❯](green)"
 error_symbol = "[❯](red)"
 ```
 
-Git 브랜치, Node/Python/Go 버전, 쿠버네티스 컨텍스트 등은 해당 프로젝트 안에
-들어갔을 때만 자동으로 나타납니다. 켜고 끄는 것은 모듈별 `disabled` 값으로
-조절합니다.
+Git branch, Node/Python/Go versions, Kubernetes context and so on appear automatically
+only inside a relevant project. Turn modules on and off with `disabled`.
 
 ```toml
 [kubernetes]
 disabled = false
 ```
 
-## 자주 쓰는 별칭
+## A few aliases
 
 ```bash
 alias ll='ls -alh'
@@ -102,10 +101,10 @@ alias ..='cd ..'
 alias ...='cd ../..'
 ```
 
-별칭은 편하지만 남용하면 다른 사람 장비에서 아무것도 못 하게 됩니다. 팀에 공유하는
-스크립트에는 원래 명령을 씁니다.
+Aliases are convenient, but overusing them leaves you stranded on other people's
+machines. Scripts you share with a team should spell out the real commands.
 
-## 다음 단계
+## Next
 
-셸이 편해졌다면 창을 여러 개 여는 대신 세션 하나로 관리해 봅니다 →
-[tmux로 세션 유지하기](/docs/terminal/tmux/)
+With the shell comfortable, stop opening extra windows and manage one session instead →
+[tmux](/docs/terminal/tmux/)

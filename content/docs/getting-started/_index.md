@@ -1,14 +1,14 @@
 ---
 weight: 10
-title: "시작하기"
-description: "도구를 고르는 기준부터 패키지 매니저 설치, 설정 백업까지 — 나머지 문서를 따라가기 위한 준비."
+title: "Getting Started"
+description: "How to decide a tool is worth installing, how to install it, and how to stop losing your configuration — groundwork for everything that follows."
 icon: "rocket_launch"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-도구는 많이 아는 것보다 **손에 붙는 몇 개를 제대로 쓰는 것**이 훨씬 유리합니다.
-이 카테고리는 본격적인 도구 소개에 앞서, 무엇을 고르고 어떻게 설치하며 설정을
-어떻게 잃어버리지 않을지를 다룹니다. 여기 세 문서만 따라 해두면 이후 카테고리의
-설치 명령을 그대로 복사해 붙여 넣을 수 있습니다.
+Knowing many tools matters far less than **having a few in your hands that you use
+well**. Before the tool tours begin, this category covers what to choose, how to
+install it, and how not to lose your settings. Work through these three pages and
+every install command in the rest of the site becomes copy-and-paste.

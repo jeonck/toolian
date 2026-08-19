@@ -1,18 +1,18 @@
 ---
 weight: 9050
 title: "n8n"
-description: "서비스와 API를 노드로 연결해 워크플로를 만드는 셀프호스팅 자동화 도구."
+description: "A self-hostable automation tool that wires services and APIs together as nodes."
 icon: "account_tree"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-"GitHub 이슈가 열리면 슬랙에 알리고 노션에 행을 추가한다" 같은 연결 작업을 코드
-없이 만드는 도구입니다. Zapier·Make와 비슷하지만 **직접 호스팅할 수 있어 데이터가
-외부로 나가지 않는다**는 점이 다릅니다.
+"When a GitHub issue opens, post to Slack and add a row in Notion" — n8n builds that
+kind of glue without code. It resembles Zapier and Make, with the difference that
+**you can host it yourself so the data never leaves.**
 
-## Docker로 실행
+## Run it with Docker
 
 ```bash
 docker run -d --name n8n \
@@ -23,9 +23,9 @@ docker run -d --name n8n \
   docker.n8n.io/n8nio/n8n
 ```
 
-`http://localhost:5678`에서 계정을 만들고 시작합니다.
+Create an account at `http://localhost:5678` and start building.
 
-Compose로 관리한다면:
+Managed with Compose:
 
 ```yaml
 services:
@@ -45,29 +45,30 @@ volumes:
   n8n_data:
 ```
 
-## 개념
+## Concepts
 
-| 요소 | 설명 |
+| Element | Meaning |
 |---|---|
-| **워크플로** | 노드를 연결한 하나의 자동화 |
-| **트리거 노드** | 시작점. 스케줄, 웹훅, 앱 이벤트 |
-| **일반 노드** | 앱 호출, 변환, 조건 분기 |
-| **실행(execution)** | 워크플로가 한 번 돈 기록. 각 단계 데이터를 볼 수 있음 |
+| **Workflow** | One automation made of connected nodes |
+| **Trigger node** | The starting point: a schedule, a webhook, an app event |
+| **Regular node** | Calls an app, transforms data, branches |
+| **Execution** | A record of one run, with the data at each step |
 
-## 만들어볼 만한 워크플로
+## Workflows worth building
 
-1. **에러 알림 정리**: 웹훅으로 에러를 받아 → 중복 제거 → 심각도별로 슬랙 채널
-   분기
-2. **일일 리포트**: 매일 아침 9시 트리거 → DB 조회 → 표로 가공 → 이메일 발송
-3. **이슈 자동 분류**: GitHub 이슈 생성 → 본문을 LLM 노드로 분류 → 라벨 부여
-4. **백업 확인**: S3 버킷 조회 → 어제 파일이 없으면 알림
+1. **Tidying error alerts**: receive errors on a webhook → de-duplicate → route to Slack
+   channels by severity
+2. **Daily report**: 9 a.m. trigger → query the database → format a table → send an email
+3. **Issue triage**: GitHub issue created → classify the body with an LLM node → apply
+   labels
+4. **Backup verification**: list an S3 bucket → alert if yesterday's file is missing
 
-## 코드가 필요한 부분
+## Where code comes in
 
-Code 노드에서 JavaScript로 데이터를 가공할 수 있습니다.
+A Code node lets you shape data with JavaScript.
 
 ```javascript
-// 입력 항목들을 정리해서 반환
+// tidy up the incoming items
 return items.map(item => ({
   json: {
     title: item.json.title.trim(),
@@ -77,25 +78,24 @@ return items.map(item => ({
 }));
 ```
 
-## 셀프호스팅 시 챙길 것
+## Self-hosting checklist
 
-- **HTTPS**: 웹훅을 받으려면 공개 주소가 필요합니다. 리버스 프록시(Caddy, Nginx)
-  뒤에 두거나 Cloudflare Tunnel을 씁니다.
-- **인증**: 기본 인증이나 SSO를 반드시 켭니다. 워크플로에는 각종 API 키가
-  들어 있습니다.
-- **백업**: `n8n_data` 볼륨에 워크플로와 자격증명이 저장됩니다. 정기 백업 대상입니다.
-- **버전 업데이트**: 노드 동작이 바뀔 수 있으므로 업데이트 후 주요 워크플로를
-  한 번씩 실행해 확인합니다.
+- **HTTPS**: receiving webhooks needs a public address. Put it behind a reverse proxy
+  (Caddy, Nginx) or a Cloudflare Tunnel.
+- **Authentication**: always enable basic auth or SSO. Workflows hold a lot of API keys.
+- **Backups**: workflows and credentials live in the `n8n_data` volume. Back it up.
+- **Upgrades**: node behaviour can change, so run your important workflows once after
+  updating.
 
-## 언제 쓰고 언제 코드로 쓰나
+## When to use it, when to write code
 
-| 상황 | 선택 |
+| Situation | Choice |
 |---|---|
-| 서비스 3~4개를 단순 연결 | n8n |
-| 조건 분기가 복잡하고 테스트가 필요 | 코드 + CI |
-| 비개발자도 수정해야 함 | n8n |
-| 초당 수백 건 처리 | 코드 (전용 워커) |
+| Wiring three or four services simply | n8n |
+| Complex branching that needs tests | Code plus CI |
+| Non-engineers need to edit it | n8n |
+| Hundreds of events per second | Code (a dedicated worker) |
 
-## 다음 단계
+## Next
 
-자동화한 내용을 기록으로 남기려면 → [문서 & 노트](/docs/writing/)
+To write down what you automated → [Docs & Notes](/docs/writing/)

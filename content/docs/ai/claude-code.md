@@ -1,18 +1,18 @@
 ---
 weight: 5010
 title: "Claude Code"
-description: "터미널에서 저장소 전체를 읽고 파일을 고치는 에이전트형 코딩 도구."
+description: "An agentic coding tool that reads a whole repository and edits files from the terminal."
 icon: "smart_toy"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-Claude Code는 자동완성이 아니라 **작업 단위로 맡기는** 도구입니다. "이 버그 원인을
-찾아 고쳐줘", "이 폴더의 테스트를 추가해줘"처럼 여러 파일을 오가는 일을 스스로
-탐색하고 수정합니다.
+Claude Code is not autocomplete — it's something you **hand a task to**. "Find and fix
+the cause of this bug", "add tests for this folder": work that spans several files, it
+explores and edits on its own.
 
-## 설치와 실행
+## Install and run
 
 ```bash
 npm install -g @anthropic-ai/claude-code
@@ -20,67 +20,68 @@ cd ~/projects/my-app
 claude
 ```
 
-터미널 외에 데스크톱 앱(Mac/Windows), 웹(claude.ai/code), VS Code·JetBrains
-확장으로도 쓸 수 있습니다.
+Besides the terminal, it's available as a desktop app (Mac/Windows), on the web
+(claude.ai/code), and as VS Code and JetBrains extensions.
 
-## 어떤 일에 맞나
+## What it suits
 
-| 잘 맞는 일 | 덜 맞는 일 |
+| Good fit | Poor fit |
 |---|---|
-| 여러 파일에 걸친 리팩터링 | 한 줄 자동완성 (Copilot이 빠름) |
-| 낯선 저장소 구조 파악 | 정답이 하나뿐인 정밀 알고리즘 |
-| 테스트 작성·실패 원인 추적 | 요구사항이 아직 안 정해진 설계 |
-| 반복적인 마이그레이션 작업 | 되돌리기 어려운 운영 작업 |
+| Refactoring across many files | Single-line completion (Copilot is faster) |
+| Getting oriented in an unfamiliar repo | Precise algorithms with one right answer |
+| Writing tests and chasing failures | Design work where requirements aren't settled |
+| Repetitive migration work | Irreversible production operations |
 
-## 기본 사용 흐름
+## The basic loop
 
 ```
-> 이 프로젝트의 인증 흐름을 요약해줘
-> src/auth 의 테스트 커버리지를 올려줘. 실패 케이스 위주로
-> 방금 변경을 커밋해줘
+> Summarise the authentication flow in this project
+> Raise test coverage in src/auth, focusing on failure cases
+> Commit what you just changed
 ```
 
-자연어로 지시하면 파일을 읽고, 수정 계획을 보여주고, 승인 후 편집합니다.
-편집 전에 확인을 거치므로 원하지 않는 변경은 거절할 수 있습니다.
+Give instructions in plain language; it reads files, shows a plan, and edits after you
+approve. Because edits are confirmed first, you can decline anything you didn't want.
 
-## 자주 쓰는 명령
+## Common commands
 
-| 명령 | 동작 |
+| Command | Action |
 |---|---|
-| `/help` | 사용 가능한 명령 목록 |
-| `/clear` | 대화 맥락 초기화 (주제가 바뀔 때) |
-| `/config` | 모델·설정 변경 |
-| `/init` | 저장소를 분석해 `CLAUDE.md` 생성 |
-| `Esc` | 진행 중인 작업 중단 |
-| `Ctrl+C` 두 번 | 종료 |
+| `/help` | List available commands |
+| `/clear` | Reset conversation context (when the topic changes) |
+| `/config` | Change the model and settings |
+| `/init` | Analyse the repo and generate `CLAUDE.md` |
+| `Esc` | Interrupt what it's doing |
+| `Ctrl+C` twice | Quit |
 
-## CLAUDE.md로 맥락 주기
+## Supplying context with CLAUDE.md
 
-프로젝트 루트의 `CLAUDE.md`는 매 세션 자동으로 읽힙니다. 팀 규칙을 여기 적어두면
-매번 설명할 필요가 없습니다.
+`CLAUDE.md` at the repository root is read automatically every session. Put your team's
+rules there and you stop repeating yourself.
 
 ```markdown
-# 프로젝트 규칙
+# Project rules
 
-- 패키지 매니저는 pnpm 을 쓴다. npm 명령을 쓰지 말 것.
-- 테스트: `pnpm test`. 커밋 전에 반드시 통과시킨다.
-- API 응답 타입은 src/types/api.ts 에만 정의한다.
-- 마이그레이션 파일은 직접 수정하지 말고 새로 생성한다.
+- The package manager is pnpm. Do not use npm commands.
+- Tests: `pnpm test`. They must pass before committing.
+- API response types live only in src/types/api.ts.
+- Never edit migration files; create new ones.
 ```
 
-## 잘 쓰는 요령
+## Getting good results
 
-- **작업을 작게 자릅니다.** "전체 리팩터링" 대신 "이 모듈부터"가 결과가 좋습니다.
-- **검증 수단을 알려줍니다.** 테스트 명령이나 린트 명령을 알려주면 스스로 확인하고
-  고칩니다.
-- **`/clear`를 자주 씁니다.** 이전 주제가 남아 있으면 엉뚱한 파일을 건드립니다.
-- **git을 안전망으로 씁니다.** 작업 시작 전 커밋해두면 언제든 되돌릴 수 있습니다.
+- **Cut the work small.** "This module first" beats "refactor everything."
+- **Tell it how to verify.** Give it the test or lint command and it will check its own
+  work and fix what broke.
+- **Use `/clear` often.** Leftover context from an earlier topic sends it into the
+  wrong files.
+- **Let git be the safety net.** Commit before you start and you can always back out.
 
-## 주의
+## A caution
 
-생성된 코드는 **반드시 읽고 테스트**합니다. 특히 삭제·배포·데이터베이스 마이그레이션
-같은 되돌리기 어려운 작업은 직접 확인한 뒤 실행하세요.
+Always **read and test** what it generates. For anything hard to reverse — deletions,
+deploys, database migrations — verify yourself before running it.
 
-## 다음 단계
+## Next
 
-타이핑 중 실시간 제안이 필요하다면 → [GitHub Copilot](/docs/ai/copilot/)
+If you want suggestions as you type → [GitHub Copilot](/docs/ai/copilot/)

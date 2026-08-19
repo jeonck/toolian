@@ -1,50 +1,50 @@
 ---
 weight: 3040
-title: "eza — 파일 목록"
-description: "색상·아이콘·트리·Git 상태를 함께 보여주는 ls 대체 도구."
+title: "eza"
+description: "An ls replacement with colour, icons, tree view, and Git status."
 icon: "list"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-`ls -alh`의 출력은 정보가 많지만 읽기가 어렵습니다. `eza`는 같은 정보를 색과
-정렬로 구분해 주고, 트리 보기와 Git 상태 표시까지 지원합니다.
+`ls -alh` gives you plenty of information and very little structure. `eza` presents the
+same data with colour and alignment, and adds tree view and Git status on top.
 
-## 설치
+## Install
 
 ```bash
 brew install eza
 sudo apt install eza            # Ubuntu 24.04+
-cargo install eza               # 그 외
+cargo install eza               # elsewhere
 ```
 
-## 기본 사용
+## Basics
 
 ```bash
-eza                    # 기본 목록
-eza -l                 # 상세 (권한, 크기, 수정 시각)
-eza -la                # 숨김 포함
-eza -l --git           # Git 상태 열 추가
-eza --tree --level=2   # 2단계 트리
-eza -l --sort=modified --reverse   # 최근 수정 순
+eza                    # plain listing
+eza -l                 # long form (permissions, size, mtime)
+eza -la                # include hidden files
+eza -l --git           # add a Git status column
+eza --tree --level=2   # two levels of tree
+eza -l --sort=modified --reverse   # most recently changed first
 ```
 
-## 자주 쓰는 옵션
+## Options worth knowing
 
-| 옵션 | 의미 |
+| Option | Meaning |
 |---|---|
-| `-l` | 상세 보기 |
-| `-a` | 숨김 파일 포함 |
-| `-T` / `--tree` | 트리 형태 |
-| `--level=N` | 트리 깊이 |
-| `--git` | Git 상태 열 |
-| `--icons` | 파일 종류 아이콘 (Nerd Font 필요) |
-| `--group-directories-first` | 디렉터리를 위로 |
-| `-s size` / `-s modified` | 정렬 기준 |
-| `--total-size` | 디렉터리 실제 크기 계산 |
+| `-l` | Long listing |
+| `-a` | Include hidden files |
+| `-T` / `--tree` | Tree view |
+| `--level=N` | Tree depth |
+| `--git` | Git status column |
+| `--icons` | File-type icons (needs a Nerd Font) |
+| `--group-directories-first` | Directories on top |
+| `-s size` / `-s modified` | Sort key |
+| `--total-size` | Compute real directory sizes |
 
-## 별칭 추천
+## Suggested aliases
 
 ```bash
 # ~/.zshrc
@@ -54,17 +54,17 @@ alias la='eza -la --git --group-directories-first'
 alias lt='eza --tree --level=2 --group-directories-first'
 ```
 
-`ls`를 덮어쓰는 것이 불안하다면 `l`, `ll`만 별칭으로 두고 `ls`는 원래대로 남겨
-두세요. 스크립트가 `ls` 출력을 파싱하는 경우 문제가 생길 수 있습니다.
+If overriding `ls` makes you nervous, alias only `l` and `ll` and leave `ls` alone —
+scripts that parse `ls` output can break.
 
-## tree 대신 쓰기
+## Instead of tree
 
 ```bash
 eza --tree --level=3 --ignore-glob="node_modules|.git"
 ```
 
-디렉터리 구조를 문서에 붙일 때 유용합니다.
+Handy when you want to paste a directory structure into a document.
 
-## 다음 단계
+## Next
 
-이제 텍스트가 아니라 JSON을 다뤄봅니다 → [jq — JSON 가공](/docs/files/jq/)
+From text to JSON → [jq](/docs/files/jq/)

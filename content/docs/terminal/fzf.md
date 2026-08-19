@@ -1,51 +1,52 @@
 ---
 weight: 2040
-title: "fzf 퍼지 검색"
-description: "히스토리·파일·브랜치를 대화형으로 골라내는 만능 필터. 설치 5분, 효과는 매일."
+title: "fzf"
+description: "An interactive filter for history, files, and branches. Five minutes to install, useful every day."
 icon: "filter_alt"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-fzf는 "목록을 받아서 사람이 고르게 해주는" 도구입니다. 목록이 무엇이든 상관없기
-때문에 히스토리, 파일, Git 브랜치, 프로세스, 도커 컨테이너 등 어디에나 붙습니다.
+fzf takes a list and lets a human pick from it. Because it doesn't care what the list
+is, it attaches to history, files, Git branches, processes, Docker containers —
+anything.
 
-## 설치
+## Install
 
 ```bash
 brew install fzf
-$(brew --prefix)/opt/fzf/install     # 셸 키 바인딩 설치 (전부 y)
+$(brew --prefix)/opt/fzf/install     # install the shell key bindings (answer y)
 ```
 
 ```bash
 sudo apt install fzf
 ```
 
-## 설치만 해도 생기는 세 가지 키
+## Three keys you get for free
 
-| 키 | 동작 |
+| Key | Action |
 |---|---|
-| `Ctrl+R` | 명령 히스토리를 퍼지 검색 (기본 히스토리 검색을 대체) |
-| `Ctrl+T` | 현재 디렉터리 하위 파일을 골라 커맨드라인에 삽입 |
-| `Alt+C` | 하위 디렉터리를 골라 바로 `cd` |
+| `Ctrl+R` | Fuzzy-search command history (replaces the default reverse search) |
+| `Ctrl+T` | Pick a file under the current directory and insert its path |
+| `Alt+C` | Pick a subdirectory and `cd` into it |
 
-특히 `Ctrl+R`은 설치 직후 가장 크게 체감됩니다. 예전에 친 긴 `docker run ...`
-명령을 단어 두어 개로 찾아냅니다.
+`Ctrl+R` is the one you feel immediately. That long `docker run ...` from last month
+comes back with two words.
 
-## 파이프로 무엇이든 고르기
+## Pipe anything into it
 
 ```bash
-# 파일 하나 골라서 에디터로 열기
+# pick a file, open it in your editor
 code "$(fzf)"
 
-# 프로세스 골라서 종료
+# pick a process and kill it
 kill -9 $(ps aux | fzf | awk '{print $2}')
 ```
 
-## 미리보기 붙이기
+## Add a preview pane
 
-`bat`이 설치되어 있다면 파일 내용을 옆에 띄울 수 있습니다.
+With `bat` installed, you can show file contents alongside the list.
 
 ```bash
 # ~/.zshrc
@@ -54,28 +55,28 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 ```
 
-`fd`와 `bat`은 [파일 & 검색](/docs/files/) 카테고리에서 다룹니다.
+`fd` and `bat` are covered in [Files & Search](/docs/files/).
 
-## 실전 함수 세 개
+## Three functions worth stealing
 
-`~/.zshrc`에 넣어두면 바로 쓸 수 있습니다.
+Drop these in `~/.zshrc`:
 
 ```bash
-# 브랜치 골라서 체크아웃
+# pick a branch and check it out
 fbr() {
   local branch
   branch=$(git branch --all | grep -v HEAD | sed 's/.* //' | fzf) || return
   git checkout "${branch#remotes/origin/}"
 }
 
-# 커밋 골라서 상세 보기
+# pick a commit and show it
 fshow() {
   git log --oneline --color=always |
     fzf --ansi --preview 'git show --color=always {1}' |
     awk '{print $1}' | xargs git show
 }
 
-# 실행 중인 도커 컨테이너에 접속
+# shell into a running container
 dsh() {
   local cid
   cid=$(docker ps --format '{{.ID}}\t{{.Names}}\t{{.Image}}' | fzf | cut -f1) || return
@@ -83,20 +84,20 @@ dsh() {
 }
 ```
 
-## 검색 문법
+## Search syntax
 
-fzf 입력창에서 쓸 수 있는 기호입니다.
+Symbols you can type in the fzf prompt:
 
-| 입력 | 의미 |
+| Input | Meaning |
 |---|---|
-| `abc` | abc 글자가 순서대로 들어간 항목 |
-| `'abc` | abc를 정확히 포함 |
-| `^abc` | abc로 시작 |
-| `abc$` | abc로 끝남 |
-| `!abc` | abc를 포함하지 않음 |
-| `abc \| def` | 둘 중 하나 |
+| `abc` | Items containing a, b, c in order |
+| `'abc` | Contains the exact string abc |
+| `^abc` | Starts with abc |
+| `abc$` | Ends with abc |
+| `!abc` | Does not contain abc |
+| `abc \| def` | Either one |
 
-## 다음 단계
+## Next
 
-명령을 찾는 시간을 줄였다면 디렉터리 이동도 줄여봅니다 →
-[zoxide로 디렉터리 이동](/docs/terminal/zoxide/)
+Commands are faster to find; now shorten directory travel →
+[zoxide](/docs/terminal/zoxide/)

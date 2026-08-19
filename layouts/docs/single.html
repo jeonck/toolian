@@ -16,11 +16,11 @@
     {{ end }}
     <script src="{{ $mermaid.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $mermaid.Data.Integrity }}"{{ end }}></script>
     <script>
-        // 테마 기본 설정에 gantt.useWidth 를 추가한 것 외에는 Lotus Docs 원본과 동일하다.
-        // gantt 차트는 렌더링 시점의 컨테이너 폭을 읽어 시간축을 계산하는데,
-        // mermaid 가 화면 밖 임시 컨테이너에서 렌더링하는 탓에 폭이 0 으로 잡혀
-        // viewBox="0 0 0 ..." 인 빈 SVG 가 나오고 콘솔에 음수 rect 에러가 쌓인다.
-        // 고정 폭을 주면 이 문제가 사라진다.
+        // Identical to the Lotus Docs original apart from gantt.useWidth.
+        // Gantt charts read the container width at render time to lay out the time
+        // axis, but mermaid renders into an off-screen scratch container, so the
+        // width comes back as 0: you get an empty SVG with viewBox="0 0 0 ..." and a
+        // pile of negative-rect errors in the console. A fixed width avoids it.
         const config = {
             startOnLoad: true,
             logLevel: "error",

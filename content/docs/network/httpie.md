@@ -1,17 +1,17 @@
 ---
 weight: 7020
 title: "HTTPie"
-description: "사람이 읽고 쓰기 좋은 문법의 HTTP 클라이언트. JSON 작업에서 특히 간결하다."
+description: "A human-friendly HTTP client. Especially terse for JSON work."
 icon: "http"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-HTTPie는 curl과 같은 일을 하지만 문법이 짧고 출력이 자동으로 색칠·정렬됩니다.
-JSON API를 손으로 두들겨 볼 때 타이핑 양이 절반 이하로 줄어듭니다.
+HTTPie does the same job as curl with shorter syntax and output that is coloured and
+formatted automatically. Poking at a JSON API by hand takes less than half the typing.
 
-## 설치
+## Install
 
 ```bash
 brew install httpie
@@ -19,76 +19,78 @@ pip install httpie
 sudo apt install httpie
 ```
 
-## 기본
+## Basics
 
 ```bash
 http GET https://api.example.com/users
-http https://api.example.com/users          # GET은 생략 가능
-https example.com/users                     # https 스킴 축약
+http https://api.example.com/users          # GET is the default
+https example.com/users                     # shorthand for the https scheme
 ```
 
-응답은 자동으로 문법 강조되고 JSON이 정렬됩니다. `jq`를 거치지 않아도 읽힙니다.
+Responses are syntax-highlighted and JSON is formatted, so you can read them without
+piping through `jq`.
 
-## 문법 규칙
+## The syntax rules
 
-| 기호 | 의미 | 예시 |
+| Symbol | Meaning | Example |
 |---|---|---|
-| `=` | JSON 문자열 필드 | `name=김철수` |
-| `:=` | JSON 원시 타입 (숫자·불리언·배열) | `age:=30` `tags:='["a","b"]'` |
-| `:` | 헤더 | `Authorization:"Bearer $TOKEN"` |
-| `==` | 쿼리 스트링 | `page==2` |
-| `@` | 파일 업로드 | `avatar@./me.png` |
-| `=@` | 파일 내용을 문자열 필드로 | `bio=@bio.txt` |
+| `=` | JSON string field | `name=Alex` |
+| `:=` | JSON raw type (number, boolean, array) | `age:=30` `tags:='["a","b"]'` |
+| `:` | Header | `Authorization:"Bearer $TOKEN"` |
+| `==` | Query string | `page==2` |
+| `@` | File upload | `avatar@./me.png` |
+| `=@` | File contents as a string field | `bio=@bio.txt` |
 
-## curl과 비교
+## Side by side with curl
 
 ```bash
 # curl
 curl -X POST https://api.example.com/users \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $TOKEN" \
-  -d '{"name":"김철수","age":30,"active":true}'
+  -d '{"name":"Alex","age":30,"active":true}'
 
 # HTTPie
 http POST api.example.com/users \
   Authorization:"Bearer $TOKEN" \
-  name=김철수 age:=30 active:=true
+  name=Alex age:=30 active:=true
 ```
 
-`Content-Type: application/json`은 자동으로 붙습니다.
+`Content-Type: application/json` is added for you.
 
-## 자주 쓰는 옵션
+## Flags worth knowing
 
-| 옵션 | 의미 |
+| Flag | Meaning |
 |---|---|
-| `-v` | 요청과 응답 전체 표시 |
-| `-h` | 응답 헤더만 |
-| `-b` | 응답 본문만 |
-| `--follow` | 리다이렉트 따라가기 |
-| `-d` | 파일로 다운로드 |
-| `-a user:pass` | 기본 인증 |
-| `--session=이름` | 쿠키·헤더를 세션에 저장 |
-| `--offline` | 실제 전송 없이 요청만 출력 (검증용) |
+| `-v` | Show the full request and response |
+| `-h` | Response headers only |
+| `-b` | Response body only |
+| `--follow` | Follow redirects |
+| `-d` | Download to a file |
+| `-a user:pass` | Basic auth |
+| `--session=name` | Persist cookies and headers in a session |
+| `--offline` | Print the request without sending it |
 
-## 세션으로 인증 유지
+## Sessions for authentication
 
 ```bash
 http --session=prod POST api.example.com/login username=me password=secret
-http --session=prod GET api.example.com/me      # 쿠키가 유지됨
+http --session=prod GET api.example.com/me      # cookies persist
 ```
 
-세션 파일은 `~/.config/httpie/sessions/`에 저장됩니다. 비밀번호가 평문으로 남을 수
-있으므로 공용 장비에서는 주의하세요.
+Session files live in `~/.config/httpie/sessions/`. Passwords can end up there in plain
+text, so be careful on shared machines.
 
-## 언제 curl을 쓰나
+## When to use curl instead
 
-| 상황 | 도구 |
+| Situation | Tool |
 |---|---|
-| 내 장비에서 API를 탐색 | HTTPie |
-| 운영 서버·컨테이너 안 | curl (이미 설치되어 있음) |
-| CI 스크립트, 헬스체크 | curl (`-f` 종료 코드 처리) |
-| 문서에 붙일 예제 | curl (범용성) |
+| Exploring an API on your own machine | HTTPie |
+| Inside a production server or container | curl (already there) |
+| CI scripts and health checks | curl (`-f` exit-code handling) |
+| Examples in documentation | curl (universally available) |
 
-## 다음 단계
+## Next
 
-요청을 저장하고 팀과 공유하려면 → [Bruno와 Postman](/docs/network/bruno-postman/)
+To save requests and share them with a team →
+[Bruno and Postman](/docs/network/bruno-postman/)

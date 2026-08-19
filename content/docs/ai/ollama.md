@@ -1,86 +1,88 @@
 ---
 weight: 5040
-title: "Ollama — 로컬 LLM"
-description: "인터넷 없이 내 컴퓨터에서 모델을 돌리는 방법과, 현실적인 기대치."
+title: "Ollama"
+description: "Running models on your own machine, and what to realistically expect from them."
 icon: "dns"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-보안 정책상 코드를 외부로 보낼 수 없거나, 오프라인에서 작동해야 하거나, 대량
-요청 비용을 줄이고 싶을 때 로컬 모델이 선택지가 됩니다. Ollama는 그 과정을
-`docker run` 수준으로 단순화합니다.
+When policy forbids sending code outside, when things must work offline, or when the
+cost of high-volume requests matters, a local model becomes an option. Ollama reduces
+that to roughly the effort of `docker run`.
 
-## 설치
+## Install
 
 ```bash
 brew install ollama
-ollama serve          # 백그라운드 서비스 시작
+ollama serve          # start the background service
 ```
 
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-Windows는 공식 설치 파일을 사용합니다.
+Windows uses the official installer.
 
-## 모델 실행
-
-```bash
-ollama pull llama3.2          # 모델 내려받기
-ollama run llama3.2           # 대화형 실행
-ollama list                   # 설치된 모델 목록
-ollama rm llama3.2            # 삭제
-```
-
-프롬프트를 파이프로 넘길 수도 있습니다.
+## Running a model
 
 ```bash
-cat error.log | ollama run llama3.2 "이 로그에서 근본 원인을 찾아줘"
+ollama pull llama3.2          # download
+ollama run llama3.2           # interactive
+ollama list                   # installed models
+ollama rm llama3.2            # remove
 ```
 
-## 모델 고르기
+You can also pipe a prompt in:
 
-| 파라미터 규모 | 필요 메모리(대략) | 용도 |
+```bash
+cat error.log | ollama run llama3.2 "Find the root cause in this log"
+```
+
+## Choosing a model
+
+| Parameter size | Rough memory | Use |
 |---|---|---|
-| 1~3B | 4GB | 요약, 분류, 간단한 변환 |
-| 7~8B | 8~16GB | 일반 질의, 코드 설명 |
-| 13~14B | 16~32GB | 좀 더 복잡한 추론 |
-| 30B+ | 32GB 이상 | 품질 우선, 속도 포기 |
+| 1–3B | 4 GB | Summaries, classification, simple transforms |
+| 7–8B | 8–16 GB | General questions, explaining code |
+| 13–14B | 16–32 GB | Somewhat harder reasoning |
+| 30B+ | 32 GB and up | Quality first, speed second |
 
-양자화 버전(`:q4_K_M` 등)은 메모리를 줄이는 대신 품질이 조금 떨어집니다. 노트북
-환경이라면 7~8B 양자화 모델이 현실적인 출발점입니다.
+Quantised builds (`:q4_K_M` and friends) trade some quality for memory. On a laptop, a
+quantised 7–8B model is the realistic starting point.
 
-## API로 붙이기
+## Wiring it into code
 
-Ollama는 로컬 HTTP 서버를 띄웁니다.
+Ollama exposes a local HTTP server.
 
 ```bash
 curl http://localhost:11434/api/generate -d '{
   "model": "llama3.2",
-  "prompt": "SELECT 문에서 인덱스가 안 타는 흔한 이유 3가지",
+  "prompt": "Three common reasons a SELECT does not use an index",
   "stream": false
 }'
 ```
 
-OpenAI 호환 엔드포인트도 제공하므로 기존 SDK 코드를 주소만 바꿔 쓸 수 있습니다.
+There is an OpenAI-compatible endpoint too, so existing SDK code often works with only
+a base URL change.
 
 ```bash
 curl http://localhost:11434/v1/chat/completions \
   -H "Content-Type: application/json" \
-  -d '{"model":"llama3.2","messages":[{"role":"user","content":"안녕"}]}'
+  -d '{"model":"llama3.2","messages":[{"role":"user","content":"hello"}]}'
 ```
 
-## 커스텀 모델 정의
+## Defining a custom model
 
-`Modelfile`로 시스템 프롬프트와 파라미터를 고정할 수 있습니다.
+A `Modelfile` pins the system prompt and parameters.
 
 ```
 FROM llama3.2
 PARAMETER temperature 0.2
 SYSTEM """
-너는 코드 리뷰어다. 한국어로 답하고, 지적은 근거와 함께 3개 이내로 한다.
+You are a code reviewer. Answer concisely and give at most three findings, each with
+a reason.
 """
 ```
 
@@ -89,16 +91,17 @@ ollama create reviewer -f Modelfile
 ollama run reviewer
 ```
 
-## 현실적인 기대치
+## Realistic expectations
 
-- **품질은 클라우드 상용 모델보다 낮습니다.** 복잡한 리팩터링이나 긴 문맥 추론에는
-  아직 부족합니다.
-- **잘 맞는 일**: 로그 요약, 분류, 번역 초안, 형식 변환, 커밋 메시지 초안.
-- **속도**: GPU 또는 Apple Silicon 통합 메모리가 있어야 실용적입니다. CPU만으로는
-  체감이 매우 느립니다.
-- **디스크**: 모델 하나에 수 GB씩 차지합니다. `ollama list`로 주기적으로 정리하세요.
+- **Quality is below the hosted commercial models.** Complex refactors and long-context
+  reasoning are still out of reach.
+- **Good fits**: log summarisation, classification, translation drafts, format
+  conversion, first-draft commit messages.
+- **Speed**: you want a GPU or Apple Silicon unified memory. CPU-only is painfully slow.
+- **Disk**: models run to several gigabytes each. Prune with `ollama list` from time to
+  time.
 
-## 다음 단계
+## Next
 
-AI 도구가 만든 변경을 안전하게 관리하려면 버전 관리가 필수입니다 →
-[Git & 협업](/docs/git/)
+Changes made with AI need version control around them →
+[Git & Collaboration](/docs/git/)

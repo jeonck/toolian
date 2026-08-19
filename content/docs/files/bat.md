@@ -1,21 +1,21 @@
 ---
 weight: 3030
-title: "bat — 파일 읽기"
-description: "문법 강조와 줄 번호, Git 변경 표시가 붙은 cat 대체 도구."
+title: "bat"
+description: "A cat replacement with syntax highlighting, line numbers, and Git change markers."
 icon: "description"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-`cat`으로 200줄짜리 설정 파일을 열면 흑백 텍스트 덩어리가 쏟아집니다. `bat`은
-같은 파일을 문법 강조·줄 번호와 함께 페이지 단위로 보여줍니다.
+`cat` on a 200-line config file dumps a monochrome wall of text. `bat` shows the same
+file with syntax highlighting, line numbers, and paging.
 
-## 설치
+## Install
 
 ```bash
 brew install bat
-sudo apt install bat            # 실행 파일 이름이 batcat
+sudo apt install bat            # the binary is called batcat
 winget install sharkdp.bat
 ```
 
@@ -23,39 +23,39 @@ winget install sharkdp.bat
 alias bat=batcat                # Ubuntu
 ```
 
-## 기본 사용
+## Basics
 
 ```bash
-bat config.yaml                 # 문법 강조 + 줄 번호 + 페이저
-bat -n script.sh                # 줄 번호만 (파일명 헤더 없이)
-bat -p log.txt                  # 장식 전부 제거 (plain)
-bat -r 40:80 main.go            # 40~80줄만
-bat -A data.txt                 # 공백·탭·개행을 눈에 보이게
+bat config.yaml                 # highlighting + line numbers + pager
+bat -n script.sh                # line numbers only, no header
+bat -p log.txt                  # plain, no decorations
+bat -r 40:80 main.go            # only lines 40–80
+bat -A data.txt                 # show spaces, tabs, and newlines
 ```
 
-## 다른 명령과 조합
+## Combining with other commands
 
 ```bash
-# 파이프로 받아 언어를 지정
+# read from a pipe and name the language
 curl -s https://api.example.com/data | bat -l json
 
-# git diff에 색을 입혀서
+# colourise a list of changed files
 git diff --name-only | xargs bat
 
-# less 대신 기본 페이저로 지정
+# use it as your default pager
 export PAGER="bat -p"
 ```
 
-`fzf` 미리보기로 쓰는 것이 가장 흔한 조합입니다.
+The most common pairing is as an `fzf` preview:
 
 ```bash
 export FZF_DEFAULT_OPTS="--preview 'bat --color=always --style=numbers {}'"
 ```
 
-## 설정
+## Configuration
 
 ```bash
-bat --config-file        # 설정 파일 경로 확인
+bat --config-file        # print the config path
 ```
 
 ```bash
@@ -65,14 +65,14 @@ bat --config-file        # 설정 파일 경로 확인
 --italic-text=always
 ```
 
-사용 가능한 테마는 `bat --list-themes`로 확인합니다.
+List available themes with `bat --list-themes`.
 
-## 사람이 볼 때만 예쁘게
+## Pretty only for humans
 
-`bat`은 출력이 터미널이 아니라 파이프로 갈 때 자동으로 `cat`처럼 동작합니다.
-따라서 스크립트에서 `bat file | grep x` 처럼 써도 색 코드가 섞이지 않습니다.
-강제로 색을 넣으려면 `--color=always`를 붙입니다.
+When its output goes to a pipe rather than a terminal, `bat` automatically behaves like
+`cat`. So `bat file | grep x` in a script won't inject colour codes. To force colour,
+add `--color=always`.
 
-## 다음 단계
+## Next
 
-파일 목록 자체도 읽기 좋게 바꿔봅니다 → [eza — 파일 목록](/docs/files/eza/)
+Make directory listings readable too → [eza](/docs/files/eza/)

@@ -1,84 +1,85 @@
 ---
 weight: 5030
 title: "Cursor"
-description: "VS Code를 기반으로 AI 편집을 전면에 둔 에디터. 기존 설정을 그대로 가져올 수 있다."
+description: "A VS Code fork that puts AI editing front and centre — and imports your existing setup."
 icon: "bolt"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-Cursor는 VS Code를 포크해서 AI 기능을 핵심 워크플로로 끌어올린 에디터입니다.
-기존 VS Code 확장·키맵·설정을 대부분 그대로 쓸 수 있어 전환 비용이 낮습니다.
+Cursor forks VS Code and promotes AI features into the core workflow. Because it keeps
+most VS Code extensions, keymaps, and settings, the cost of switching is low.
 
-## 설치
+## Install
 
 ```bash
 brew install --cask cursor
 ```
 
-첫 실행 시 VS Code 설정을 가져올지 물어봅니다. 확장, 테마, 키 바인딩이 함께
-넘어옵니다.
+On first launch it offers to import your VS Code setup — extensions, theme, and key
+bindings come across.
 
-## 핵심 기능 세 가지
+## Three features that matter
 
-| 기능 | 키 | 용도 |
+| Feature | Key | Purpose |
 |---|---|---|
-| **인라인 편집** | `⌘K` / `Ctrl+K` | 선택 영역을 자연어 지시로 수정 |
-| **채팅** | `⌘L` / `Ctrl+L` | 코드에 대해 묻고 답 듣기 |
-| **에이전트 모드** | 채팅 패널에서 전환 | 여러 파일에 걸친 변경 수행 |
+| **Inline edit** | `⌘K` / `Ctrl+K` | Change the selection from a plain-language instruction |
+| **Chat** | `⌘L` / `Ctrl+L` | Ask questions about the code |
+| **Agent mode** | Toggle in the chat panel | Make changes across several files |
 
-### 인라인 편집이 가장 자주 쓰입니다
+### Inline edit is the one you'll use most
 
-고칠 코드를 선택하고 `⌘K` → "이 반복문을 map으로 바꾸고 null 체크를 추가해줘".
-변경 사항이 diff로 표시되고, 수락 또는 거절합니다.
+Select the code, press `⌘K`, and say "turn this loop into a map and add a null check."
+The change appears as a diff for you to accept or reject.
 
-## 문맥 지정 문법
+## Specifying context
 
-채팅에서 `@`로 무엇을 볼지 지정합니다.
+In chat, `@` selects what it should look at.
 
-| 입력 | 의미 |
+| Input | Meaning |
 |---|---|
-| `@파일명` | 특정 파일 |
-| `@폴더명` | 폴더 전체 |
-| `@Codebase` | 저장소 전체 검색 |
-| `@Docs` | 등록된 라이브러리 문서 |
-| `@Web` | 웹 검색 결과 |
+| `@filename` | A specific file |
+| `@folder` | A whole folder |
+| `@Codebase` | Search the repository |
+| `@Docs` | Registered library documentation |
+| `@Web` | Web search results |
 
-문맥을 좁게 줄수록 정확합니다. `@Codebase`를 습관적으로 쓰기보다, 관련 파일
-두세 개를 직접 지정하는 편이 결과가 좋습니다.
+Narrower context is more accurate. Naming two or three relevant files usually beats
+reaching for `@Codebase` out of habit.
 
-## 프로젝트 규칙 파일
+## Project rules
 
-저장소에 `.cursor/rules/`를 두면 매 요청에 규칙이 적용됩니다.
+Add `.cursor/rules/` to the repository and the rules apply to every request.
 
 ```markdown
 ---
-description: 프로젝트 공통 규칙
+description: Shared project rules
 alwaysApply: true
 ---
 
-- 상태 관리는 Zustand 를 쓴다. Redux 를 도입하지 말 것.
-- 컴포넌트 파일은 PascalCase, 훅은 use 접두사.
-- 스타일은 Tailwind 유틸리티만. CSS 파일을 새로 만들지 않는다.
+- State management is Zustand. Do not introduce Redux.
+- Component files are PascalCase; hooks use the `use` prefix.
+- Styling is Tailwind utilities only. Do not create new CSS files.
 ```
 
-## 다른 도구와 비교
+## Compared to the others
 
 | | Copilot | Cursor | Claude Code |
 |---|---|---|---|
-| 형태 | 확장 | 에디터 | 터미널/확장 |
-| 강점 | 인라인 제안 속도 | 편집 UX, diff 검토 | 자율 탐색·다중 파일 작업 |
-| 전환 비용 | 없음 | 낮음 (설정 이관) | 없음 (기존 에디터 유지) |
+| Form | Extension | Editor | Terminal / extension |
+| Strength | Inline suggestion speed | Editing UX, diff review | Autonomous multi-file work |
+| Switching cost | None | Low (settings import) | None (keep your editor) |
 
-셋 중 하나만 골라야 한다면 작업 성격으로 정합니다. 타이핑이 많으면 Copilot,
-편집 검토를 눈으로 하고 싶으면 Cursor, 작업을 통째로 맡기고 싶으면 Claude Code.
+If you must pick one, pick by the shape of your work. Heavy typing favours Copilot;
+wanting to eyeball every diff favours Cursor; handing over whole tasks favours Claude
+Code.
 
-## 주의
+## A caution
 
-Cursor는 VS Code 업데이트를 뒤따라 반영하므로 최신 VS Code 기능이 조금 늦게
-들어올 수 있습니다. 팀 표준 에디터가 정해져 있다면 확인이 필요합니다.
+Cursor trails VS Code releases, so the newest VS Code features can arrive late. Worth
+checking if your team has a standard editor.
 
-## 다음 단계
+## Next
 
-코드를 외부로 보내기 어려운 환경이라면 → [Ollama — 로컬 LLM](/docs/ai/ollama/)
+When code can't leave your machine → [Ollama](/docs/ai/ollama/)

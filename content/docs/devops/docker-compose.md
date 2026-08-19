@@ -1,16 +1,16 @@
 ---
 weight: 8020
 title: "Docker Compose"
-description: "앱·DB·캐시를 파일 하나로 정의하고 한 명령으로 띄우는 로컬 개발 환경."
+description: "Defining your app, database, and cache in one file and starting them with one command."
 icon: "layers"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-실제 프로젝트는 컨테이너 하나로 끝나지 않습니다. 앱, 데이터베이스, 캐시, 큐가
-함께 떠야 합니다. Compose는 이 구성을 YAML 하나에 적고 `docker compose up`으로
-띄웁니다.
+Real projects don't stop at one container — the app, a database, a cache, and a queue
+all need to be up. Compose describes that in a single YAML file and starts it with
+`docker compose up`.
 
 ## compose.yaml
 
@@ -25,7 +25,7 @@ services:
       REDIS_URL: redis://cache:6379
     volumes:
       - .:/app
-      - /app/node_modules      # 호스트 폴더로 덮이지 않게 보호
+      - /app/node_modules      # protect it from being shadowed by the host
     depends_on:
       db:
         condition: service_healthy
@@ -51,38 +51,38 @@ volumes:
   pgdata:
 ```
 
-컨테이너끼리는 **서비스 이름으로 서로를 찾습니다**. 위에서 앱이 DB에 접속할 때
-`localhost`가 아니라 `db`를 쓰는 이유입니다.
+Containers **find each other by service name**. That's why the app above connects to
+`db` rather than `localhost`.
 
-## 기본 명령
+## Commands
 
-| 명령 | 동작 |
+| Command | Action |
 |---|---|
-| `docker compose up -d` | 전체 백그라운드 실행 |
-| `docker compose up --build` | 이미지 다시 빌드하고 실행 |
-| `docker compose ps` | 상태 확인 |
-| `docker compose logs -f app` | 특정 서비스 로그 |
-| `docker compose exec app sh` | 실행 중 컨테이너에 접속 |
-| `docker compose run --rm app npm test` | 일회성 명령 실행 |
-| `docker compose down` | 중지 및 정리 |
-| `docker compose down -v` | 볼륨까지 삭제 (데이터 초기화) |
+| `docker compose up -d` | Start everything in the background |
+| `docker compose up --build` | Rebuild images, then start |
+| `docker compose ps` | Status |
+| `docker compose logs -f app` | Logs for one service |
+| `docker compose exec app sh` | Shell into a running container |
+| `docker compose run --rm app npm test` | One-off command |
+| `docker compose down` | Stop and clean up |
+| `docker compose down -v` | Also delete volumes (wipes data) |
 
-## 환경별 구성 분리
+## Splitting environments
 
-기본 파일과 오버라이드 파일로 나눕니다.
+Use a base file plus an override.
 
 ```bash
-# compose.yaml (공통) + compose.override.yaml (로컬, 자동 적용)
+# compose.yaml (shared) + compose.override.yaml (local, applied automatically)
 docker compose up
 
-# 운영용 구성으로
+# with a production configuration
 docker compose -f compose.yaml -f compose.prod.yaml up -d
 ```
 
-`compose.override.yaml`은 파일명만 맞으면 자동으로 합쳐지므로, 로컬 전용 볼륨
-마운트나 디버그 포트를 여기 둡니다.
+`compose.override.yaml` merges automatically by filename, so local-only volume mounts
+and debug ports belong there.
 
-## `.env` 파일
+## The `.env` file
 
 ```bash
 # .env
@@ -97,20 +97,20 @@ services:
       - "${APP_PORT}:3000"
 ```
 
-`.env`는 반드시 `.gitignore`에 넣고, `.env.example`을 대신 커밋해 필요한 키
-목록을 공유합니다.
+Always gitignore `.env` and commit a `.env.example` instead so the required keys are
+discoverable.
 
-## 자주 겪는 문제
+## Frequent problems
 
-| 증상 | 해결 |
+| Symptom | Fix |
 |---|---|
-| 앱이 DB에 접속 못 함 | 호스트를 `localhost` 대신 서비스 이름으로 |
-| DB가 아직 준비 안 됨 | `depends_on` + `healthcheck` 조합 사용 |
-| 코드 변경이 반영 안 됨 | 소스 볼륨 마운트 확인, 핫 리로드 설정 확인 |
-| `node_modules`가 사라짐 | 익명 볼륨(`/app/node_modules`)으로 보호 |
-| 포트 이미 사용 중 | `.env`의 포트 값을 바꿔 회피 |
+| App can't reach the database | Use the service name, not `localhost` |
+| The database isn't ready yet | Pair `depends_on` with a `healthcheck` |
+| Code changes don't apply | Check the source volume mount and hot reload settings |
+| `node_modules` disappears | Protect it with an anonymous volume (`/app/node_modules`) |
+| Port already in use | Change the port value in `.env` |
 
-## 다음 단계
+## Next
 
-컨테이너가 여러 서버로 퍼지면 오케스트레이터가 필요합니다 →
-[kubectl과 k9s](/docs/devops/kubernetes/)
+When containers spread across machines you need an orchestrator →
+[kubectl and k9s](/docs/devops/kubernetes/)

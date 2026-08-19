@@ -1,13 +1,14 @@
 ---
 weight: 90
-title: "자동화 & 단축키"
-description: "런처, 시스템 유틸리티, Makefile, 스케줄러, 노코드 워크플로 — 반복을 기계에 넘기기."
+title: "Automation & Shortcuts"
+description: "Launchers, system utilities, Makefiles, schedulers, and no-code workflows — handing repetition to a machine."
 icon: "bolt"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-하루에 세 번 넘게 하는 일이라면 자동화 후보입니다. 이 카테고리는 키보드에서 손을
-떼지 않게 해주는 런처부터, 프로젝트 명령을 한 곳에 모으는 Makefile, 정해진 시각에
-도는 스케줄러, 서비스끼리 연결하는 노코드 워크플로까지 단계별로 소개합니다.
+Anything you do more than three times a day is an automation candidate. This category
+works outward from the launcher that keeps your hands on the keyboard, to the Makefile
+that collects a project's commands in one place, to schedulers that run on their own,
+to no-code workflows that wire services together.

@@ -1,18 +1,18 @@
 ---
 weight: 2050
-title: "zoxide로 디렉터리 이동"
-description: "자주 가는 폴더를 기억했다가 이름 일부만으로 이동시켜 주는 cd 대체 도구."
+title: "zoxide"
+description: "A cd replacement that remembers where you go and gets you there from a fragment of the name."
 icon: "moving"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-`cd ~/work/projects/backend/services/auth` 같은 경로를 하루에 몇 번씩 치고
-있다면 zoxide가 그 타이핑을 `z auth` 로 줄여줍니다. 방문한 디렉터리에 빈도와
-최근성 점수를 매겨 가장 그럴듯한 곳으로 보내줍니다.
+If you type `cd ~/work/projects/backend/services/auth` several times a day, zoxide
+shortens it to `z auth`. It scores directories you've visited by frequency and recency
+and sends you to the most plausible one.
 
-## 설치
+## Install
 
 ```bash
 brew install zoxide
@@ -22,63 +22,63 @@ brew install zoxide
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
 ```
 
-셸에 연결합니다.
+Hook it into your shell:
 
 ```bash
 # ~/.zshrc
 eval "$(zoxide init zsh)"
 
-# bash 사용자
+# bash
 eval "$(zoxide init bash)"
 ```
 
-`cd` 자체를 대체하고 싶다면:
+To replace `cd` outright:
 
 ```bash
 eval "$(zoxide init --cmd cd zsh)"
 ```
 
-## 사용법
+## Usage
 
 ```bash
-# 평소처럼 다니면 zoxide가 기록한다
+# go about your day as usual; zoxide records it
 cd ~/work/projects/backend
 
-# 이후에는 조각만 입력
+# afterwards, a fragment is enough
 z backend
-z proj back      # 여러 조각을 공백으로 (AND 조건)
+z proj back      # multiple fragments, space separated (AND)
 
-# 후보를 직접 고르기 (fzf 필요)
+# choose from the candidates (needs fzf)
 zi backend
 ```
 
-| 명령 | 동작 |
+| Command | Action |
 |---|---|
-| `z <조각>` | 점수가 가장 높은 디렉터리로 이동 |
-| `zi <조각>` | 후보 목록을 대화형으로 선택 |
-| `z -` | 직전 디렉터리로 |
-| `zoxide query -l` | 기록된 경로를 점수순으로 출력 |
-| `zoxide remove <경로>` | 기록에서 제거 |
+| `z <fragment>` | Jump to the highest-scoring match |
+| `zi <fragment>` | Pick interactively from the candidates |
+| `z -` | Back to the previous directory |
+| `zoxide query -l` | Print recorded paths by score |
+| `zoxide remove <path>` | Drop a path from the database |
 
-## 주의할 점
+## Things to know
 
-- **초반 며칠은 효과가 없습니다.** 데이터베이스가 쌓여야 정확해집니다. 일주일만
-  평소대로 다니면 대부분의 이동이 두 글자로 끝납니다.
-- **비슷한 이름이 많으면** `z` 대신 `zi`로 골라 확인하는 습관이 안전합니다.
-  스크립트 안에서는 절대 `z`를 쓰지 말고 절대 경로를 씁니다.
-- 기존 데이터베이스를 초기화하려면 `~/.local/share/zoxide/db.zo`를 지웁니다.
+- **The first few days do nothing.** The database has to fill up. Go about your work
+  normally for a week and most jumps become two characters.
+- **When names collide,** use `zi` and confirm rather than `z`. Never use `z` inside a
+  script — use absolute paths there.
+- To reset, delete `~/.local/share/zoxide/db.zo`.
 
-## 함께 쓰면 좋은 조합
+## Good combinations
 
 ```bash
-# 디렉터리 이동 후 바로 파일 검색
+# jump, then search
 z auth && rg "TODO"
 
-# fzf 미리보기와 함께 후보 고르기
+# pick candidates with an fzf preview
 zi
 ```
 
-## 다음 단계
+## Next
 
-이동이 빨라졌으니 이제 그 안에서 파일을 찾는 도구로 넘어갑니다 →
-[ripgrep으로 코드 검색](/docs/files/ripgrep/)
+Travel is fast; now the tools for finding things once you arrive →
+[ripgrep](/docs/files/ripgrep/)

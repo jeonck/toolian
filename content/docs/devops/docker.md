@@ -1,59 +1,60 @@
 ---
 weight: 8010
 title: "Docker"
-description: "환경을 코드로 고정하는 컨테이너 기본기 — 이미지, 컨테이너, Dockerfile."
+description: "Container fundamentals for pinning an environment as code — images, containers, Dockerfiles."
 icon: "inventory"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-Docker의 효용은 "가상화"보다 **환경을 코드로 적어두는 것**에 있습니다. 새 팀원이
-반나절 걸리던 로컬 환경 세팅이 `docker compose up` 한 줄이 됩니다.
+Docker's value is less about virtualisation and more about **writing an environment
+down as code**. Half a day of local setup for a new teammate becomes one line:
+`docker compose up`.
 
-## 설치
+## Install
 
 ```bash
 brew install --cask docker          # Docker Desktop
-brew install --cask orbstack        # 더 가벼운 대안 (macOS)
+brew install --cask orbstack        # a lighter alternative on macOS
 ```
 
-Linux는 배포판 공식 문서의 `docker-ce` 설치 절차를 따릅니다.
+On Linux, follow your distribution's official `docker-ce` instructions.
 
-## 개념 세 가지
+## Three concepts
 
-| 개념 | 설명 |
+| Concept | Meaning |
 |---|---|
-| **이미지** | 실행 환경의 스냅샷. 읽기 전용 |
-| **컨테이너** | 이미지를 실행한 인스턴스 |
-| **볼륨** | 컨테이너가 죽어도 남는 저장 공간 |
+| **Image** | A read-only snapshot of an environment |
+| **Container** | A running instance of an image |
+| **Volume** | Storage that survives the container |
 
-## 기본 명령
+## Basic commands
 
 ```bash
 docker run -d --name pg -p 5432:5432 \
   -e POSTGRES_PASSWORD=secret postgres:16
 
-docker ps                    # 실행 중 컨테이너
-docker ps -a                 # 종료된 것 포함
-docker logs -f pg            # 로그 실시간
-docker exec -it pg psql -U postgres    # 컨테이너 안에서 명령 실행
+docker ps                    # running containers
+docker ps -a                 # including stopped ones
+docker logs -f pg            # follow the logs
+docker exec -it pg psql -U postgres    # run a command inside
 docker stop pg && docker rm pg
 ```
 
-| 옵션 | 의미 |
+| Flag | Meaning |
 |---|---|
-| `-d` | 백그라운드 실행 |
-| `-p 호스트:컨테이너` | 포트 연결 |
-| `-e KEY=VALUE` | 환경 변수 |
-| `-v 호스트경로:컨테이너경로` | 볼륨 마운트 |
-| `--rm` | 종료 시 자동 삭제 |
-| `-it` | 대화형 터미널 |
+| `-d` | Run in the background |
+| `-p host:container` | Publish a port |
+| `-e KEY=VALUE` | Environment variable |
+| `-v hostpath:containerpath` | Mount a volume |
+| `--rm` | Delete on exit |
+| `-it` | Interactive terminal |
 
-## Dockerfile 작성
+## Writing a Dockerfile
 
 ```dockerfile
-# 1단계: 빌드
+# stage 1: build
 FROM node:22-slim AS builder
 WORKDIR /app
 COPY package*.json ./
@@ -61,7 +62,7 @@ RUN npm ci
 COPY . .
 RUN npm run build
 
-# 2단계: 실행 (빌드 도구 없이 가볍게)
+# stage 2: run, without the build tooling
 FROM node:22-slim
 WORKDIR /app
 ENV NODE_ENV=production
@@ -73,14 +74,14 @@ EXPOSE 3000
 CMD ["node", "dist/main.js"]
 ```
 
-핵심은 두 가지입니다.
+Two things carry most of the benefit:
 
-- **레이어 캐시**: 자주 바뀌지 않는 것(의존성)을 먼저, 자주 바뀌는 것(소스)을
-  나중에 복사합니다. 순서만 바꿔도 빌드가 몇 배 빨라집니다.
-- **멀티 스테이지**: 빌드 도구는 최종 이미지에 넣지 않습니다. 이미지 크기와
-  공격 표면이 함께 줄어듭니다.
+- **Layer caching.** Copy what changes rarely (dependencies) first and what changes
+  often (source) last. Reordering alone can make builds several times faster.
+- **Multi-stage builds.** Build tools never reach the final image, which shrinks both
+  the size and the attack surface.
 
-`.dockerignore`도 잊지 마세요.
+Don't forget `.dockerignore`:
 
 ```
 node_modules
@@ -90,33 +91,33 @@ dist
 .env
 ```
 
-## 빌드와 실행
+## Build and run
 
 ```bash
 docker build -t myapp:dev .
 docker run --rm -p 3000:3000 --env-file .env myapp:dev
 ```
 
-## 정리
+## Cleaning up
 
-컨테이너와 이미지는 조용히 디스크를 잡아먹습니다.
+Containers and images quietly eat disk.
 
 ```bash
-docker system df           # 사용량 확인
-docker container prune     # 멈춘 컨테이너 삭제
-docker image prune -a      # 사용하지 않는 이미지 삭제
-docker system prune -a --volumes    # 전부 (볼륨 포함, 주의)
+docker system df           # check usage
+docker container prune     # remove stopped containers
+docker image prune -a      # remove unused images
+docker system prune -a --volumes    # everything, volumes included (careful)
 ```
 
-## 자주 겪는 문제
+## Frequent problems
 
-| 증상 | 원인과 해결 |
+| Symptom | Cause and fix |
 |---|---|
-| 포트 충돌 | 이미 그 포트를 쓰는 프로세스. `lsof -i :5432`로 확인 |
-| 파일 변경이 반영 안 됨 | 소스를 이미지에 복사만 함. 개발 시엔 `-v $(pwd):/app` 마운트 |
-| Apple Silicon에서 실행 실패 | `--platform linux/amd64` 지정 |
-| 컨테이너가 바로 종료됨 | 포그라운드 프로세스가 없음. `docker logs`로 확인 |
+| Port conflict | Something already holds it. Check with `lsof -i :5432` |
+| Edits don't show up | The source was copied into the image. Mount it in dev: `-v $(pwd):/app` |
+| Fails to run on Apple Silicon | Specify `--platform linux/amd64` |
+| Container exits immediately | No foreground process. Check `docker logs` |
 
-## 다음 단계
+## Next
 
-여러 서비스를 한 번에 띄우려면 → [Docker Compose](/docs/devops/docker-compose/)
+To bring several services up at once → [Docker Compose](/docs/devops/docker-compose/)

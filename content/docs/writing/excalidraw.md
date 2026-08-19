@@ -1,103 +1,102 @@
 ---
 weight: 10040
 title: "Excalidraw"
-description: "손그림 느낌의 화이트보드. 설계 논의와 아키텍처 스케치에 적합하다."
+description: "A hand-drawn-feel whiteboard, well suited to design discussion and architecture sketches."
 icon: "draw"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-Mermaid는 정형화된 다이어그램에 강하지만, 자유로운 배치가 필요한 아키텍처 스케치나
-회의 중 실시간 그림에는 맞지 않습니다. Excalidraw는 그 자리를 채웁니다. 손그림
-스타일이라 **"아직 확정 아님"이라는 신호**를 자연스럽게 줍니다.
+Mermaid is strong on formalised diagrams, but it's the wrong tool for an architecture
+sketch that needs free placement, or for drawing live in a meeting. Excalidraw fills
+that gap, and its hand-drawn style sends a useful signal: **this isn't settled yet.**
 
-## 시작하기
+## Getting started
 
-[excalidraw.com](https://excalidraw.com)에 접속하면 바로 그릴 수 있습니다. 계정도
-설치도 필요 없습니다.
+Open [excalidraw.com](https://excalidraw.com) and draw. No account, no install.
 
-로컬에서 쓰려면:
+To use it locally:
 
-- **VS Code**: `Excalidraw` 확장 설치 후 `.excalidraw` 파일 생성
-- **Obsidian**: Excalidraw 플러그인
-- **직접 호스팅**: `docker run -p 5000:80 excalidraw/excalidraw`
+- **VS Code**: install the `Excalidraw` extension and create a `.excalidraw` file
+- **Obsidian**: the Excalidraw plugin
+- **Self-hosted**: `docker run -p 5000:80 excalidraw/excalidraw`
 
-## 필수 단축키
+## Essential shortcuts
 
-| 키 | 도구 |
+| Key | Tool |
 |---|---|
-| `1` `V` | 선택 |
-| `2` `R` | 사각형 |
-| `3` `D` | 마름모 |
-| `4` `O` | 원 |
-| `5` `A` | 화살표 |
-| `6` `L` | 선 |
-| `8` `T` | 텍스트 |
-| `9` | 이미지 |
-| `Space` 드래그 | 캔버스 이동 |
-| `⌘D` | 복제 |
-| `⌥` 드래그 | 복제하며 이동 |
+| `1` `V` | Select |
+| `2` `R` | Rectangle |
+| `3` `D` | Diamond |
+| `4` `O` | Ellipse |
+| `5` `A` | Arrow |
+| `6` `L` | Line |
+| `8` `T` | Text |
+| `9` | Image |
+| `Space` drag | Pan the canvas |
+| `⌘D` | Duplicate |
+| `⌥` drag | Duplicate while moving |
 
-## 깔끔하게 그리는 요령
+## Keeping it tidy
 
-- **도형끼리 연결하세요.** 화살표를 도형 가장자리에서 시작하면 자동으로 붙어,
-  나중에 도형을 옮겨도 화살표가 따라옵니다.
-- **텍스트는 도형 안에 넣습니다.** 도형을 더블클릭하면 안에 텍스트가 들어가고
-  함께 움직입니다.
-- **색은 두세 가지만.** 기본 팔레트에서 회색(기본), 파랑(강조), 빨강(문제)
-  정도로 제한하면 읽기 쉽습니다.
-- **정렬은 도구에 맡깁니다.** 여러 개 선택 후 우클릭 → Align.
-- **그룹으로 묶습니다** (`⌘G`). 나중에 통째로 옮길 때 편합니다.
+- **Bind arrows to shapes.** Start an arrow on a shape's edge and it attaches, so moving
+  the shape later drags the arrow with it.
+- **Put text inside shapes.** Double-click a shape and the text lives in it and moves
+  with it.
+- **Use two or three colours.** Grey for the default, blue for emphasis, red for
+  problems is plenty.
+- **Let the tool align.** Select several elements, right-click → Align.
+- **Group things** (`⌘G`) so you can move a cluster at once later.
 
-## 라이브러리
+## Libraries
 
-자주 쓰는 도형 묶음을 [libraries.excalidraw.com](https://libraries.excalidraw.com)에서
-가져올 수 있습니다. AWS·GCP 아이콘, 소프트웨어 아키텍처 요소, 와이어프레임 부품
-등이 있습니다.
+Pull in sets of shapes from
+[libraries.excalidraw.com](https://libraries.excalidraw.com) — AWS and GCP icons,
+software architecture elements, wireframe parts, and more.
 
-## 저장과 공유
+## Saving and sharing
 
-| 방식 | 특징 |
+| Method | Character |
 |---|---|
-| `.excalidraw` 파일 | 편집 가능한 원본. 저장소에 커밋 |
-| PNG 내보내기 | "Embed scene" 옵션을 켜면 PNG 안에 원본 데이터가 들어가 다시 편집 가능 |
-| SVG 내보내기 | 확대해도 안 깨짐. 문서에 붙이기 좋음 |
-| 라이브 협업 링크 | 실시간 공동 편집. 종단간 암호화 |
+| `.excalidraw` file | The editable original. Commit it |
+| PNG export | With "Embed scene" on, the PNG carries the source and stays editable |
+| SVG export | Scales cleanly. Good for embedding in documents |
+| Live collaboration link | Real-time editing, end-to-end encrypted |
 
-**PNG의 "Embed scene" 옵션**이 특히 유용합니다. README에 PNG만 올려도 나중에
-그 PNG를 Excalidraw에 드래그하면 그대로 편집됩니다.
+**The "Embed scene" option on PNG export** is especially useful: put only the PNG in a
+README, and dragging that PNG back into Excalidraw later reopens it for editing.
 
-## 저장소에 함께 두기
+## Keeping it with the code
 
 ```
 docs/
   architecture.md
   diagrams/
-    system-overview.excalidraw     # 편집용 원본
-    system-overview.svg            # 문서에 임베드
+    system-overview.excalidraw     # editable source
+    system-overview.svg            # embedded in the doc
 ```
 
 ```markdown
-![시스템 구성](./diagrams/system-overview.svg)
+![System overview](./diagrams/system-overview.svg)
 ```
 
-원본을 함께 커밋해 두면 6개월 뒤에도 수정할 수 있습니다. SVG만 있으면 사실상
-새로 그려야 합니다.
+Commit the source alongside and you can still change it six months later. With only the
+SVG, you're effectively redrawing.
 
-## Mermaid와 나눠 쓰기
+## Splitting the work with Mermaid
 
-| 상황 | 도구 |
+| Situation | Tool |
 |---|---|
-| 순서도, 시퀀스, ER | Mermaid (문법이 정해져 있어 빠름) |
-| 아키텍처 개요, 배치가 중요한 그림 | Excalidraw |
-| PR에서 변경점을 봐야 함 | Mermaid |
-| 회의 중 실시간 스케치 | Excalidraw |
+| Flowcharts, sequences, ER | Mermaid (fixed syntax, faster) |
+| Architecture overviews where layout carries meaning | Excalidraw |
+| The change needs to be readable in a PR | Mermaid |
+| Sketching live in a meeting | Excalidraw |
 
-Excalidraw는 Mermaid 코드를 붙여넣어 도형으로 변환하는 기능도 있습니다
-(Mermaid로 뼈대를 만들고 손으로 다듬는 방식).
+Excalidraw can also convert pasted Mermaid code into shapes — build the skeleton in
+Mermaid, then loosen it by hand.
 
-## 여기까지
+## That's the tour
 
-전체 카테고리를 한 바퀴 돌았습니다. 처음으로 돌아가려면
-[개요](/docs/)에서 관심 있는 카테고리를 다시 골라보세요.
+You've been through every category. To start again, pick another from the
+[overview](/docs/).

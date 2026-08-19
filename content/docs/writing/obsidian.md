@@ -1,90 +1,92 @@
 ---
 weight: 10010
 title: "Obsidian"
-description: "로컬 Markdown 파일로 굴러가는 개인 지식 관리 도구. 링크로 노트를 잇는다."
+description: "Personal knowledge management on top of local Markdown files, linked together."
 icon: "menu_book"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-Obsidian의 핵심은 **노트가 그냥 폴더 안의 `.md` 파일**이라는 점입니다. 서비스가
-사라져도 파일은 남고, Git으로 버전 관리하거나 다른 도구로 옮기기도 쉽습니다.
+The heart of Obsidian is that **a note is just a `.md` file in a folder**. If the
+service disappears the files remain, and version-controlling them or moving them to
+another tool is easy.
 
-## 설치와 첫 설정
+## Install and first setup
 
 ```bash
 brew install --cask obsidian
 ```
 
-- **볼트(vault)** 는 노트가 담긴 폴더입니다. `~/notes` 같은 경로에 하나 만듭니다.
-- 설정 → Files & Links에서 "Default location for new attachments"를
-  `attachments` 폴더로 지정하면 이미지가 흩어지지 않습니다.
+- A **vault** is the folder holding your notes. Make one at something like `~/notes`.
+- Under Settings → Files & Links, point "Default location for new attachments" at an
+  `attachments` folder so images don't scatter.
 
-## 폴더 구조
+## Folder structure
 
-깊은 폴더 트리를 만들면 어디에 넣을지 고민하다가 기록을 안 하게 됩니다. 얕게
-가고 링크로 잇는 편이 오래갑니다.
+A deep folder tree makes you deliberate about where things go, and then you stop writing
+them down. Staying shallow and linking instead lasts longer.
 
 ```
 notes/
-  inbox/        # 일단 여기 던진다
-  daily/        # 날짜별 기록
-  projects/     # 진행 중인 일
-  reference/    # 정리된 지식
+  inbox/        # dump things here first
+  daily/        # by date
+  projects/     # work in flight
+  reference/    # settled knowledge
   attachments/
 ```
 
-## 링크로 잇기
+## Linking
 
 ```markdown
-[[Docker 네트워크]] 를 참고할 것.
-[[Docker 네트워크|컨테이너 통신]] 처럼 표시 텍스트를 바꿀 수도 있다.
+See [[Docker networking]].
+[[Docker networking|container communication]] changes the display text.
 ```
 
-없는 노트로 링크를 걸어도 됩니다. 나중에 클릭하면 그 이름으로 새 노트가 생깁니다.
-이 "일단 링크부터" 방식이 지식이 자라는 가장 자연스러운 경로입니다.
+Linking to a note that doesn't exist is fine — clicking it later creates it under that
+name. This "link first" habit is the most natural way for a set of notes to grow.
 
-노트 아래쪽의 **Backlinks** 패널은 이 노트를 참조하는 다른 노트를 보여줍니다.
-폴더 분류로는 얻을 수 없는 연결이 여기서 드러납니다.
+The **Backlinks** panel at the bottom of a note shows what refers to it. That's the
+connection folder hierarchies can never give you.
 
-## 데일리 노트
+## Daily notes
 
-설정 → Core plugins → Daily notes를 켜고 템플릿을 지정합니다.
+Enable Settings → Core plugins → Daily notes and point it at a template.
 
 ```markdown
-## 오늘 한 일
+## Done today
 
-## 막힌 것
+## Stuck on
 
-## 배운 것
+## Learned
 
-## 내일
+## Tomorrow
 ```
 
-매일 같은 틀로 기록하면 나중에 검색으로 "그때 그 에러"를 찾아냅니다.
+Recording in the same shape every day means you can later search your way back to "that
+error from before."
 
-## 쓸 만한 코어 플러그인
+## Core plugins worth using
 
-| 플러그인 | 용도 |
+| Plugin | Purpose |
 |---|---|
-| Daily notes | 날짜별 노트 자동 생성 |
-| Templates | 노트 템플릿 삽입 |
-| Quick switcher | `⌘O`로 노트 이름 검색 |
-| Command palette | `⌘P`로 모든 명령 |
-| Outgoing links | 이 노트가 참조하는 노트 |
-| Graph view | 연결 구조 시각화 (재미는 있지만 실용성은 낮음) |
+| Daily notes | Automatic dated notes |
+| Templates | Insert note templates |
+| Quick switcher | `⌘O` to search note names |
+| Command palette | `⌘P` for everything |
+| Outgoing links | What this note refers to |
+| Graph view | Visualise connections (fun, less practical) |
 
-## 커뮤니티 플러그인
+## Community plugins
 
-| 플러그인 | 용도 |
+| Plugin | Purpose |
 |---|---|
-| **Dataview** | 노트의 메타데이터로 표·목록 자동 생성 |
-| **Templater** | 날짜·변수가 들어간 동적 템플릿 |
-| **Excalidraw** | 노트 안에서 손그림 다이어그램 |
-| **Obsidian Git** | 볼트를 자동으로 커밋·푸시 |
+| **Dataview** | Generate tables and lists from note metadata |
+| **Templater** | Dynamic templates with dates and variables |
+| **Excalidraw** | Hand-drawn diagrams inside a note |
+| **Obsidian Git** | Auto-commit and push the vault |
 
-Dataview 예시 — 진행 중인 프로젝트 목록을 자동으로:
+A Dataview example that keeps a project list current:
 
 ````markdown
 ```dataview
@@ -95,14 +97,14 @@ SORT due ASC
 ```
 ````
 
-## 동기화
+## Syncing
 
-- **Obsidian Sync**: 유료지만 종단간 암호화되고 설정이 가장 간단합니다.
-- **Git**: 무료. Obsidian Git 플러그인으로 자동 커밋·푸시. 충돌 해결이 필요할 수
-  있어 텍스트 위주 볼트에 적합합니다.
-- **iCloud/Dropbox**: 무료지만 동시 편집 시 충돌 파일이 생기기 쉽습니다.
+- **Obsidian Sync**: paid, end-to-end encrypted, and the simplest to set up.
+- **Git**: free, with the Obsidian Git plugin auto-committing. You may have to resolve
+  conflicts, so it suits text-heavy vaults.
+- **iCloud/Dropbox**: free, but prone to conflict copies when editing on two devices.
 
-Git을 쓴다면 `.gitignore`에 다음을 넣습니다.
+If you use Git, put these in `.gitignore`:
 
 ```
 .obsidian/workspace.json
@@ -110,16 +112,18 @@ Git을 쓴다면 `.gitignore`에 다음을 넣습니다.
 .trash/
 ```
 
-## 대안
+## Alternatives
 
-| 도구 | 특징 |
+| Tool | Character |
 |---|---|
-| **Notion** | 협업·데이터베이스 강력, 파일은 클라우드에 |
-| **Logseq** | 블록 단위 아웃라이너, 로컬 파일 |
-| **Apple Notes** | 가볍고 빠름, 링크 기능은 제한적 |
+| **Notion** | Strong collaboration and databases; files live in the cloud |
+| **Logseq** | Block-based outliner over local files |
+| **Apple Notes** | Light and fast; limited linking |
 
-혼자 쌓는 지식은 Obsidian, 팀 공유 문서는 Notion처럼 나눠 쓰는 조합이 흔합니다.
+Obsidian for the knowledge you accumulate alone and Notion for shared team documents is
+a common split.
 
-## 다음 단계
+## Next
 
-어떤 도구를 쓰든 문법은 하나입니다 → [Markdown 기본기](/docs/writing/markdown/)
+Whatever tool you use, the syntax is the same →
+[Markdown](/docs/writing/markdown/)

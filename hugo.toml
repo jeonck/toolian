@@ -1,15 +1,15 @@
 baseURL = "https://toolian.metacog.co.kr/"
-locale = "ko-kr"
+locale = "en-us"
 title = "Toolian"
 contentDir = "content"
 enableEmoji = true
 enableGitInfo = true
 
-defaultContentLanguage = "ko"
+defaultContentLanguage = "en"
 [languages]
-  [languages.ko]
+  [languages.en]
     title = "Toolian"
-    label = "한국어"
+    label = "English"
     weight = 10
 
 [module]
@@ -87,12 +87,12 @@ defaultContentLanguage = "ko"
 
 [menu]
 [[menu.primary]]
-  name       = "문서"
+  name       = "Docs"
   url        = "docs/"
   identifier = "docs"
   weight     = 10
 [[menu.primary]]
-  name       = "빠른 시작"
+  name       = "Get Started"
   url        = "docs/getting-started/"
   identifier = "start"
   weight     = 20

@@ -1,39 +1,42 @@
 ---
 weight: 1
-title: "개요"
-description: "IT 업무의 생산성과 편의를 높여주는 도구들을 카테고리별로 소개하고, 설치부터 실전 사용법까지 짧게 정리한 안내서."
+title: "Overview"
+description: "A category-by-category guide to the tools that raise the productivity and comfort of everyday IT work, from install to first real use."
 icon: "home"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-## Toolian이 다루는 것
+## What this is
 
-개발자와 IT 실무자가 매일 반복하는 작업 — 터미널 조작, 파일 찾기, 코드 편집,
-버전 관리, API 호출, 배포, 문서화 — 마다 "이건 손으로 하기엔 너무 잦다" 싶은
-지점이 있습니다. 그 지점을 메워주는 도구를 카테고리별로 모아, **왜 필요한지 →
-어떻게 설치하는지 → 오늘 바로 써먹을 명령 몇 개**의 순서로 정리했습니다.
+Every day of IT work repeats the same motions — driving a terminal, finding files,
+editing code, managing versions, calling APIs, shipping, writing things down. In
+each of those, there is a point where you think *this is too frequent to keep doing
+by hand*. Toolian collects the tools that fill those gaps and presents each one in
+the same order: **why you'd want it → how to install it → a handful of commands you
+can use today.**
 
-각 문서는 5분 안에 읽고 따라 할 수 있는 분량입니다. 전체 레퍼런스가 아니라,
-"처음 손에 익히는 데 필요한 최소한"에 집중합니다.
+Each page is a five-minute read you can follow along with. This is not an exhaustive
+reference; it's the minimum you need to get a tool into your hands.
 
-## 카테고리
+## Categories
 
-1. [시작하기](/docs/getting-started/) — 도구를 고르는 기준, 패키지 매니저, 설정 백업
-2. [터미널 & 셸](/docs/terminal/) — 터미널 앱, 프롬프트, tmux, fzf, zoxide
-3. [파일 & 검색](/docs/files/) — ripgrep, fd, bat, eza, jq
-4. [에디터 & IDE](/docs/editor/) — VS Code, Neovim, JetBrains, 공통 편집 기술
-5. [AI 코딩 도구](/docs/ai/) — Claude Code, Copilot, Cursor, 로컬 LLM
-6. [Git & 협업](/docs/git/) — Git 워크플로, gh, lazygit, delta, pre-commit
-7. [네트워크 & API](/docs/network/) — curl, HTTPie, Bruno, 터널링
-8. [컨테이너 & 배포](/docs/devops/) — Docker, Compose, Kubernetes, Actions, Terraform
-9. [자동화 & 단축키](/docs/automation/) — Raycast, PowerToys, Make, 스케줄러, n8n
-10. [문서 & 노트](/docs/writing/) — Obsidian, Markdown, Mermaid, Excalidraw
+1. [Getting Started](/docs/getting-started/) — picking tools, package managers, dotfiles
+2. [Terminal & Shell](/docs/terminal/) — terminal apps, prompts, tmux, fzf, zoxide
+3. [Files & Search](/docs/files/) — ripgrep, fd, bat, eza, jq
+4. [Editors & IDEs](/docs/editor/) — VS Code, Neovim, JetBrains, portable editing skills
+5. [AI Coding Tools](/docs/ai/) — Claude Code, Copilot, Cursor, local LLMs
+6. [Git & Collaboration](/docs/git/) — Git workflow, gh, lazygit, delta, pre-commit
+7. [Network & APIs](/docs/network/) — curl, HTTPie, Bruno, tunnelling
+8. [Containers & Deploys](/docs/devops/) — Docker, Compose, Kubernetes, Actions, Terraform
+9. [Automation & Shortcuts](/docs/automation/) — Raycast, PowerToys, Make, schedulers, n8n
+10. [Docs & Notes](/docs/writing/) — Obsidian, Markdown, Mermaid, Excalidraw
 
-## 이 사이트를 읽는 방법
+## How to read this
 
-- **처음이라면** [시작하기](/docs/getting-started/)부터. 도구를 무작정 늘리기 전에
-  고르는 기준을 먼저 잡는 편이 결과적으로 빠릅니다.
-- **특정 도구만 궁금하다면** 오른쪽 위 검색을 쓰세요. 명령어 이름으로도 찾힙니다.
-- 각 페이지 하단의 이전/다음 카드를 따라가면 카테고리 순서대로 읽을 수 있습니다.
+- **New here?** Start with [Getting Started](/docs/getting-started/). Setting a bar
+  for what deserves installing turns out to be faster than piling tools up.
+- **After one specific tool?** Use the search at the top. Command names are indexed
+  too, so `rg` and `ripgrep` both find the same page.
+- The previous/next cards at the bottom of each page walk the categories in order.

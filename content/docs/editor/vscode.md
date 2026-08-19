@@ -1,41 +1,42 @@
 ---
 weight: 4010
 title: "VS Code"
-description: "가장 무난한 기본값. 처음 설치하고 30분 안에 손봐야 할 설정과 확장."
+description: "The safest default. The settings and extensions worth touching in the first 30 minutes."
 icon: "code"
 date: "2026-08-19"
 lastmod: "2026-08-19"
 draft: false
 ---
 
-VS Code는 언어를 가리지 않고 확장으로 채워 쓰는 에디터입니다. 팀원과 설정을
-공유하기 쉽고, 대부분의 튜토리얼이 이것을 기준으로 쓰여 있어 첫 에디터로
-적합합니다.
+VS Code is language-agnostic and filled in with extensions. Settings are easy to share
+with a team, and most tutorials are written against it, which makes it a good first
+editor.
 
-## 설치
+## Install
 
 ```bash
 brew install --cask visual-studio-code
 winget install Microsoft.VisualStudioCode
 ```
 
-터미널에서 `code .`을 쓰려면 명령 팔레트(`⌘⇧P` / `Ctrl+Shift+P`)에서
-`Shell Command: Install 'code' command in PATH`를 실행합니다.
+To use `code .` from a terminal, run
+`Shell Command: Install 'code' command in PATH` from the command palette
+(`⌘⇧P` / `Ctrl+Shift+P`).
 
-## 반드시 익힐 단축키 여섯 개
+## Six shortcuts to learn first
 
-| 동작 | macOS | Windows/Linux |
+| Action | macOS | Windows/Linux |
 |---|---|---|
-| 명령 팔레트 | `⌘⇧P` | `Ctrl+Shift+P` |
-| 파일 빠른 열기 | `⌘P` | `Ctrl+P` |
-| 심볼로 이동 | `⌘⇧O` | `Ctrl+Shift+O` |
-| 전체 검색 | `⌘⇧F` | `Ctrl+Shift+F` |
-| 멀티 커서 (같은 단어) | `⌘D` 반복 | `Ctrl+D` |
-| 줄 이동 | `⌥↑` / `⌥↓` | `Alt+↑` / `Alt+↓` |
+| Command palette | `⌘⇧P` | `Ctrl+Shift+P` |
+| Quick open a file | `⌘P` | `Ctrl+P` |
+| Go to symbol | `⌘⇧O` | `Ctrl+Shift+O` |
+| Search everywhere | `⌘⇧F` | `Ctrl+Shift+F` |
+| Multi-cursor (same word) | `⌘D` repeatedly | `Ctrl+D` |
+| Move a line | `⌥↑` / `⌥↓` | `Alt+↑` / `Alt+↓` |
 
-명령 팔레트 하나만 알아도 나머지 기능은 이름으로 찾아 쓸 수 있습니다.
+Knowing the command palette alone lets you find everything else by name.
 
-## 처음 손볼 설정
+## First settings to change
 
 `⌘⇧P → Preferences: Open User Settings (JSON)`:
 
@@ -53,39 +54,40 @@ winget install Microsoft.VisualStudioCode
 }
 ```
 
-- `formatOnSave`는 리뷰에서 포맷 지적이 사라지게 하는 가장 큰 한 방입니다.
-- `enablePreview: false`는 파일을 클릭할 때마다 탭이 바뀌는 동작을 끕니다.
+- `formatOnSave` is the single biggest thing you can do to eliminate formatting nits
+  from code review.
+- `enablePreview: false` stops a tab from being replaced every time you click a file.
 
-## 확장은 최소로
+## Keep extensions minimal
 
-| 확장 | 용도 |
+| Extension | Purpose |
 |---|---|
-| **ESLint / Prettier** | JS·TS 린트와 포맷 |
-| **Python (Microsoft)** | 파이썬 언어 서버, 디버거 |
-| **Error Lens** | 에러를 해당 줄에 인라인 표시 |
-| **GitLens** | 줄 단위 blame, 히스토리 |
-| **EditorConfig** | 팀 공통 들여쓰기 규칙 적용 |
-| **Docker** | Dockerfile·컨테이너 관리 |
+| **ESLint / Prettier** | JS and TS linting and formatting |
+| **Python (Microsoft)** | Python language server and debugger |
+| **Error Lens** | Shows errors inline on the offending line |
+| **GitLens** | Line-level blame and history |
+| **EditorConfig** | Applies shared indentation rules |
+| **Docker** | Dockerfile support and container management |
 
-확장이 많아질수록 시작이 느려집니다. `Developer: Show Running Extensions`로
-주기적으로 확인하고, 안 쓰는 건 지웁니다.
+More extensions means slower startup. Check `Developer: Show Running Extensions`
+periodically and remove what you don't use.
 
-## 팀 설정 공유하기
+## Sharing settings with a team
 
-프로젝트 루트에 `.vscode/settings.json`과 `.vscode/extensions.json`을 커밋하면,
-팀원이 저장소를 열 때 같은 포맷 규칙과 확장 추천을 받습니다.
+Commit `.vscode/settings.json` and `.vscode/extensions.json` and everyone who opens
+the repository gets the same formatting rules and extension recommendations.
 
 ```json
 // .vscode/extensions.json
 { "recommendations": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"] }
 ```
 
-## 원격 개발
+## Remote development
 
-`Remote - SSH` 확장을 쓰면 서버의 코드를 로컬 에디터처럼 편집합니다. 컨테이너
-안에서 개발하려면 `Dev Containers` 확장과 `.devcontainer/devcontainer.json`을
-사용합니다. 환경 차이로 생기는 문제를 크게 줄여줍니다.
+The `Remote - SSH` extension lets you edit code on a server as if it were local. To
+develop inside a container, use `Dev Containers` with a
+`.devcontainer/devcontainer.json`. Both cut down sharply on environment-drift problems.
 
-## 다음 단계
+## Next
 
-키보드만으로 편집하고 싶다면 → [Neovim](/docs/editor/neovim/)
+If you'd rather edit without leaving the keyboard → [Neovim](/docs/editor/neovim/)

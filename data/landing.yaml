@@ -1,4 +1,4 @@
-# Lotus Docs 랜딩 페이지 구성. 블록은 weight 오름차순으로 렌더링된다.
+# Lotus Docs landing page. Blocks render in ascending `weight` order.
 
 hero:
   enable: true
@@ -6,107 +6,112 @@ hero:
   template: hero
 
   badge:
-    text: "IT 생산성 도구 가이드"
+    text: "Open, practical, free"
     color: primary
     pill: true
     soft: true
 
-  title: "Toolian"
-  subtitle: "매일 반복하는 작업을 줄여주는 도구들을 **왜 필요한지 → 어떻게 설치하는지 → 오늘 바로 쓸 명령 몇 개** 순서로 정리했습니다. 각 문서는 5분이면 읽고 따라 할 수 있습니다."
+  title: "Tools that give you your day back"
+  subtitle: "A hands-on guide to the tools that cut the repetition out of IT work — terminals, search, editors, AI assistants, Git, APIs, containers, automation. Every page follows the same shape: **why it matters → how to install it → the handful of commands you'll actually use.** Five minutes each."
+
+  image:
+    path: "images"
+    filename: "hero-terminal.svg"
+    alt: "A terminal window with a fuzzy-finder command palette open over a project"
 
   ctaButton:
     icon: rocket_launch
-    btnText: "문서 둘러보기"
+    btnText: "Browse the docs"
     url: "/docs/"
   cta2Button:
     icon: hub
-    btnText: "GitHub 저장소"
+    btnText: "View on GitHub"
     url: "https://github.com/jeonck/toolian"
 
-  info: "**Hugo**와 **Lotus Docs**로 만들었습니다."
+  info: "**MIT licensed.** Every page is plain Markdown — fork it, adapt it, drop it into your own handbook."
 
 featureGrid:
   enable: true
   weight: 20
   template: feature grid
 
-  title: "카테고리"
-  subtitle: "관심 있는 곳부터 골라 읽으세요. 순서대로 읽으면 터미널에서 배포까지 한 바퀴가 됩니다."
+  title: "Ten categories, forty-four tools"
+  subtitle: "Start wherever your friction is. Read straight through and you go from an empty terminal to a deployed service."
 
   items:
-    - title: "시작하기"
+    - title: "Getting Started"
       icon: "rocket_launch"
-      description: "도구를 고르는 기준, 패키지 매니저로 설치하기, 설정을 dotfiles로 관리하기."
+      description: "How to pick a tool worth installing, package managers on every OS, and keeping your config in dotfiles."
       ctaLink:
-        text: 둘러보기
+        text: browse
         url: /docs/getting-started/
 
-    - title: "터미널 & 셸"
+    - title: "Terminal & Shell"
       icon: "terminal"
-      description: "터미널 앱, zsh와 Starship 프롬프트, tmux 세션, fzf 퍼지 검색, zoxide 이동."
+      description: "Terminal apps, zsh with Starship, tmux sessions, fzf fuzzy finding, and zoxide for jumping between directories."
       ctaLink:
-        text: 둘러보기
+        text: browse
         url: /docs/terminal/
 
-    - title: "파일 & 검색"
+    - title: "Files & Search"
       icon: "search"
-      description: "ripgrep, fd, bat, eza, jq — grep·find·cat·ls를 대체하는 현대적 CLI."
+      description: "ripgrep, fd, bat, eza, and jq — modern replacements for grep, find, cat, and ls with saner defaults."
       ctaLink:
-        text: 둘러보기
+        text: browse
         url: /docs/files/
 
-    - title: "에디터 & IDE"
+    - title: "Editors & IDEs"
       icon: "code"
-      description: "VS Code, Neovim, JetBrains의 최소 설정과 어디서나 통하는 편집 기술."
+      description: "The first settings that matter in VS Code, Neovim, and JetBrains, plus editing skills that survive a switch."
       ctaLink:
-        text: 둘러보기
+        text: browse
         url: /docs/editor/
 
-    - title: "AI 코딩 도구"
+    - title: "AI Coding Tools"
       icon: "auto_awesome"
-      description: "Claude Code, GitHub Copilot, Cursor, Ollama — 성격이 다른 네 가지 접근."
+      description: "Claude Code, GitHub Copilot, Cursor, and Ollama — four different shapes of assistance, and when each fits."
       ctaLink:
-        text: 둘러보기
+        text: browse
         url: /docs/ai/
 
-    - title: "Git & 협업"
+    - title: "Git & Collaboration"
       icon: "hub"
-      description: "실전 Git 워크플로와 되돌리기, gh, lazygit, delta, pre-commit 훅."
+      description: "A real daily Git workflow including how to undo things, plus gh, lazygit, delta, and pre-commit hooks."
       ctaLink:
-        text: 둘러보기
+        text: browse
         url: /docs/git/
 
-    - title: "네트워크 & API"
+    - title: "Network & APIs"
       icon: "api"
-      description: "curl, HTTPie, Bruno와 Postman, 로컬 서버를 외부에 여는 터널링."
+      description: "curl, HTTPie, Bruno and Postman, and opening a local server to the internet for webhook testing."
       ctaLink:
-        text: 둘러보기
+        text: browse
         url: /docs/network/
 
-    - title: "컨테이너 & 배포"
+    - title: "Containers & Deploys"
       icon: "deployed_code"
-      description: "Docker, Compose, kubectl과 k9s, GitHub Actions, Terraform."
+      description: "Docker, Compose, kubectl and k9s, GitHub Actions, and Terraform — from local parity to infrastructure as code."
       ctaLink:
-        text: 둘러보기
+        text: browse
         url: /docs/devops/
 
-    - title: "자동화 & 단축키"
+    - title: "Automation & Shortcuts"
       icon: "bolt"
-      description: "Raycast, PowerToys, Makefile, cron과 launchd, n8n 워크플로."
+      description: "Raycast, PowerToys, Makefiles, cron and launchd, and n8n for wiring services together."
       ctaLink:
-        text: 둘러보기
+        text: browse
         url: /docs/automation/
 
-    - title: "문서 & 노트"
+    - title: "Docs & Notes"
       icon: "description"
-      description: "Obsidian, Markdown 기본기, Mermaid 다이어그램, Excalidraw."
+      description: "Obsidian, the Markdown you actually need, Mermaid diagrams that live in your diffs, and Excalidraw."
       ctaLink:
-        text: 둘러보기
+        text: browse
         url: /docs/writing/
 
-# 테마가 기본 제공하는 imageCompare 블록을 끈다.
-# Hugo는 모듈의 data/ 디렉터리를 사이트 data/ 와 병합하므로,
-# 여기서 명시적으로 끄지 않으면 테마 데모 섹션이 홈페이지에 남는다.
+# The theme ships its own data/landing.yaml, and Hugo merges a module's data
+# directory into the site's. Without switching this off explicitly, the Lotus
+# Docs demo comparison slider stays on our homepage.
 imageCompare:
   enable: false
   weight: 30
