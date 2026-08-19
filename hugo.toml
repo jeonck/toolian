@@ -51,7 +51,10 @@ defaultContentLanguage = "en"
     copyright = "© :YEAR: Toolian. Built with [**Lotus Docs**](https://github.com/colinwilson/lotusdocs)"
 
   [params.social]
-    github = "https://github.com/jeonck/toolian"
+    # The theme builds this as https://<network>.com/<value>, so the value must be
+    # the path only. A full URL here produces https://github.com/https://github.com/...
+    # and the header icon 404s.
+    github = "jeonck/toolian"
 
   [params.docs]
     title           = "Toolian"
