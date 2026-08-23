@@ -35,7 +35,7 @@ featureGrid:
   weight: 20
   template: feature grid
 
-  title: "Eleven categories, fifty-seven tools"
+  title: "Twelve categories, sixty-six tools"
   subtitle: "Start wherever your friction is. Read straight through and you go from an empty terminal to a deployed, monitored product that takes payments."
 
   items:
@@ -90,7 +90,7 @@ featureGrid:
 
     - title: "Containers & Deploys"
       icon: "deployed_code"
-      description: "Docker, Compose, kubectl and k9s, GitHub Actions, and Terraform — from local parity to infrastructure as code."
+      description: "Docker, Compose, kubectl and k9s, five CI/CD tools from GitHub Actions to Argo CD, and Terraform — from local parity to infrastructure as code."
       ctaLink:
         text: browse
         url: /docs/devops/
@@ -115,6 +115,13 @@ featureGrid:
       ctaLink:
         text: browse
         url: /docs/vibe-infra/
+
+    - title: "AI Media Tools"
+      icon: "palette"
+      description: "Browser tools for the assets a project needs: Raphael and Krea for images, Magnific for upscaling, Clipdrop for edits, ElevenLabs for voice."
+      ctaLink:
+        text: browse
+        url: /docs/ai-media/
 
 # The theme ships its own data/landing.yaml, and Hugo merges a module's data
 # directory into the site's. Without switching this off explicitly, the Lotus
