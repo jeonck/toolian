@@ -96,7 +96,7 @@ SVG, you're effectively redrawing.
 Excalidraw can also convert pasted Mermaid code into shapes — build the skeleton in
 Mermaid, then loosen it by hand.
 
-## That's the tour
+## Next
 
-You've been through every category. To start again, pick another from the
-[overview](/docs/).
+Everything so far builds the thing. One category left, on putting it online →
+[Vibe Coding Infra](/docs/vibe-infra/)

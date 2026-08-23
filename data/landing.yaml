@@ -12,7 +12,7 @@ hero:
     soft: true
 
   title: "Tools that give you your day back"
-  subtitle: "A hands-on guide to the tools that cut the repetition out of IT work — terminals, search, editors, AI assistants, Git, APIs, containers, automation. Every page follows the same shape: **why it matters → how to install it → the handful of commands you'll actually use.** Five minutes each."
+  subtitle: "A hands-on guide to the tools that cut the repetition out of IT work — terminals, search, editors, AI assistants, Git, APIs, containers, automation, and the free-tier stack you ship on. Every page follows the same shape: **why it matters → how to install it → the handful of commands you'll actually use.** Five minutes each."
 
   image:
     path: "images"
@@ -35,8 +35,8 @@ featureGrid:
   weight: 20
   template: feature grid
 
-  title: "Ten categories, forty-four tools"
-  subtitle: "Start wherever your friction is. Read straight through and you go from an empty terminal to a deployed service."
+  title: "Eleven categories, fifty-seven tools"
+  subtitle: "Start wherever your friction is. Read straight through and you go from an empty terminal to a deployed, monitored product that takes payments."
 
   items:
     - title: "Getting Started"
@@ -69,7 +69,7 @@ featureGrid:
 
     - title: "AI Coding Tools"
       icon: "auto_awesome"
-      description: "Claude Code, GitHub Copilot, Cursor, and Ollama — four different shapes of assistance, and when each fits."
+      description: "Claude Code, Copilot, Cursor, and Ollama, plus the open-source layer around them: Graft, Codebase Memory MCP, Agency Agents, OpenMontage."
       ctaLink:
         text: browse
         url: /docs/ai/
@@ -108,6 +108,13 @@ featureGrid:
       ctaLink:
         text: browse
         url: /docs/writing/
+
+    - title: "Vibe Coding Infra"
+      icon: "cloud"
+      description: "The free-tier stack behind a solo-built product: Railway, Vercel, Postgres, Upstash, R2, Resend, Sentry, and getting paid."
+      ctaLink:
+        text: browse
+        url: /docs/vibe-infra/
 
 # The theme ships its own data/landing.yaml, and Hugo merges a module's data
 # directory into the site's. Without switching this off explicitly, the Lotus

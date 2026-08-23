@@ -9,7 +9,7 @@ everyday IT work, with a short, practical guide to each one.
 
 - Hugo (extended) + [Lotus Docs](https://github.com/colinwilson/lotusdocs) (a Hugo Module)
 - Built by GitHub Actions and deployed to GitHub Pages
-- 10 categories, 44 pages
+- 11 categories, 57 pages
 
 | Category | Contents |
 |---|---|
@@ -17,12 +17,13 @@ everyday IT work, with a short, practical guide to each one.
 | Terminal & Shell | Terminal apps, zsh/Starship, tmux, fzf, zoxide |
 | Files & Search | ripgrep, fd, bat, eza, jq |
 | Editors & IDEs | VS Code, Neovim, JetBrains, portable editing skills |
-| AI Coding Tools | Claude Code, Copilot, Cursor, Ollama |
+| AI Coding Tools | Claude Code, Copilot, Cursor, Ollama, Graft, Codebase Memory MCP, Agency Agents, OpenMontage |
 | Git & Collaboration | Git workflow, gh, lazygit, delta, pre-commit |
 | Network & APIs | curl, HTTPie, Bruno/Postman, tunnelling |
 | Containers & Deploys | Docker, Compose, kubectl/k9s, Actions, Terraform |
 | Automation & Shortcuts | Raycast, PowerToys, Make, cron/launchd, n8n |
 | Docs & Notes | Obsidian, Markdown, Mermaid, Excalidraw |
+| Vibe Coding Infra | Railway, Vercel, Postgres, Upstash, R2, Resend, Sentry, Lemon Squeezy, Groble |
 
 ## Running locally
 
