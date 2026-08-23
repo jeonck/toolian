@@ -33,6 +33,7 @@ reference; it's the minimum you need to get a tool into your hands.
 9. [Automation & Shortcuts](/docs/automation/) — Raycast, PowerToys, Make, schedulers, n8n
 10. [Docs & Notes](/docs/writing/) — Obsidian, Markdown, Mermaid, Excalidraw
 11. [Vibe Coding Infra](/docs/vibe-infra/) — Railway, Vercel, Postgres, Upstash, R2, Resend, Sentry, payments
+12. [AI Media Tools](/docs/ai-media/) — Raphael, Krea, Magnific, Clipdrop, ElevenLabs
 
 ## How to read this
 

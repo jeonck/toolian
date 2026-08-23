@@ -87,7 +87,7 @@ PG with an API once you have the business registration that requires.
 Nothing stops you running both — the same PDF sold through Groble at home and Lemon
 Squeezy everywhere else.
 
-## That's the tour
+## Next
 
-You've been through every category. To start again, pick another from the
-[overview](/docs/).
+One category left, on the assets a project needs and has no budget for →
+[AI Media Tools](/docs/ai-media/)
