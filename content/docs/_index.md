@@ -32,6 +32,7 @@ reference; it's the minimum you need to get a tool into your hands.
 8. [Containers & Deploys](/docs/devops/) — Docker, Compose, Kubernetes, Actions, Terraform
 9. [Automation & Shortcuts](/docs/automation/) — Raycast, PowerToys, Make, schedulers, n8n
 10. [Docs & Notes](/docs/writing/) — Obsidian, Markdown, Mermaid, Excalidraw
+11. [Vibe Coding Infra](/docs/vibe-infra/) — Railway, Vercel, Postgres, Upstash, R2, Resend, Sentry, payments
 
 ## How to read this
 
