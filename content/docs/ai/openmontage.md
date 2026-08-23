@@ -48,7 +48,7 @@ The default path needs **no API keys at all**:
 |---|---|
 | Narration | Piper TTS, running locally |
 | Footage | Archive.org, NASA, Wikimedia Commons |
-| Composition | Remotion (React) or HyperFrames (HTML/GSAP) |
+| Composition | Remotion (React) or [HyperFrames](/docs/ai/hyperframes/) (HTML/GSAP) |
 | Assembly and captions | FFmpeg, with word-level timing |
 
 Paid APIs are opt-in and unlock generated video, generated imagery, and better voices;
@@ -76,5 +76,5 @@ it gets you a draft to edit, not a finished film.
 
 ## Next
 
-Changes made with AI need version control around them →
-[Git & Collaboration](/docs/git/)
+The composition layer on its own, as a file you can review →
+[HyperFrames](/docs/ai/hyperframes/)
