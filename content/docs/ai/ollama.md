@@ -103,5 +103,5 @@ ollama run reviewer
 
 ## Next
 
-Changes made with AI need version control around them →
-[Git & Collaboration](/docs/git/)
+Whichever agent you use, it works better with a map of the repository →
+[Graft](/docs/ai/graft/)
