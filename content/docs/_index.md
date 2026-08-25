@@ -29,8 +29,8 @@ reference; it's the minimum you need to get a tool into your hands.
 5. [AI Coding Tools](/docs/ai/) — Claude Code, Copilot, Cursor, local LLMs, agent context and subagents
 6. [Git & Collaboration](/docs/git/) — Git workflow, gh, lazygit, delta, hunk, pre-commit
 7. [Network & APIs](/docs/network/) — curl, HTTPie, Bruno, tunnelling, AutoCLI
-8. [Containers & Deploys](/docs/devops/) — Docker, Kubernetes, Helm, five CI/CD tools, Terraform, Ansible, secrets, Trivy
-9. [Observability & Reliability](/docs/observability/) — Prometheus, Grafana, Loki, OpenTelemetry, k6
+8. [Containers & Deploys](/docs/devops/) — Docker, Podman, Kubernetes, Helm/Kustomize, Istio, six CI/CD tools, Terraform, Ansible, secrets, scanning, Backstage
+9. [Observability & Reliability](/docs/observability/) — Prometheus, Grafana, Loki, OpenTelemetry, k6, chaos, cost
 10. [Automation & Shortcuts](/docs/automation/) — Raycast, PowerToys, Make, schedulers, n8n
 11. [Docs & Notes](/docs/writing/) — Obsidian, Markdown, Mermaid, Excalidraw
 12. [Vibe Coding Infra](/docs/vibe-infra/) — Railway, Vercel, Postgres, Upstash, R2, Resend, Sentry, payments

@@ -1,5 +1,5 @@
 ---
-weight: 8050
+weight: 8110
 title: "GitHub Actions"
 description: "Running tests, builds, and deploys automatically on every push."
 icon: "play_circle"

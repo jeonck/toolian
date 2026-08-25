@@ -1,5 +1,5 @@
 ---
-weight: 8040
+weight: 8060
 title: "Helm"
 description: "Packaging a Kubernetes application as one versioned unit, and installing it with the values that differ per environment."
 icon: "package_2"
@@ -109,4 +109,4 @@ of GitOps.
 
 ## Next
 
-To automate the deploy itself → [GitHub Actions](/docs/devops/github-actions/)
+The other way to handle environment differences → [Kustomize](/docs/devops/kustomize/)

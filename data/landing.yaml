@@ -35,7 +35,7 @@ featureGrid:
   weight: 20
   template: feature grid
 
-  title: "Thirteen categories, eighty tools"
+  title: "Thirteen categories, ninety-two tools"
   subtitle: "Start wherever your friction is. Read straight through and you go from an empty terminal to a deployed, observable product that takes payments."
 
   items:
@@ -90,14 +90,14 @@ featureGrid:
 
     - title: "Containers & Deploys"
       icon: "deployed_code"
-      description: "Docker, Kubernetes and Helm, five CI/CD tools from GitHub Actions to Argo CD, Terraform and Ansible, secrets management, and Trivy scanning."
+      description: "Docker and Podman, Kubernetes with Helm, Kustomize, Istio and policy, six CI/CD tools, Terraform and Ansible, secrets, scanning, and Backstage."
       ctaLink:
         text: browse
         url: /docs/devops/
 
     - title: "Observability & Reliability"
       icon: "monitoring"
-      description: "Prometheus for metrics, Grafana for dashboards and alerts, Loki for logs, OpenTelemetry for traces, and k6 for load tests."
+      description: "Prometheus, Grafana, Loki and OpenTelemetry for the four signals, k6 for load tests, chaos experiments, and OpenCost for the bill."
       ctaLink:
         text: browse
         url: /docs/observability/

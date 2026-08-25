@@ -1,5 +1,5 @@
 ---
-weight: 8060
+weight: 8120
 title: "Jenkins"
 description: "The CI server that still runs the enterprise — self-hosted, plugin-driven, and happy inside an air-gapped network."
 icon: "engineering"

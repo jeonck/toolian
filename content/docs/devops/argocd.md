@@ -1,5 +1,5 @@
 ---
-weight: 8080
+weight: 8150
 title: "Argo CD"
 description: "GitOps for Kubernetes — the cluster pulls its desired state from Git and puts back whatever drifts."
 icon: "sync"
@@ -110,5 +110,4 @@ the model earns its keep, because the answer is the Git history.
 
 ## Next
 
-The same pipeline, assembled from AWS services →
-[AWS CodePipeline](/docs/devops/aws-codepipeline/)
+The other GitOps controller, and when it fits better → [Flux](/docs/devops/flux/)

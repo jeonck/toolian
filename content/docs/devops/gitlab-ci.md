@@ -1,5 +1,5 @@
 ---
-weight: 8070
+weight: 8130
 title: "GitLab CI/CD"
 description: "Repository, pipelines, registry, and releases in one system you can run inside your own network."
 icon: "integration_instructions"
@@ -114,5 +114,4 @@ will cost you less attention.
 
 ## Next
 
-Building the artifact is half of it. Getting it onto the cluster, and keeping it there →
-[Argo CD](/docs/devops/argocd/)
+Before it ships, a gate on the code itself → [SonarQube](/docs/devops/sonarqube/)
