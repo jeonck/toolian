@@ -9,17 +9,17 @@ everyday IT work, with a short, practical guide to each one.
 
 - Hugo (extended) + [Lotus Docs](https://github.com/colinwilson/lotusdocs) (a Hugo Module)
 - Built by GitHub Actions and deployed to GitHub Pages
-- 12 categories, 67 pages
+- 12 categories, 71 pages
 
 | Category | Contents |
 |---|---|
 | Getting Started | Choosing tools, package managers, dotfiles |
-| Terminal & Shell | Terminal apps, zsh/Starship, tmux, fzf, zoxide |
-| Files & Search | ripgrep, fd, bat, eza, jq |
+| Terminal & Shell | Terminal apps, zsh/Starship, tmux, fzf, zoxide, hyperfine |
+| Files & Search | ripgrep, fd, bat, eza, jq, ast-grep |
 | Editors & IDEs | VS Code, Neovim, JetBrains, portable editing skills |
 | AI Coding Tools | Claude Code, Copilot, Cursor, Ollama, Graft, Codebase Memory MCP, Agency Agents, OpenMontage, HyperFrames |
-| Git & Collaboration | Git workflow, gh, lazygit, delta, pre-commit |
-| Network & APIs | curl, HTTPie, Bruno/Postman, tunnelling |
+| Git & Collaboration | Git workflow, gh, lazygit, delta, hunk, pre-commit |
+| Network & APIs | curl, HTTPie, Bruno/Postman, tunnelling, AutoCLI |
 | Containers & Deploys | Docker, Compose, kubectl/k9s, Actions, Jenkins, GitLab CI, Argo CD, CodePipeline, Terraform |
 | Automation & Shortcuts | Raycast, PowerToys, Make, cron/launchd, n8n |
 | Docs & Notes | Obsidian, Markdown, Mermaid, Excalidraw |
