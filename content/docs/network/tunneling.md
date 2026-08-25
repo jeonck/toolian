@@ -78,4 +78,5 @@ Opening a tunnel means **the entire internet can reach your local server.**
 
 ## Next
 
-On to shipping → [Containers & Deploys](/docs/devops/)
+For pulling data out of sites instead of pushing requests at them →
+[AutoCLI](/docs/network/autocli/)

@@ -99,5 +99,4 @@ Pass `--light` or `--dark` to match your terminal.
 
 ## Next
 
-Catch problems before the diff is even written →
-[pre-commit hooks](/docs/git/pre-commit/)
+For reviewing a large change you didn't write → [hunk](/docs/git/hunk/)

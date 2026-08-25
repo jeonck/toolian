@@ -94,5 +94,5 @@ yq -o=json '.' config.yaml | jq
 
 ## Next
 
-With files under control, on to where you write the code →
-[Editors & IDEs](/docs/editor/)
+Searching text has limits; code has structure →
+[ast-grep](/docs/files/ast-grep/)

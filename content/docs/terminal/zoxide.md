@@ -80,5 +80,5 @@ zi
 
 ## Next
 
-Travel is fast; now the tools for finding things once you arrive →
-[ripgrep](/docs/files/ripgrep/)
+Before optimising anything, measure it →
+[hyperfine](/docs/terminal/hyperfine/)
