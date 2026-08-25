@@ -1,5 +1,5 @@
 ---
-weight: 8090
+weight: 8170
 title: "AWS CodePipeline"
 description: "CI/CD assembled from AWS services — worth it when IAM, VPC, and the audit trail matter more than developer comfort."
 icon: "cloud_queue"

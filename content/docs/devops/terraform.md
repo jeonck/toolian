@@ -1,5 +1,5 @@
 ---
-weight: 8100
+weight: 8180
 title: "Terraform"
 description: "Declaring cloud resources as code and reviewing the plan before anything changes."
 icon: "architecture"

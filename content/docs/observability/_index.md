@@ -21,6 +21,8 @@ This category is the open-source stack that answers it, in the order you'd adopt
 | [Loki](/docs/observability/loki/) | What the logs said around that spike |
 | [OpenTelemetry](/docs/observability/opentelemetry/) | Where a single slow request spent its time |
 | [k6](/docs/observability/k6/) | What happens before it breaks, on your terms rather than a customer's |
+| [Chaos Engineering](/docs/observability/chaos-engineering/) | Whether the failover you built actually works |
+| [OpenCost](/docs/observability/opencost/) | Which team, namespace, and workload spent the money |
 
 ## The three signals, and the one you should add first
 

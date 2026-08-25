@@ -112,5 +112,4 @@ discoverable.
 
 ## Next
 
-When containers spread across machines you need an orchestrator →
-[kubectl and k9s](/docs/devops/kubernetes/)
+For the same containers without a root daemon → [Podman](/docs/devops/podman/)

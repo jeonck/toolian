@@ -1,5 +1,5 @@
 ---
-weight: 8130
+weight: 8210
 title: "Trivy"
 description: "Scanning images, dependencies, and infrastructure code for known vulnerabilities and misconfigurations, in one command."
 icon: "security"
@@ -88,5 +88,5 @@ Pair it with `pip-audit`, `npm audit`, or Dependabot on the language side, and w
 
 ## Next
 
-Shipping safely is half of it. Knowing what the system is doing afterwards →
-[Observability & Reliability](/docs/observability/)
+Scanning covers what you ship; something has to watch what it does →
+[Falco](/docs/devops/falco/)

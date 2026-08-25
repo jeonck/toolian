@@ -1,5 +1,5 @@
 ---
-weight: 8030
+weight: 8050
 title: "kubectl and k9s"
 description: "The minimum you need to inspect and debug a Kubernetes cluster."
 icon: "hub"
