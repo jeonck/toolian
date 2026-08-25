@@ -29,11 +29,12 @@ reference; it's the minimum you need to get a tool into your hands.
 5. [AI Coding Tools](/docs/ai/) — Claude Code, Copilot, Cursor, local LLMs, agent context and subagents
 6. [Git & Collaboration](/docs/git/) — Git workflow, gh, lazygit, delta, hunk, pre-commit
 7. [Network & APIs](/docs/network/) — curl, HTTPie, Bruno, tunnelling, AutoCLI
-8. [Containers & Deploys](/docs/devops/) — Docker, Compose, Kubernetes, five CI/CD tools, Terraform
-9. [Automation & Shortcuts](/docs/automation/) — Raycast, PowerToys, Make, schedulers, n8n
-10. [Docs & Notes](/docs/writing/) — Obsidian, Markdown, Mermaid, Excalidraw
-11. [Vibe Coding Infra](/docs/vibe-infra/) — Railway, Vercel, Postgres, Upstash, R2, Resend, Sentry, payments
-12. [AI Media Tools](/docs/ai-media/) — Raphael, Krea, Magnific, Clipdrop, ElevenLabs
+8. [Containers & Deploys](/docs/devops/) — Docker, Kubernetes, Helm, five CI/CD tools, Terraform, Ansible, secrets, Trivy
+9. [Observability & Reliability](/docs/observability/) — Prometheus, Grafana, Loki, OpenTelemetry, k6
+10. [Automation & Shortcuts](/docs/automation/) — Raycast, PowerToys, Make, schedulers, n8n
+11. [Docs & Notes](/docs/writing/) — Obsidian, Markdown, Mermaid, Excalidraw
+12. [Vibe Coding Infra](/docs/vibe-infra/) — Railway, Vercel, Postgres, Upstash, R2, Resend, Sentry, payments
+13. [AI Media Tools](/docs/ai-media/) — Raphael, Krea, Magnific, Clipdrop, ElevenLabs
 
 ## How to read this
 

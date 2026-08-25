@@ -1,5 +1,5 @@
 ---
-weight: 8090
+weight: 8100
 title: "Terraform"
 description: "Declaring cloud resources as code and reviewing the plan before anything changes."
 icon: "architecture"
@@ -140,5 +140,5 @@ terraform import aws_s3_bucket.assets myapp-assets-prod
 
 ## Next
 
-Infrastructure is code; now automate your own work →
-[Automation & Shortcuts](/docs/automation/)
+Terraform makes the machine; something has to configure it →
+[Ansible](/docs/devops/ansible/)

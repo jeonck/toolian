@@ -1,7 +1,7 @@
 ---
 weight: 80
 title: "Containers & Deploys"
-description: "Pinning environments with Docker, composing services, inspecting Kubernetes, and automating with CI and infrastructure as code."
+description: "Docker and Kubernetes, five CI/CD tools, infrastructure and configuration as code, secrets, and image scanning — the working DevOps toolchain."
 icon: "deployed_code"
 date: "2026-08-19"
 lastmod: "2026-08-19"
@@ -29,3 +29,18 @@ by the organisation rather than by the tool's features.
 Argo CD is the odd one out: it is deployment only, so it sits *after* one of the others
 rather than replacing it. A common pairing is GitHub Actions to build and test, Argo CD
 to roll out.
+
+## The rest of the toolchain
+
+After the pipeline comes everything that makes a deploy repeatable and safe to repeat.
+
+| Tool | Job |
+|---|---|
+| [Helm](/docs/devops/helm/) | Package a Kubernetes app as one versioned, configurable unit |
+| [Terraform](/docs/devops/terraform/) | Declare the cloud resources, review the plan before applying |
+| [Ansible](/docs/devops/ansible/) | Bring servers to a described state over SSH, no agent needed |
+| [Secrets management](/docs/devops/secrets/) | Get credentials out of `.env` files and repositories |
+| [Trivy](/docs/devops/trivy/) | Scan images, dependencies, and IaC for known problems |
+
+Then [Observability & Reliability](/docs/observability/) picks it up from the other
+side — what the system is doing once it's running.

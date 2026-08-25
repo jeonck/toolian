@@ -99,4 +99,4 @@ clusters often, start here rather than with `kubectl`.
 
 ## Next
 
-To automate the deploy itself → [GitHub Actions](/docs/devops/github-actions/)
+To ship an app onto that cluster as one versioned unit → [Helm](/docs/devops/helm/)
