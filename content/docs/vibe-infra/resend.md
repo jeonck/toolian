@@ -1,5 +1,5 @@
 ---
-weight: 11060
+weight: 11110
 title: "Resend"
 description: "Transactional email with an API you can call in one line — and the DNS records that decide whether it lands in the inbox."
 icon: "mail"
@@ -107,5 +107,5 @@ full of dead addresses is how a sending domain loses its reputation.
 
 ## Next
 
-When something breaks, you want to hear it from a tool, not a user →
-[Sentry](/docs/vibe-infra/sentry/)
+Work that shouldn't happen inside a request →
+[Inngest](/docs/vibe-infra/inngest/)

@@ -1,5 +1,5 @@
 ---
-weight: 11070
+weight: 11150
 title: "Sentry"
 description: "Error monitoring that shows you the stack trace, the release, and the user — instead of a screenshot of a white page."
 icon: "bug_report"

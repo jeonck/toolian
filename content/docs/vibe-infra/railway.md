@@ -96,4 +96,4 @@ moment something has to *stay running*.
 
 ## Next
 
-If there's no server in your app → [Vercel](/docs/vibe-infra/vercel/)
+For the same containers, in several regions at once → [Fly.io](/docs/vibe-infra/fly-io/)

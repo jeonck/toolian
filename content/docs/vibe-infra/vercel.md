@@ -1,5 +1,5 @@
 ---
-weight: 11020
+weight: 11030
 title: "Vercel"
 description: "Push-to-deploy hosting for a frontend, with preview URLs per branch — and the licence clause that catches people out."
 icon: "change_history"
@@ -88,4 +88,5 @@ shell on Vercel, the long-lived services on Railway.
 
 ## Next
 
-Both hosts need somewhere to keep the data → [PostgreSQL](/docs/vibe-infra/postgres/)
+Compute with no cold start, and a free tier that hasn't moved →
+[Cloudflare Workers](/docs/vibe-infra/cloudflare-workers/)

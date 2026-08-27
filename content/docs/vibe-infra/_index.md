@@ -1,7 +1,7 @@
 ---
 weight: 110
 title: "Vibe Coding Infra"
-description: "The free-tier stack behind a solo-built product — hosting, database, cache, storage, email, monitoring, and getting paid."
+description: "The free-tier stack behind a solo-built product — hosting, database, cache, storage, auth, email, jobs, search, analytics, monitoring, and getting paid."
 icon: "cloud"
 date: "2026-08-23"
 lastmod: "2026-08-23"
@@ -22,11 +22,19 @@ before your launch day traffic finds it for you.
 | Slot | Pick | Free tier in one line |
 |---|---|---|
 | Backend + frontend hosting | [Railway](/docs/vibe-infra/railway/) | $5 trial credit, then $1/month — real apps need Hobby at $5 |
+| Multi-region containers | [Fly.io](/docs/vibe-infra/fly-io/) | None — pay-as-you-go from about $2/month |
 | Frontend-only hosting | [Vercel](/docs/vibe-infra/vercel/) | 100 GB bandwidth, non-commercial projects only |
+| Edge compute and static sites | [Cloudflare Workers](/docs/vibe-infra/cloudflare-workers/) | 100K requests/day, unlimited bandwidth |
 | Database | [Postgres](/docs/vibe-infra/postgres/) | ~0.5 GB on Neon or Supabase, forever |
+| Serverless Postgres with branching | [Neon](/docs/vibe-infra/neon/) | A project, scale-to-zero, a monthly compute budget |
+| Backend in a box | [Supabase](/docs/vibe-infra/supabase/) | Two projects — free ones pause after a week idle |
 | Cache and rate limiting | [Upstash](/docs/vibe-infra/upstash/) | 256 MB, 500K commands/month |
 | File storage | [Cloudflare R2](/docs/vibe-infra/cloudflare-r2/) | 10 GB, and zero egress fees at any size |
+| Authentication | [Clerk](/docs/vibe-infra/clerk/) | Tens of thousands of users, billed as retained users |
 | Email | [Resend](/docs/vibe-infra/resend/) | 3,000/month, 100/day |
+| Background jobs and cron | [Inngest](/docs/vibe-infra/inngest/) | Free indefinitely at side-project volume |
+| Search | [Meilisearch](/docs/vibe-infra/meilisearch/) | Free to self-host; paid cloud |
+| Product analytics and flags | [PostHog](/docs/vibe-infra/posthog/) | 1M events/month, plus replay and flag allowances |
 | Error monitoring | [Sentry](/docs/vibe-infra/sentry/) | 5,000 errors/month, 1 user |
 | Payments, global | [Lemon Squeezy](/docs/vibe-infra/lemon-squeezy/) | $0 up front, 5% + $0.50 per sale |
 | Payments, Korea | [Groble](/docs/vibe-infra/groble/) | $0 up front, 4.4% per sale, no business registration |
