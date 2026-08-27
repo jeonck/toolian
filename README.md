@@ -9,7 +9,7 @@ everyday IT work, with a short, practical guide to each one.
 
 - Hugo (extended) + [Lotus Docs](https://github.com/colinwilson/lotusdocs) (a Hugo Module)
 - Built by GitHub Actions and deployed to GitHub Pages
-- 13 categories, 92 pages
+- 13 categories, 100 pages
 
 | Category | Contents |
 |---|---|
@@ -24,7 +24,7 @@ everyday IT work, with a short, practical guide to each one.
 | Observability & Reliability | Prometheus, Grafana, Loki, OpenTelemetry, k6, chaos engineering, OpenCost |
 | Automation & Shortcuts | Raycast, PowerToys, Make, cron/launchd, n8n |
 | Docs & Notes | Obsidian, Markdown, Mermaid, Excalidraw |
-| Vibe Coding Infra | Railway, Vercel, Postgres, Upstash, R2, Resend, Sentry, Lemon Squeezy, Groble |
+| Vibe Coding Infra | Railway, Fly.io, Vercel, Cloudflare Workers, Postgres, Neon, Supabase, Upstash, R2, Clerk, Resend, Inngest, Meilisearch, PostHog, Sentry, Lemon Squeezy, Groble |
 | AI Media Tools | Raphael, Krea, Magnific, Clipdrop, ElevenLabs |
 
 ## Running locally

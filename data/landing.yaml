@@ -35,7 +35,7 @@ featureGrid:
   weight: 20
   template: feature grid
 
-  title: "Thirteen categories, ninety-two tools"
+  title: "Thirteen categories, one hundred tools"
   subtitle: "Start wherever your friction is. Read straight through and you go from an empty terminal to a deployed, observable product that takes payments."
 
   items:
@@ -118,7 +118,7 @@ featureGrid:
 
     - title: "Vibe Coding Infra"
       icon: "cloud"
-      description: "The free-tier stack behind a solo-built product: Railway, Vercel, Postgres, Upstash, R2, Resend, Sentry, and getting paid."
+      description: "The free-tier stack behind a solo-built product: Railway and Fly.io, Vercel and Workers, Neon and Supabase, Upstash, R2, Clerk, Resend, Inngest, PostHog, and getting paid."
       ctaLink:
         text: browse
         url: /docs/vibe-infra/

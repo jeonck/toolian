@@ -1,5 +1,5 @@
 ---
-weight: 11090
+weight: 11170
 title: "Groble"
 description: "Selling a digital product to Korean customers — KakaoPay and NaverPay included, no business registration required."
 icon: "storefront"

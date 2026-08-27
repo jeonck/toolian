@@ -1,5 +1,5 @@
 ---
-weight: 11030
+weight: 11050
 title: "PostgreSQL"
 description: "The default database for a new project, and how the Neon and Supabase free tiers differ once you're past the signup."
 icon: "database"
@@ -15,12 +15,15 @@ category speaks it, so nothing you write is locked to a vendor.
 
 ## Where to run it free
 
-| | Neon | Supabase | Railway |
+| | [Neon](/docs/vibe-infra/neon/) | [Supabase](/docs/vibe-infra/supabase/) | Railway |
 |---|---|---|---|
 | Free storage | 0.5 GB per project | 500 MB | Counts against your $1–5 credit |
 | Projects | 100 | 2 | Unlimited within the plan |
 | Idle behaviour | Scales to zero, wakes on connect | **Paused after ~1 week idle**, manual unpause | Stays up while credit lasts |
 | Extras | Branching | Auth, file storage, realtime, edge functions | Sits next to your app |
+
+Both have a page of their own here — [Neon](/docs/vibe-infra/neon/) and
+[Supabase](/docs/vibe-infra/supabase/) — and the short version follows.
 
 Choose by what else you need. **Supabase** if you want auth and storage handed to you
 and would rather not assemble them; **Neon** if you only want a database and value
@@ -97,4 +100,4 @@ and being the end of the project.
 
 ## Next
 
-Reads that repeat every request belong in a cache → [Upstash](/docs/vibe-infra/upstash/)
+Serverless Postgres that branches like Git → [Neon](/docs/vibe-infra/neon/)

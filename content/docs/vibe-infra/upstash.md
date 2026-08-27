@@ -1,5 +1,5 @@
 ---
-weight: 11040
+weight: 11080
 title: "Upstash"
 description: "Serverless Redis over HTTP — caching, rate limiting, and a queue, without a connection pool to manage."
 icon: "memory"

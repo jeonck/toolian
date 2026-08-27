@@ -1,5 +1,5 @@
 ---
-weight: 11080
+weight: 11160
 title: "Lemon Squeezy"
 description: "Taking money from anywhere in the world without registering for tax anywhere — what a merchant of record buys you, and what it costs."
 icon: "credit_card"

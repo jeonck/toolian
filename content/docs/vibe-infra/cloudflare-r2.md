@@ -1,5 +1,5 @@
 ---
-weight: 11050
+weight: 11090
 title: "Cloudflare R2"
 description: "S3-compatible object storage with no egress fees — the right home for uploads, images, and backups."
 icon: "cloud_upload"
@@ -109,4 +109,4 @@ Skip `r2.dev` for production traffic — it's rate limited and meant for testing
 
 ## Next
 
-The other thing every app needs to send out → [Resend](/docs/vibe-infra/resend/)
+Before anyone can own a file, they have to sign in → [Clerk](/docs/vibe-infra/clerk/)

@@ -33,7 +33,7 @@ reference; it's the minimum you need to get a tool into your hands.
 9. [Observability & Reliability](/docs/observability/) — Prometheus, Grafana, Loki, OpenTelemetry, k6, chaos, cost
 10. [Automation & Shortcuts](/docs/automation/) — Raycast, PowerToys, Make, schedulers, n8n
 11. [Docs & Notes](/docs/writing/) — Obsidian, Markdown, Mermaid, Excalidraw
-12. [Vibe Coding Infra](/docs/vibe-infra/) — Railway, Vercel, Postgres, Upstash, R2, Resend, Sentry, payments
+12. [Vibe Coding Infra](/docs/vibe-infra/) — Railway, Fly.io, Vercel, Workers, Neon, Supabase, Upstash, R2, Clerk, Resend, Inngest, search, PostHog, payments
 13. [AI Media Tools](/docs/ai-media/) — Raphael, Krea, Magnific, Clipdrop, ElevenLabs
 
 ## How to read this
