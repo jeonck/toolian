@@ -1,5 +1,5 @@
 ---
-weight: 6070
+weight: 6080
 title: "hunk"
 description: "A terminal diff viewer built for reviewing changes you didn't write — including the ones an agent wrote."
 icon: "difference"

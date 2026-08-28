@@ -1,5 +1,5 @@
 ---
-weight: 6080
+weight: 6090
 title: "pre-commit Hooks"
 description: "Running formatters, linters, and secret scanning at commit time so review never has to mention them."
 icon: "verified"

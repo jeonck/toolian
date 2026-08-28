@@ -96,5 +96,4 @@ ground for security-flavoured rules.
 
 ## Next
 
-The GitOps controller that pairs with Argo CD, or replaces it →
-[Argo CD](/docs/devops/argocd/)
+Where the artifact you just built goes → [Nexus Repository](/docs/devops/nexus/)

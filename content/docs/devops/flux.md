@@ -1,5 +1,5 @@
 ---
-weight: 8160
+weight: 8170
 title: "Flux"
 description: "GitOps as a set of controllers with no dashboard — the other CNCF option, and when it fits better than Argo CD."
 icon: "sync_alt"

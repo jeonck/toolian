@@ -1,7 +1,7 @@
 ---
 weight: 80
 title: "Containers & Deploys"
-description: "Containers, Kubernetes and the platform around it, six CI/CD tools, infrastructure and configuration as code, secrets, scanning, and a service catalogue."
+description: "Containers, Kubernetes and the platform around it, six CI/CD tools, an artifact repository, infrastructure and configuration as code, secrets, scanning, and a service catalogue."
 icon: "deployed_code"
 date: "2026-08-19"
 lastmod: "2026-08-19"
@@ -51,6 +51,7 @@ to roll out.
 | [Ansible](/docs/devops/ansible/) | Bring servers to a described state over SSH, no agent needed |
 | [Secrets management](/docs/devops/secrets/) | Get credentials out of `.env` files and repositories |
 | [SonarQube](/docs/devops/sonarqube/) | A quality gate on the code you just changed |
+| [Nexus Repository](/docs/devops/nexus/) | Proxy the public registries, host your own artifacts |
 | [Trivy](/docs/devops/trivy/) | Scan images, dependencies, and IaC before they ship |
 | [Falco](/docs/devops/falco/) | Detect what a container does at runtime, after every scan passed |
 | [Backstage](/docs/devops/backstage/) | A catalogue of services, owners, and templates, once there are many |

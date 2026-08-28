@@ -97,4 +97,4 @@ wrong; and read the upgrade notes before a major version, because migrations run
 
 ## Next
 
-To stage and browse history visually → [lazygit](/docs/git/lazygit/)
+The forge at the other end of the scale → [GitLab](/docs/git/gitlab/)

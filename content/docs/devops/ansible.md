@@ -1,5 +1,5 @@
 ---
-weight: 8190
+weight: 8200
 title: "Ansible"
 description: "Bringing servers to a described state over SSH — no agent, no bootstrap problem, and safe to run twice."
 icon: "list_alt"
