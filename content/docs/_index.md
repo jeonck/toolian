@@ -27,7 +27,7 @@ reference; it's the minimum you need to get a tool into your hands.
 3. [Files & Search](/docs/files/) — ripgrep, fd, bat, eza, jq, ast-grep
 4. [Editors & IDEs](/docs/editor/) — VS Code, Neovim, JetBrains, portable editing skills
 5. [AI Coding Tools](/docs/ai/) — Claude Code, Copilot, Cursor, local LLMs, agent context and subagents
-6. [Git & Collaboration](/docs/git/) — Git workflow, gh, Gitea, lazygit, delta, hunk, pre-commit
+6. [Git & Collaboration](/docs/git/) — Git workflow, gh, Gitea, Forgejo, lazygit, delta, hunk, pre-commit
 7. [Network & APIs](/docs/network/) — curl, HTTPie, Bruno, tunnelling, AutoCLI
 8. [Containers & Deploys](/docs/devops/) — Docker, Podman, Kubernetes, Helm/Kustomize, Istio, six CI/CD tools, Terraform, Ansible, secrets, scanning, Backstage
 9. [Observability & Reliability](/docs/observability/) — Prometheus, Grafana, Loki, OpenTelemetry, k6, chaos, cost

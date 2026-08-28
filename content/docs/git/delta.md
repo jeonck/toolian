@@ -1,5 +1,5 @@
 ---
-weight: 6050
+weight: 6060
 title: "delta"
 description: "A pager that adds syntax highlighting, line numbers, and side-by-side view to git diff."
 icon: "difference"

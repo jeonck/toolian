@@ -91,8 +91,12 @@ and the two have since diverged enough that they're no longer drop-in interchang
 
 For most self-hosters either is a good answer and the day-to-day experience is nearly
 identical. Choose **Forgejo** if community governance and a copyleft licence matter to
-you; **Gitea** if you want the MIT licence or a commercial support option. Decide once —
-migrating later is possible but no longer trivial.
+you; **Gitea** if you want the MIT licence or a commercial support option.
+
+Worth knowing which way the door swings: **Gitea → Forgejo is documented and supported**,
+often little more than swapping the image. The reverse is not a supported path, and since
+the 2024 hard fork the two are no longer drop-in interchangeable.
+[Forgejo has its own page](/docs/git/forgejo/) if that's the direction you're leaning.
 
 ## Running it in earnest
 
@@ -106,4 +110,4 @@ migrating later is possible but no longer trivial.
 
 ## Next
 
-To stage and browse history visually → [lazygit](/docs/git/lazygit/)
+The other side of the fork, and the case for it → [Forgejo](/docs/git/forgejo/)

@@ -1,5 +1,5 @@
 ---
-weight: 6040
+weight: 6050
 title: "lazygit"
 description: "A Git UI inside the terminal. Staging, rebasing, and conflict resolution from the keyboard."
 icon: "dashboard"
