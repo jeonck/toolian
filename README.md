@@ -9,7 +9,7 @@ everyday IT work, with a short, practical guide to each one.
 
 - Hugo (extended) + [Lotus Docs](https://github.com/colinwilson/lotusdocs) (a Hugo Module)
 - Built by GitHub Actions and deployed to GitHub Pages
-- 13 categories, 100 pages
+- 14 categories, 104 pages
 
 | Category | Contents |
 |---|---|
@@ -23,7 +23,8 @@ everyday IT work, with a short, practical guide to each one.
 | Containers & Deploys | Docker, Compose, Podman, local k8s, kubectl/k9s, Helm, Kustomize, cert-manager, Istio, policy, Actions, Jenkins, GitLab CI, SonarQube, Argo CD, Flux, CodePipeline, Terraform, Ansible, secrets, Trivy, Falco, Backstage |
 | Observability & Reliability | Prometheus, Grafana, Loki, OpenTelemetry, k6, chaos engineering, OpenCost |
 | Automation & Shortcuts | Raycast, PowerToys, Make, cron/launchd, n8n |
-| Docs & Notes | Obsidian, Markdown, Mermaid, Excalidraw |
+| Linux Desktop | Zen Browser, Webapp Manager, Zathura |
+| Docs & Notes | Obsidian, Joplin, Markdown, Mermaid, Excalidraw |
 | Vibe Coding Infra | Railway, Fly.io, Vercel, Cloudflare Workers, Postgres, Neon, Supabase, Upstash, R2, Clerk, Resend, Inngest, Meilisearch, PostHog, Sentry, Lemon Squeezy, Groble |
 | AI Media Tools | Raphael, Krea, Magnific, Clipdrop, ElevenLabs |
 

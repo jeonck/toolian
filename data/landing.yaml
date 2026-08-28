@@ -35,7 +35,7 @@ featureGrid:
   weight: 20
   template: feature grid
 
-  title: "Thirteen categories, one hundred tools"
+  title: "Fourteen categories, one hundred and four tools"
   subtitle: "Start wherever your friction is. Read straight through and you go from an empty terminal to a deployed, observable product that takes payments."
 
   items:
@@ -109,9 +109,16 @@ featureGrid:
         text: browse
         url: /docs/automation/
 
+    - title: "Linux Desktop"
+      icon: "desktop_windows"
+      description: "Zen Browser for the days that end with forty tabs, Webapp Manager to make websites real apps, and Zathura for reading PDFs from the keyboard."
+      ctaLink:
+        text: browse
+        url: /docs/linux-desktop/
+
     - title: "Docs & Notes"
       icon: "description"
-      description: "Obsidian, the Markdown you actually need, Mermaid diagrams that live in your diffs, and Excalidraw."
+      description: "Obsidian and Joplin, the Markdown you actually need, Mermaid diagrams that live in your diffs, and Excalidraw."
       ctaLink:
         text: browse
         url: /docs/writing/
