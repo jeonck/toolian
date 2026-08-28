@@ -98,4 +98,4 @@ return items.map(item => ({
 
 ## Next
 
-To write down what you automated → [Docs & Notes](/docs/writing/)
+To write down what you automated → [Linux Desktop](/docs/linux-desktop/)

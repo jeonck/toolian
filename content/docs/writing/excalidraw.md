@@ -1,5 +1,5 @@
 ---
-weight: 10040
+weight: 10050
 title: "Excalidraw"
 description: "A hand-drawn-feel whiteboard, well suited to design discussion and architecture sketches."
 icon: "draw"

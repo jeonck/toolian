@@ -125,5 +125,4 @@ a common split.
 
 ## Next
 
-Whatever tool you use, the syntax is the same →
-[Markdown](/docs/writing/markdown/)
+For the same job with open-source sync you control → [Joplin](/docs/writing/joplin/)
