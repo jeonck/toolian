@@ -110,5 +110,4 @@ The work stops being a video-editing task and becomes a build step.
 
 ## Next
 
-Changes made with AI need version control around them →
-[Git & Collaboration](/docs/git/)
+An agent is only as useful as what it can reach → [Composio](/docs/ai/composio/)
