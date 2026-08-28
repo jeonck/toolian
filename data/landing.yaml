@@ -35,7 +35,7 @@ featureGrid:
   weight: 20
   template: feature grid
 
-  title: "Fifteen categories, one hundred and fifteen tools"
+  title: "Fifteen categories, one hundred and sixteen tools"
   subtitle: "Start wherever your friction is. Read straight through and you go from an empty terminal to a deployed, observable product that takes payments."
 
   items:
@@ -55,7 +55,7 @@ featureGrid:
 
     - title: "Files & Search"
       icon: "search"
-      description: "ripgrep, fd, bat, eza, and jq — modern replacements for grep, find, cat, and ls — plus ast-grep for code structure and MinerU for PDFs."
+      description: "ripgrep, fd, bat, eza, and jq — modern replacements for grep, find, cat, and ls — plus ast-grep for code structure and MinerU or Docling for documents."
       ctaLink:
         text: browse
         url: /docs/files/

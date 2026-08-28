@@ -92,12 +92,12 @@ than assuming.
 | Simple text out of a digital PDF | `pdftotext`, `pymupdf` |
 | Plain OCR of an image, minimal setup | Tesseract, PaddleOCR |
 | Make a scanned PDF searchable in place | `ocrmypdf` |
-| Markdown from many document types, quickly | Docling, Marker |
+| Markdown from many document types, quickly | [Docling](/docs/files/docling/), Marker |
 
 Reach for the small tools first. `pdftotext` on a clean digital PDF is instant and exact;
 MinerU earns its install when the layout is the information.
 
 ## Next
 
-With files under control, on to where you write the code →
-[Editors & IDEs](/docs/editor/)
+The same job with a wider mouth and a pipeline attached →
+[Docling](/docs/files/docling/)
