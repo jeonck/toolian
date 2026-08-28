@@ -129,5 +129,5 @@ a week later.
 
 ## Next
 
-With files under control, on to where you write the code →
-[Editors & IDEs](/docs/editor/)
+Some files aren't text until something makes them text →
+[MinerU](/docs/files/mineru/)
