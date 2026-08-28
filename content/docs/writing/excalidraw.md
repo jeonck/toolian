@@ -98,5 +98,5 @@ Mermaid, then loosen it by hand.
 
 ## Next
 
-Everything so far builds the thing. One category left, on putting it online →
-[Vibe Coding Infra](/docs/vibe-infra/)
+Notes and diagrams are yours; documents are what other people send →
+[GenOffice](/docs/writing/genoffice/)

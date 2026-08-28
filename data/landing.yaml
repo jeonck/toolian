@@ -35,7 +35,7 @@ featureGrid:
   weight: 20
   template: feature grid
 
-  title: "Fifteen categories, one hundred and eighteen tools"
+  title: "Fifteen categories, one hundred and twenty tools"
   subtitle: "Start wherever your friction is. Read straight through and you go from an empty terminal to a deployed, observable product that takes payments."
 
   items:
@@ -125,7 +125,7 @@ featureGrid:
 
     - title: "Docs & Notes"
       icon: "description"
-      description: "Obsidian and Joplin, the Markdown you actually need, Mermaid diagrams that live in your diffs, and Excalidraw."
+      description: "Obsidian and Joplin, the Markdown you actually need, Mermaid diagrams that live in your diffs, Excalidraw, and two AI office suites — GenOffice and BatiOffice."
       ctaLink:
         text: browse
         url: /docs/writing/
