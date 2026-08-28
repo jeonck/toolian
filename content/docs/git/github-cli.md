@@ -98,4 +98,4 @@ gh co 42
 
 ## Next
 
-To stage and browse history visually → [lazygit](/docs/git/lazygit/)
+When the code can't live on GitHub at all → [Gitea](/docs/git/gitea/)

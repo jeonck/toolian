@@ -35,7 +35,7 @@ featureGrid:
   weight: 20
   template: feature grid
 
-  title: "Fourteen categories, one hundred and four tools"
+  title: "Fourteen categories, one hundred and five tools"
   subtitle: "Start wherever your friction is. Read straight through and you go from an empty terminal to a deployed, observable product that takes payments."
 
   items:
@@ -76,7 +76,7 @@ featureGrid:
 
     - title: "Git & Collaboration"
       icon: "hub"
-      description: "A real daily Git workflow including how to undo things, plus gh, lazygit, delta, hunk, and pre-commit hooks."
+      description: "A real daily Git workflow including how to undo things, plus gh, Gitea for a forge you host yourself, lazygit, delta, hunk, and pre-commit hooks."
       ctaLink:
         text: browse
         url: /docs/git/
