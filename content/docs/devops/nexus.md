@@ -107,5 +107,5 @@ access policies your forge can't express.
 
 ## Next
 
-Building the artifact is half of it. Getting it onto the cluster, and keeping it there →
-[Argo CD](/docs/devops/argocd/)
+For container images specifically, with scanning and policy built in →
+[Harbor](/docs/devops/harbor/)

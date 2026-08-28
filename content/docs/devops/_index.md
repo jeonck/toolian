@@ -52,6 +52,7 @@ to roll out.
 | [Secrets management](/docs/devops/secrets/) | Get credentials out of `.env` files and repositories |
 | [SonarQube](/docs/devops/sonarqube/) | A quality gate on the code you just changed |
 | [Nexus Repository](/docs/devops/nexus/) | Proxy the public registries, host your own artifacts |
+| [Harbor](/docs/devops/harbor/) | An image registry with scanning, signing, and per-project policy |
 | [Trivy](/docs/devops/trivy/) | Scan images, dependencies, and IaC before they ship |
 | [Falco](/docs/devops/falco/) | Detect what a container does at runtime, after every scan passed |
 | [Backstage](/docs/devops/backstage/) | A catalogue of services, owners, and templates, once there are many |

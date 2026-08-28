@@ -78,5 +78,5 @@ explorer still owns that view.
 
 ## Next
 
-The system is watched. Now automate your own work →
-[Automation & Shortcuts](/docs/automation/)
+Watching what the system does is one half; watching what could be done to it is the
+other → [Security](/docs/security/)

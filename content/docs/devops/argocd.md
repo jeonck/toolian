@@ -1,5 +1,5 @@
 ---
-weight: 8160
+weight: 8170
 title: "Argo CD"
 description: "GitOps for Kubernetes — the cluster pulls its desired state from Git and puts back whatever drifts."
 icon: "sync"

@@ -29,13 +29,14 @@ reference; it's the minimum you need to get a tool into your hands.
 5. [AI Coding Tools](/docs/ai/) — Claude Code, Copilot, Cursor, local LLMs, agent context and subagents
 6. [Git & Collaboration](/docs/git/) — Git workflow, gh, Gitea, Forgejo, GitLab, lazygit, delta, hunk, pre-commit
 7. [Network & APIs](/docs/network/) — curl, HTTPie, Bruno, tunnelling, AutoCLI
-8. [Containers & Deploys](/docs/devops/) — Docker, Podman, Kubernetes, Helm/Kustomize, Istio, six CI/CD tools, Nexus, Terraform, Ansible, secrets, scanning, Backstage
+8. [Containers & Deploys](/docs/devops/) — Docker, Podman, Kubernetes, Helm/Kustomize, Istio, six CI/CD tools, Nexus and Harbor, Terraform, Ansible, secrets, scanning, Backstage
 9. [Observability & Reliability](/docs/observability/) — Prometheus, Grafana, Loki, OpenTelemetry, k6, chaos, cost
-10. [Automation & Shortcuts](/docs/automation/) — Raycast, PowerToys, Make, schedulers, n8n
-11. [Linux Desktop](/docs/linux-desktop/) — Zen Browser, Webapp Manager, Zathura
-12. [Docs & Notes](/docs/writing/) — Obsidian, Joplin, Markdown, Mermaid, Excalidraw
-13. [Vibe Coding Infra](/docs/vibe-infra/) — Railway, Fly.io, Vercel, Workers, Neon, Supabase, Upstash, R2, Clerk, Resend, Inngest, search, PostHog, payments
-14. [AI Media Tools](/docs/ai-media/) — Raphael, Krea, Magnific, Clipdrop, ElevenLabs
+10. [Security](/docs/security/) — Semgrep, gitleaks, Sigstore, ZAP, Wazuh
+11. [Automation & Shortcuts](/docs/automation/) — Raycast, PowerToys, Make, schedulers, n8n
+12. [Linux Desktop](/docs/linux-desktop/) — Zen Browser, Webapp Manager, Zathura
+13. [Docs & Notes](/docs/writing/) — Obsidian, Joplin, Markdown, Mermaid, Excalidraw
+14. [Vibe Coding Infra](/docs/vibe-infra/) — Railway, Fly.io, Vercel, Workers, Neon, Supabase, Upstash, R2, Clerk, Resend, Inngest, search, PostHog, payments
+15. [AI Media Tools](/docs/ai-media/) — Raphael, Krea, Magnific, Clipdrop, ElevenLabs
 
 ## How to read this
 

@@ -35,7 +35,7 @@ featureGrid:
   weight: 20
   template: feature grid
 
-  title: "Fourteen categories, one hundred and eight tools"
+  title: "Fifteen categories, one hundred and fourteen tools"
   subtitle: "Start wherever your friction is. Read straight through and you go from an empty terminal to a deployed, observable product that takes payments."
 
   items:
@@ -90,7 +90,7 @@ featureGrid:
 
     - title: "Containers & Deploys"
       icon: "deployed_code"
-      description: "Docker and Podman, Kubernetes with Helm, Kustomize, Istio and policy, six CI/CD tools, Nexus, Terraform and Ansible, secrets, scanning, and Backstage."
+      description: "Docker and Podman, Kubernetes with Helm, Kustomize, Istio and policy, six CI/CD tools, Nexus and Harbor, Terraform and Ansible, secrets, scanning, and Backstage."
       ctaLink:
         text: browse
         url: /docs/devops/
@@ -101,6 +101,13 @@ featureGrid:
       ctaLink:
         text: browse
         url: /docs/observability/
+
+    - title: "Security"
+      icon: "shield"
+      description: "Semgrep for source patterns, gitleaks for secrets, Sigstore for signing, ZAP against the running app, and Wazuh watching the hosts."
+      ctaLink:
+        text: browse
+        url: /docs/security/
 
     - title: "Automation & Shortcuts"
       icon: "bolt"
