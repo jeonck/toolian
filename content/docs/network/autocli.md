@@ -1,5 +1,5 @@
 ---
-weight: 7050
+weight: 7060
 title: "AutoCLI"
 description: "Pulling structured data out of Reddit, Hacker News, and dozens of other sites with one command instead of a scraper."
 icon: "download_for_offline"

@@ -78,5 +78,5 @@ Opening a tunnel means **the entire internet can reach your local server.**
 
 ## Next
 
-For pulling data out of sites instead of pushing requests at them →
-[AutoCLI](/docs/network/autocli/)
+A tunnel is for one port; sometimes you want the whole machine →
+[Tailscale](/docs/network/tailscale/)

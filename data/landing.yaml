@@ -35,7 +35,7 @@ featureGrid:
   weight: 20
   template: feature grid
 
-  title: "Fifteen categories, one hundred and twenty tools"
+  title: "Fifteen categories, one hundred and twenty-one tools"
   subtitle: "Start wherever your friction is. Read straight through and you go from an empty terminal to a deployed, observable product that takes payments."
 
   items:
@@ -83,7 +83,7 @@ featureGrid:
 
     - title: "Network & APIs"
       icon: "api"
-      description: "curl, HTTPie, Bruno and Postman, opening a local server to the internet, and AutoCLI for pulling data out of sites."
+      description: "curl, HTTPie, Bruno and Postman, opening a local server to the internet, Tailscale for a private network between your machines, and AutoCLI."
       ctaLink:
         text: browse
         url: /docs/network/
