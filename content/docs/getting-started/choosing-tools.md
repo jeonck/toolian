@@ -1,5 +1,5 @@
 ---
-weight: 1010
+weight: 1020
 title: "Choosing a Tool"
 description: "Six questions worth five minutes before you install anything new."
 icon: "checklist"

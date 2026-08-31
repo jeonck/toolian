@@ -35,13 +35,13 @@ featureGrid:
   weight: 20
   template: feature grid
 
-  title: "Fifteen categories, one hundred and twenty-one tools"
+  title: "Fifteen categories, one hundred and twenty-two tools"
   subtitle: "Start wherever your friction is. Read straight through and you go from an empty terminal to a deployed, observable product that takes payments."
 
   items:
     - title: "Getting Started"
       icon: "rocket_launch"
-      description: "How to pick a tool worth installing, package managers on every OS, and keeping your config in dotfiles."
+      description: "Writing a bootable USB with Rufus, how to pick a tool worth installing, package managers on every OS, and keeping your config in dotfiles."
       ctaLink:
         text: browse
         url: /docs/getting-started/

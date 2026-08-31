@@ -22,7 +22,7 @@ reference; it's the minimum you need to get a tool into your hands.
 
 ## Categories
 
-1. [Getting Started](/docs/getting-started/) — picking tools, package managers, dotfiles
+1. [Getting Started](/docs/getting-started/) — bootable USBs, picking tools, package managers, dotfiles
 2. [Terminal & Shell](/docs/terminal/) — terminal apps, prompts, tmux, fzf, zoxide, hyperfine
 3. [Files & Search](/docs/files/) — ripgrep, fd, bat, eza, jq, ast-grep, MinerU, Docling
 4. [Editors & IDEs](/docs/editor/) — VS Code, Neovim, JetBrains, portable editing skills
