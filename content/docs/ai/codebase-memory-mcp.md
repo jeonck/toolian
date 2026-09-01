@@ -1,5 +1,5 @@
 ---
-weight: 5060
+weight: 5070
 title: "Codebase Memory MCP"
 description: "Indexing a repository into a queryable graph an agent can ask structural questions of, instead of grepping."
 icon: "schema"

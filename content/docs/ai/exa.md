@@ -1,5 +1,5 @@
 ---
-weight: 5110
+weight: 5120
 title: "Exa"
 description: "Web search built for models rather than people — meaning-based retrieval, clean extracted text, and a research endpoint with citations."
 icon: "travel_explore"

@@ -1,5 +1,5 @@
 ---
-weight: 5050
+weight: 5060
 title: "Graft"
 description: "A pre-built map of your repository so the agent stops re-reading the same files on every task."
 icon: "account_tree"

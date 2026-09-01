@@ -1,5 +1,5 @@
 ---
-weight: 5100
+weight: 5110
 title: "Composio"
 description: "Giving an agent authenticated access to real applications — Gmail, Slack, GitHub, Jira — without building an OAuth flow per service."
 icon: "extension"

@@ -103,5 +103,5 @@ ollama run reviewer
 
 ## Next
 
-Whichever agent you use, it works better with a map of the repository →
-[Graft](/docs/ai/graft/)
+An agent with no subscription and no API key, and the trade that pays for it →
+[Freebuff](/docs/ai/freebuff/)

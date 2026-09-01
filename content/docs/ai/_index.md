@@ -9,9 +9,10 @@ draft: false
 ---
 
 AI tooling pays off less for "writing the code for you" and more for **reading context
-and absorbing repetitive work**. The first four pages cover genuinely different
-approaches — a terminal agent, inline completion, an AI-native editor, and running a
-model locally — along with the situations each one suits.
+and absorbing repetitive work**. The first pages cover genuinely different approaches — a
+terminal agent, inline completion, an AI-native editor, running a model locally, and an
+ad-funded agent that costs nothing — along with the situations each one suits, and what
+each one does with your code.
 
 The pages after them are the layer that has grown up around those agents: two ways to
 give one a pre-built map of your repository so it stops re-reading the same files, a

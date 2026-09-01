@@ -35,7 +35,7 @@ featureGrid:
   weight: 20
   template: feature grid
 
-  title: "Fifteen categories, one hundred and twenty-two tools"
+  title: "Fifteen categories, one hundred and twenty-three tools"
   subtitle: "Start wherever your friction is. Read straight through and you go from an empty terminal to a deployed, observable product that takes payments."
 
   items:
@@ -69,7 +69,7 @@ featureGrid:
 
     - title: "AI Coding Tools"
       icon: "auto_awesome"
-      description: "Claude Code, Copilot, Cursor, and Ollama, plus the layer around them: Graft, Codebase Memory MCP, Agency Agents, OpenMontage, HyperFrames, Composio, Exa."
+      description: "Claude Code, Copilot, Cursor, Ollama and Freebuff, plus the layer around them: Graft, Codebase Memory MCP, Agency Agents, OpenMontage, HyperFrames, Composio, Exa."
       ctaLink:
         text: browse
         url: /docs/ai/
