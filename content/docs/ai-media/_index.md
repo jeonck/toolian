@@ -1,7 +1,7 @@
 ---
 weight: 120
 title: "AI Media Tools"
-description: "Browser tools for the images, edits, and voice-overs a project needs — generation, upscaling, one-click retouching, and speech."
+description: "Browser tools for the images, edits, and voice-overs a project needs — generation, upscaling, one-click retouching, and two takes on speech."
 icon: "palette"
 date: "2026-08-23"
 lastmod: "2026-08-23"
@@ -23,6 +23,7 @@ open, drop a file in, get a result.
 | [Magnific](/docs/ai-media/magnific/) | Enlarging an image and inventing the detail that wasn't there |
 | [Clipdrop](/docs/ai-media/clipdrop/) | One-click background removal, object removal, relighting |
 | [ElevenLabs](/docs/ai-media/elevenlabs/) | Turning a script into speech, or cloning a voice |
+| [Gemini TTS](/docs/ai-media/gemini-tts/) | Directing a read — scene, style, and pacing — free in AI Studio |
 
 ## Two things to settle before you publish anything
 

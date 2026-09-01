@@ -35,7 +35,7 @@ featureGrid:
   weight: 20
   template: feature grid
 
-  title: "Fifteen categories, one hundred and twenty-three tools"
+  title: "Fifteen categories, one hundred and twenty-four tools"
   subtitle: "Start wherever your friction is. Read straight through and you go from an empty terminal to a deployed, observable product that takes payments."
 
   items:
@@ -139,7 +139,7 @@ featureGrid:
 
     - title: "AI Media Tools"
       icon: "palette"
-      description: "Browser tools for the assets a project needs: Raphael and Krea for images, Magnific for upscaling, Clipdrop for edits, ElevenLabs for voice."
+      description: "Browser tools for the assets a project needs: Raphael and Krea for images, Magnific for upscaling, Clipdrop for edits, ElevenLabs and Gemini TTS for voice."
       ctaLink:
         text: browse
         url: /docs/ai-media/

@@ -9,7 +9,7 @@ everyday IT work, with a short, practical guide to each one.
 
 - Hugo (extended) + [Lotus Docs](https://github.com/colinwilson/lotusdocs) (a Hugo Module)
 - Built by GitHub Actions and deployed to GitHub Pages
-- 15 categories, 123 pages
+- 15 categories, 124 pages
 
 | Category | Contents |
 |---|---|
@@ -27,7 +27,7 @@ everyday IT work, with a short, practical guide to each one.
 | Linux Desktop | Zen Browser, Webapp Manager, Zathura |
 | Docs & Notes | Obsidian, Joplin, Markdown, Mermaid, Excalidraw, GenOffice, BatiOffice |
 | Vibe Coding Infra | Railway, Fly.io, Vercel, Cloudflare Workers, Postgres, Neon, Supabase, Upstash, R2, Clerk, Resend, Inngest, Meilisearch, PostHog, Sentry, Lemon Squeezy, Groble |
-| AI Media Tools | Raphael, Krea, Magnific, Clipdrop, ElevenLabs |
+| AI Media Tools | Raphael, Krea, Magnific, Clipdrop, ElevenLabs, Gemini TTS |
 
 ## Running locally
 

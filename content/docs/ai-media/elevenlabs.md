@@ -70,7 +70,7 @@ The same API sits behind a lot of the video and agent tooling elsewhere on this 
 local engine that costs nothing. If you're generating a lot of audio programmatically,
 compare the per-character API price against a local model before wiring it in.
 
-## That's the tour
+## Next
 
-You've been through every category. To start again, pick another from the
-[overview](/docs/).
+The same job with direction instead of sliders, free in a browser →
+[Gemini TTS](/docs/ai-media/gemini-tts/)

@@ -36,7 +36,7 @@ reference; it's the minimum you need to get a tool into your hands.
 12. [Linux Desktop](/docs/linux-desktop/) — Zen Browser, Webapp Manager, Zathura
 13. [Docs & Notes](/docs/writing/) — Obsidian, Joplin, Markdown, Mermaid, Excalidraw, GenOffice, BatiOffice
 14. [Vibe Coding Infra](/docs/vibe-infra/) — Railway, Fly.io, Vercel, Workers, Neon, Supabase, Upstash, R2, Clerk, Resend, Inngest, search, PostHog, payments
-15. [AI Media Tools](/docs/ai-media/) — Raphael, Krea, Magnific, Clipdrop, ElevenLabs
+15. [AI Media Tools](/docs/ai-media/) — Raphael, Krea, Magnific, Clipdrop, ElevenLabs, Gemini TTS
 
 ## How to read this
 
