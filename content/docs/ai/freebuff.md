@@ -73,5 +73,5 @@ read the diff, and give the agent a way to verify its own work.
 
 ## Next
 
-Whichever agent you use, it works better with a map of the repository →
-[Graft](/docs/ai/graft/)
+When one agent turns into several, running at the same time →
+[Luvus](/docs/ai/luvus/)
