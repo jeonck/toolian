@@ -75,5 +75,5 @@ dependencies and need to stay out of each other's files.
 
 ## Next
 
-Whichever agents you run, they work better with a map of the repository →
-[Graft](/docs/ai/graft/)
+The same idea as a desktop application, with a worktree per task →
+[Orca](/docs/ai/orca/)
