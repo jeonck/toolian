@@ -140,5 +140,5 @@ terraform import aws_s3_bucket.assets myapp-assets-prod
 
 ## Next
 
-Terraform makes the machine; something has to configure it →
-[Ansible](/docs/devops/ansible/)
+If you'd rather write infrastructure in a real programming language →
+[Pulumi](/docs/devops/pulumi/)

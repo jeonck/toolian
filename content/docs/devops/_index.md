@@ -48,6 +48,7 @@ to roll out.
 | Tool | Job |
 |---|---|
 | [Terraform](/docs/devops/terraform/) | Declare the cloud resources, review the plan before applying |
+| [Pulumi](/docs/devops/pulumi/) | The same model in TypeScript, Python or Go, when the config needs real logic |
 | [Ansible](/docs/devops/ansible/) | Bring servers to a described state over SSH, no agent needed |
 | [Secrets management](/docs/devops/secrets/) | Get credentials out of `.env` files and repositories |
 | [SonarQube](/docs/devops/sonarqube/) | A quality gate on the code you just changed |
