@@ -12,7 +12,8 @@ AI tooling pays off less for "writing the code for you" and more for **reading c
 and absorbing repetitive work**. The first pages cover genuinely different approaches — a
 terminal agent, inline completion, an AI-native editor, a spec-driven one, running a
 model locally, an ad-funded agent that costs nothing, and two mission controls for
-driving several agents at once — along with the situations each one suits, and what each one does with your code.
+driving several agents at once — along with the situations each one suits, and what
+each one does with your code.
 
 The pages after them are the layer that has grown up around those agents: two ways to
 give one a pre-built map of your repository so it stops re-reading the same files, a
