@@ -82,4 +82,4 @@ checking if your team has a standard editor.
 
 ## Next
 
-When code can't leave your machine → [Ollama](/docs/ai/ollama/)
+For an agent that makes you write the spec first → [Kiro](/docs/ai/kiro/)
