@@ -103,5 +103,5 @@ ollama run reviewer
 
 ## Next
 
-An agent with no subscription and no API key, and the trade that pays for it →
-[Freebuff](/docs/ai/freebuff/)
+When the model you want is bigger than the RAM you have →
+[Slotstream](/docs/ai/slotstream/)
