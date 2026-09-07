@@ -92,5 +92,5 @@ it safe to follow.
 
 ## Next
 
-Changes made with AI need version control around them →
-[Git & Collaboration](/docs/git/)
+Search reaches indexed pages; some tasks need the actual browser →
+[Camofox Browser](/docs/ai/camofox/)
