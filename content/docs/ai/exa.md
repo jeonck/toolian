@@ -93,4 +93,4 @@ it safe to follow.
 ## Next
 
 Search reaches indexed pages; some tasks need the actual browser →
-[Camofox Browser](/docs/ai/camofox/)
+[Browser Use](/docs/ai/browser-use/)
