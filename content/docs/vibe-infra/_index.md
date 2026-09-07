@@ -24,6 +24,7 @@ before your launch day traffic finds it for you.
 | Backend + frontend hosting | [Railway](/docs/vibe-infra/railway/) | $5 trial credit, then $1/month — real apps need Hobby at $5 |
 | Multi-region containers | [Fly.io](/docs/vibe-infra/fly-io/) | None — pay-as-you-go from about $2/month |
 | Frontend-only hosting | [Vercel](/docs/vibe-infra/vercel/) | 100 GB bandwidth, non-commercial projects only |
+| The whole stack on one platform | [The Cloudflare Stack](/docs/vibe-infra/cloudflare-stack/) | No bandwidth, seat, or per-project billing |
 | Edge compute and static sites | [Cloudflare Workers](/docs/vibe-infra/cloudflare-workers/) | 100K requests/day, unlimited bandwidth |
 | Database | [Postgres](/docs/vibe-infra/postgres/) | ~0.5 GB on Neon or Supabase, forever |
 | Serverless Postgres with branching | [Neon](/docs/vibe-infra/neon/) | A project, scale-to-zero, a monthly compute budget |

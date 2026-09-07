@@ -88,5 +88,5 @@ shell on Vercel, the long-lived services on Railway.
 
 ## Next
 
-Compute with no cold start, and a free tier that hasn't moved →
-[Cloudflare Workers](/docs/vibe-infra/cloudflare-workers/)
+The argument for putting the whole stack somewhere else →
+[The Cloudflare Stack](/docs/vibe-infra/cloudflare-stack/)
