@@ -63,5 +63,5 @@ including Slotstream on `http://localhost:11434/v1`.
 
 ## Next
 
-An agent with no subscription and no API key, and the trade that pays for it →
-[Freebuff](/docs/ai/freebuff/)
+Local models are one source of tokens; stacked free tiers are another →
+[FreeLLMAPI](/docs/ai/freellmapi/)
