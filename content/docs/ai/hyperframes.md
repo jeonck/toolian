@@ -17,6 +17,10 @@ headless Chrome and FFmpeg.
 It came out of HeyGen and is Apache 2.0. The tagline is the whole design: *write HTML,
 render video, built for agents.*
 
+HyperFrames is inspired by [Remotion](/docs/ai/remotion/), and both render with headless
+Chrome and FFmpeg. The whole difference is the authoring model: Remotion's bet is React
+components, HyperFrames' is plain HTML that humans and agents can both write easily.
+
 ## Why HTML is the right source format here
 
 Every property a video needs — layout, type, colour, easing, layering — is a thing the
@@ -110,4 +114,4 @@ The work stops being a video-editing task and becomes a build step.
 
 ## Next
 
-An agent is only as useful as what it can reach → [Composio](/docs/ai/composio/)
+The framework this one is a reaction to, in React → [Remotion](/docs/ai/remotion/)
