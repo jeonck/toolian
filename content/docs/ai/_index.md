@@ -17,8 +17,9 @@ with the situations each one suits, and what each one does with your code.
 
 The pages after them are the layer that has grown up around those agents: two ways to
 give one a pre-built map of your repository so it stops re-reading the same files, a
-library of ready-made specialist subagents, three projects that point an agent at video
-production, and three services that extend an agent's reach — authenticated access to
+library of ready-made specialist subagents, five skills that hand one some visual taste,
+three projects that point an agent at
+video production, and three services that extend an agent's reach — authenticated access to
 other people's applications, web search built for models rather than for people, and a
 browser server for the sites that offer neither. The last two leave software behind
 entirely: the same skills-and-agents pattern applied to market research, and to trading

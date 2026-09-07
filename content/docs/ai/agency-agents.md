@@ -84,5 +84,5 @@ it's the correct habit for every prompt library you install.
 
 ## Next
 
-The most unexpected thing on this list — an agent that edits video →
-[OpenMontage](/docs/ai/openmontage/)
+Knowledge instead of roles — five skills that give an agent taste →
+[Frontend Design Skills](/docs/ai/frontend-design-skills/)
