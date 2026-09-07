@@ -72,7 +72,7 @@ npm run dev        # Node.js 24+
 
 Electron, React, TypeScript, whisper.cpp, and sherpa-onnx underneath.
 
-## That's the tour
+## Next
 
-You've been through every category. To start again, pick another from the
-[overview](/docs/).
+The other desktop app here, and the one an agent can drive →
+[Drift](/docs/ai-media/drift/)

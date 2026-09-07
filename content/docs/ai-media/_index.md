@@ -1,7 +1,7 @@
 ---
 weight: 120
 title: "AI Media Tools"
-description: "The images, edits, and voice a project needs — generation, upscaling, one-click retouching, two takes on speech, and dictation that runs offline."
+description: "The images, edits, voice, and video a project needs — generation, upscaling, retouching, two takes on speech, offline dictation, and an editor an agent can drive."
 icon: "palette"
 date: "2026-08-23"
 lastmod: "2026-08-23"
@@ -14,8 +14,8 @@ saved it at, a voice-over for a demo. None of that is your job, and all of it la
 your desk anyway.
 
 Six of these work from a browser tab — no installs, nothing to configure: open, drop a
-file in, get a result. The last is a desktop app, and it runs the other direction:
-turning what you say into text.
+file in, get a result. The last two are desktop apps that run the other direction:
+turning what you say into text, and letting an agent work an editing timeline.
 
 | Site | Use it for |
 |---|---|
@@ -26,6 +26,7 @@ turning what you say into text.
 | [ElevenLabs](/docs/ai-media/elevenlabs/) | Turning a script into speech, or cloning a voice |
 | [Gemini TTS](/docs/ai-media/gemini-tts/) | Directing a read — scene, style, and pacing — free in AI Studio |
 | [OpenWhispr](/docs/ai-media/openwhispr/) | Dictating into any app from a hotkey, offline if you want |
+| [Drift](/docs/ai-media/drift/) | Editing video, with an MCP server so an agent can edit too |
 
 ## Two things to settle before you publish anything
 
