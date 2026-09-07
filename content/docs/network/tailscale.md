@@ -115,5 +115,5 @@ by hand, you know what an afternoon here is worth.
 
 ## Next
 
-For pulling data out of sites instead of pushing requests at them →
-[AutoCLI](/docs/network/autocli/)
+When both devices are already on the same network, there's a shorter path →
+[LocalSend](/docs/network/localsend/)

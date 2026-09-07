@@ -100,5 +100,5 @@ surprising number can be traced rather than argued about.
 
 ## Next
 
-With files under control, on to where you write the code →
-[Editors & IDEs](/docs/editor/)
+Reading a PDF is one job; operating on one is another →
+[Stirling PDF](/docs/files/stirling-pdf/)
