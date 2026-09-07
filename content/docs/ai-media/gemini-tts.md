@@ -105,7 +105,7 @@ For a demo video, a prototype, or an experiment with tone, AI Studio is the fast
 from a sentence to audio you can listen to — and it costs nothing to find out whether the
 read works.
 
-## That's the tour
+## Next
 
-You've been through every category. To start again, pick another from the
-[overview](/docs/).
+Every tool so far makes media out of text. One goes the other way →
+[OpenWhispr](/docs/ai-media/openwhispr/)

@@ -1,7 +1,7 @@
 ---
 weight: 120
 title: "AI Media Tools"
-description: "Browser tools for the images, edits, and voice-overs a project needs — generation, upscaling, one-click retouching, and two takes on speech."
+description: "The images, edits, and voice a project needs — generation, upscaling, one-click retouching, two takes on speech, and dictation that runs offline."
 icon: "palette"
 date: "2026-08-23"
 lastmod: "2026-08-23"
@@ -13,8 +13,9 @@ page, a screenshot with the clutter removed, a thumbnail at twice the resolution
 saved it at, a voice-over for a demo. None of that is your job, and all of it lands on
 your desk anyway.
 
-These five sites cover that work from a browser tab. No installs, nothing to configure —
-open, drop a file in, get a result.
+Six of these work from a browser tab — no installs, nothing to configure: open, drop a
+file in, get a result. The last is a desktop app, and it runs the other direction:
+turning what you say into text.
 
 | Site | Use it for |
 |---|---|
@@ -24,6 +25,7 @@ open, drop a file in, get a result.
 | [Clipdrop](/docs/ai-media/clipdrop/) | One-click background removal, object removal, relighting |
 | [ElevenLabs](/docs/ai-media/elevenlabs/) | Turning a script into speech, or cloning a voice |
 | [Gemini TTS](/docs/ai-media/gemini-tts/) | Directing a read — scene, style, and pacing — free in AI Studio |
+| [OpenWhispr](/docs/ai-media/openwhispr/) | Dictating into any app from a hotkey, offline if you want |
 
 ## Two things to settle before you publish anything
 
