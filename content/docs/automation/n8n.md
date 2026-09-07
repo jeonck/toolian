@@ -98,4 +98,4 @@ return items.map(item => ({
 
 ## Next
 
-To write down what you automated → [Linux Desktop](/docs/linux-desktop/)
+For the same canvas idea, with LLMs as the nodes → [Flowise](/docs/automation/flowise/)

@@ -24,19 +24,20 @@ reference; it's the minimum you need to get a tool into your hands.
 
 1. [Getting Started](/docs/getting-started/) — bootable USBs, picking tools, package managers, dotfiles
 2. [Terminal & Shell](/docs/terminal/) — terminal apps, prompts, tmux, fzf, zoxide, hyperfine
-3. [Files & Search](/docs/files/) — ripgrep, fd, bat, eza, jq, ast-grep, MinerU, Docling
+3. [Files & Search](/docs/files/) — ripgrep, fd, bat, eza, jq, ast-grep, MinerU, Docling, Stirling PDF
 4. [Editors & IDEs](/docs/editor/) — VS Code, Neovim, JetBrains, portable editing skills
-5. [AI Coding Tools](/docs/ai/) — Claude Code, Copilot, Cursor, local LLMs, Freebuff, agent context, subagents, tools and search
+5. [AI Coding Tools](/docs/ai/) — Claude Code, Copilot, Cursor, Kiro, local LLMs, Open WebUI, mission controls, design skills, subagents, browsers, tools and search
 6. [Git & Collaboration](/docs/git/) — Git workflow, gh, Gitea, Forgejo, GitLab, lazygit, delta, hunk, pre-commit
-7. [Network & APIs](/docs/network/) — curl, HTTPie, Bruno, tunnelling, Tailscale, AutoCLI
+7. [Network & APIs](/docs/network/) — curl, HTTPie, Bruno, tunnelling, Tailscale, LocalSend, AutoCLI
 8. [Containers & Deploys](/docs/devops/) — Docker, Podman, Kubernetes, Helm/Kustomize, Istio, six CI/CD tools, Nexus and Harbor, Terraform, Ansible, secrets, scanning, Backstage
 9. [Observability & Reliability](/docs/observability/) — Prometheus, Grafana, Loki, OpenTelemetry, k6, chaos, cost
 10. [Security](/docs/security/) — Semgrep, gitleaks, Sigstore, ZAP, Wazuh
-11. [Automation & Shortcuts](/docs/automation/) — Raycast, PowerToys, Make, schedulers, n8n
+11. [Automation & Shortcuts](/docs/automation/) — Raycast, PowerToys, Make, schedulers, n8n, Flowise
 12. [Linux Desktop](/docs/linux-desktop/) — Zen Browser, Webapp Manager, Zathura
 13. [Docs & Notes](/docs/writing/) — Obsidian, Joplin, Markdown, Mermaid, Excalidraw, GenOffice, BatiOffice
 14. [Vibe Coding Infra](/docs/vibe-infra/) — Railway, Fly.io, Vercel, Workers, Neon, Supabase, Upstash, R2, Clerk, Resend, Inngest, search, PostHog, payments
-15. [AI Media Tools](/docs/ai-media/) — Raphael, Krea, Magnific, Clipdrop, ElevenLabs, Gemini TTS
+15. [AI Media Tools](/docs/ai-media/) — Raphael, Krea, Magnific, Clipdrop, ElevenLabs, Gemini TTS, OmniVoice, OpenWhispr, Drift
+16. [Self-Hosted](/docs/self-hosted/) — Immich, Puter
 
 ## How to read this
 

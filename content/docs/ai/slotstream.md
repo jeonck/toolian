@@ -111,5 +111,5 @@ and Windows are stated plans, not shipped.
 
 ## Next
 
-An agent with no subscription and no API key, and the trade that pays for it →
-[Freebuff](/docs/ai/freebuff/)
+A model on a port still needs somewhere to talk to it →
+[Open WebUI](/docs/ai/open-webui/)

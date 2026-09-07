@@ -121,7 +121,6 @@ video that should rebuild itself.
 - **An agent is fast at the tedious half** — importing, syncing, applying the same
   treatment to forty clips, generating captions. Taste in the cut is still yours.
 
-## That's the tour
+## Next
 
-You've been through every category. To start again, pick another from the
-[overview](/docs/).
+Services worth running on your own hardware → [Self-Hosted](/docs/self-hosted/)
