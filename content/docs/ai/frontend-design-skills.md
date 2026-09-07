@@ -123,5 +123,5 @@ your project wants something else.
 
 ## Next
 
-The most unexpected thing on this list — an agent that edits video →
-[OpenMontage](/docs/ai/openmontage/)
+Those are other people's expertise packaged. Now package your own →
+[book-to-skill](/docs/ai/book-to-skill/)
