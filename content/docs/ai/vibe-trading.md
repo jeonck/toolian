@@ -91,5 +91,5 @@ answer means anything.
 
 ## Next
 
-Changes made with AI need version control around them →
-[Git & Collaboration](/docs/git/)
+The same pipeline with nobody asking permission before the order →
+[AutoHedge](/docs/ai/autohedge/)
