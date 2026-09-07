@@ -104,5 +104,5 @@ the judgement about where to put them to you.
 
 ## Next
 
-Changes made with AI need version control around them →
-[Git & Collaboration](/docs/git/)
+The same skills-and-agents pattern, pointed at markets →
+[Vibe-Trading](/docs/ai/vibe-trading/)
