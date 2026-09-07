@@ -107,5 +107,5 @@ read works.
 
 ## Next
 
-Every tool so far makes media out of text. One goes the other way →
-[OpenWhispr](/docs/ai-media/openwhispr/)
+The same job on your own GPU, in 600 languages →
+[OmniVoice](/docs/ai-media/omnivoice/)
