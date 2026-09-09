@@ -4,7 +4,7 @@ title: "Flowise"
 description: "Building an AI agent or RAG pipeline by dragging nodes onto a canvas instead of writing the glue code."
 icon: "account_tree"
 date: "2026-09-07"
-lastmod: "2026-09-07"
+lastmod: "2026-09-09"
 draft: false
 ---
 
@@ -63,4 +63,5 @@ in fifty lines of Python is easier to test and deploy. Prototype here; port what
 
 ## Next
 
-To write down what you automated → [Linux Desktop](/docs/linux-desktop/)
+For a narrower automation that publishes on a schedule →
+[Ddalkkak Threads Factory](/docs/automation/ddalkkak-threads/)
