@@ -29,6 +29,7 @@ work an editing timeline.
 | [OmniVoice](/docs/ai-media/omnivoice/) | Cloning or designing a voice locally, in 600+ languages |
 | [OpenWhispr](/docs/ai-media/openwhispr/) | Dictating into any app from a hotkey, offline if you want |
 | [Drift](/docs/ai-media/drift/) | Editing video, with an MCP server so an agent can edit too |
+| [Best in Class](/docs/ai-media/best-in-class-2026-09/) | Checking which model leads a task before you commit to one |
 
 ## Two things to settle before you publish anything
 
