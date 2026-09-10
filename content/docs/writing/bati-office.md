@@ -65,5 +65,5 @@ buried in its text.
 
 ## Next
 
-Everything so far builds the thing. One category left, on putting it online →
-[Vibe Coding Infra](/docs/vibe-infra/)
+One more writing tool, for drafts that came out of a model →
+[imnotai](/docs/writing/imnotai/)
