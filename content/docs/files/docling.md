@@ -100,5 +100,5 @@ surprising number can be traced rather than argued about.
 
 ## Next
 
-Reading a PDF is one job; operating on one is another →
-[Stirling PDF](/docs/files/stirling-pdf/)
+The same job traded the other way — every format, less fidelity →
+[MarkItDown](/docs/files/markitdown/)

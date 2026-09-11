@@ -69,5 +69,5 @@ files — OCR everything, compress, then split by bookmark, on a schedule.
 
 ## Next
 
-With files under control, on to where you write the code →
-[Editors & IDEs](/docs/editor/)
+Every tool so far assumes a document should become text. One disagrees →
+[PixelRAG](/docs/files/pixelrag/)
