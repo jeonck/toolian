@@ -107,5 +107,5 @@ costs nothing. Running the loop costs whatever is in the wallet.
 
 ## Next
 
-Changes made with AI need version control around them →
-[Git & Collaboration](/docs/git/)
+None of that matters if you can't tell whether the output is any good →
+[promptfoo](/docs/ai/promptfoo/)

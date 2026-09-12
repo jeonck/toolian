@@ -25,3 +25,8 @@ rather than for people, and two layers of browser for the sites that offer neith
 last two leave software behind entirely: the same skills-and-agents pattern applied to
 market research, and to trading itself. None of them replace the agent; they change what
 it starts each task knowing, and what it can do.
+
+The category closes on the question all of that eventually runs into: how do you know the
+output is any good? Three answers — a command-line test matrix that also red-teams your
+app, a pytest suite with model-quality thresholds that fail the build, and self-hosted
+tracing that scores what real users actually got.
