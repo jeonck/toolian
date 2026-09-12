@@ -110,4 +110,4 @@ and survive after the agent's session is gone.
 
 ## Next
 
-When code can't leave your machine → [Ollama](/docs/ai/ollama/)
+For the same terminal-agent shape from Meta → [Muse Code](/docs/ai/muse-code/)
