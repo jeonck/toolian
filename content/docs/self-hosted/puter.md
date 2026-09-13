@@ -62,5 +62,5 @@ system, storage, and hosting are already there.
 
 ## That's the tour
 
-You've been through every category. To start again, pick another from the
-[overview](/docs/).
+Self-hosting means owning the hardware too — including the evening it won't boot →
+[IP KVM](/docs/self-hosted/ip-kvm/)

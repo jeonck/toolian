@@ -37,7 +37,7 @@ reference; it's the minimum you need to get a tool into your hands.
 13. [Docs & Notes](/docs/writing/) — Obsidian, Joplin, Markdown, Mermaid, Excalidraw, GenOffice, BatiOffice, imnotai
 14. [Vibe Coding Infra](/docs/vibe-infra/) — Railway, Fly.io, Vercel, Workers, Neon, Supabase, Upstash, R2, Clerk, Resend, Inngest, search, PostHog, payments
 15. [AI Media Tools](/docs/ai-media/) — Raphael, Krea, Magnific, Clipdrop, ElevenLabs, Gemini TTS, OmniVoice, OpenWhispr, Drift, a best-in-class snapshot
-16. [Self-Hosted](/docs/self-hosted/) — Immich, Puter
+16. [Self-Hosted](/docs/self-hosted/) — Immich, Puter, IP KVM
 
 ## How to read this
 
