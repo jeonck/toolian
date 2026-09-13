@@ -89,5 +89,4 @@ Squeezy everywhere else.
 
 ## Next
 
-One category left, on the assets a project needs and has no budget for →
-[AI Media Tools](/docs/ai-media/)
+Korean latency and won invoices instead of a US platform → [iwinv](/docs/vibe-infra/iwinv/)

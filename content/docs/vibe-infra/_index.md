@@ -39,6 +39,7 @@ before your launch day traffic finds it for you.
 | Error monitoring | [Sentry](/docs/vibe-infra/sentry/) | 5,000 errors/month, 1 user |
 | Payments, global | [Lemon Squeezy](/docs/vibe-infra/lemon-squeezy/) | $0 up front, 5% + $0.50 per sale |
 | Payments, Korea | [Groble](/docs/vibe-infra/groble/) | $0 up front, 4.4% per sale, no business registration |
+| Hosting, Korea | [iwinv](/docs/vibe-infra/iwinv/) | Seoul VMs from ₩5,600/month, hourly metered, 3-month trial |
 
 The two payment pages are the odd ones out: nothing is charged until you make a sale, so
 they are free in the sense that matters — you can set them up before you have a single
