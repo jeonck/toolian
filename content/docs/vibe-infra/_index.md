@@ -37,6 +37,7 @@ before your launch day traffic finds it for you.
 | Search | [Meilisearch](/docs/vibe-infra/meilisearch/) | Free to self-host; paid cloud |
 | Product analytics and flags | [PostHog](/docs/vibe-infra/posthog/) | 1M events/month, plus replay and flag allowances |
 | Error monitoring | [Sentry](/docs/vibe-infra/sentry/) | 5,000 errors/month, 1 user |
+| Real-time voice agents | [LiveKit](/docs/vibe-infra/livekit/) | 1,000 agent minutes/month; BAA is Enterprise-only |
 | Payments, global | [Lemon Squeezy](/docs/vibe-infra/lemon-squeezy/) | $0 up front, 5% + $0.50 per sale |
 | Payments, Korea | [Groble](/docs/vibe-infra/groble/) | $0 up front, 4.4% per sale, no business registration |
 | Hosting, Korea | [iwinv](/docs/vibe-infra/iwinv/) | Seoul VMs from ₩5,600/month, hourly metered, 3-month trial |

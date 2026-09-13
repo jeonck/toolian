@@ -103,5 +103,4 @@ everything else can wait for you to open the dashboard.
 
 ## Next
 
-The infrastructure works. Now get paid →
-[Lemon Squeezy](/docs/vibe-infra/lemon-squeezy/)
+If the product talks → [LiveKit](/docs/vibe-infra/livekit/)
