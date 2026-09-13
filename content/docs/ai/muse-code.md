@@ -96,4 +96,4 @@ your employer's monorepo this week.
 
 ## Next
 
-When code can't leave your machine → [Ollama](/docs/ai/ollama/)
+Before pulling a local model, check what your machine can run → [llmfit](/docs/ai/llmfit/)

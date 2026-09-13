@@ -42,6 +42,9 @@ cat error.log | ollama run llama3.2 "Find the root cause in this log"
 
 ## Choosing a model
 
+[llmfit](/docs/ai/llmfit/) does this table for your actual hardware; the numbers below are
+the rule of thumb.
+
 | Parameter size | Rough memory | Use |
 |---|---|---|
 | 1–3B | 4 GB | Summaries, classification, simple transforms |
