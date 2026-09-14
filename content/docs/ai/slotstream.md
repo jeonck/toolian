@@ -111,5 +111,4 @@ and Windows are stated plans, not shipped.
 
 ## Next
 
-A model on a port still needs somewhere to talk to it →
-[Open WebUI](/docs/ai/open-webui/)
+The same trick aimed at phone-class memory instead → [edge0](/docs/ai/edge0/)
