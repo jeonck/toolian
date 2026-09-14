@@ -123,5 +123,4 @@ video that should rebuild itself.
 
 ## Next
 
-Which model currently leads each of these tasks →
-[Best in Class, September 2026](/docs/ai-media/best-in-class-2026-09/)
+Generating the footage rather than cutting it → [Google Flow](/docs/ai-media/flow/)
