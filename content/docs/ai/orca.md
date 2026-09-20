@@ -84,5 +84,5 @@ which -a orca
 
 ## Next
 
-Whichever agents you run, they work better with a map of the repository →
-[Graft](/docs/ai/graft/)
+The same job one layer down, owning the terminals themselves →
+[herdr](/docs/ai/herdr/)
