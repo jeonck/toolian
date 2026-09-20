@@ -169,5 +169,5 @@ plainly:
 
 ## Next
 
-An agent with no subscription and no API key, and the trade that pays for it →
-[Freebuff](/docs/ai/freebuff/)
+The other extreme — a model small enough to ship inside the app →
+[Needle](/docs/ai/needle/)
