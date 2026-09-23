@@ -153,4 +153,5 @@ ballot, open weights or best overall.
 
 ## Next
 
-Services worth running on your own hardware → [Self-Hosted](/docs/self-hosted/)
+The same question restricted to models you can download and licence →
+[Open-Weight Picks](/docs/ai-media/open-weights-2026-09/)

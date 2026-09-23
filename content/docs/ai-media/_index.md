@@ -31,6 +31,7 @@ work an editing timeline.
 | [Drift](/docs/ai-media/drift/) | Editing video, with an MCP server so an agent can edit too |
 | [Google Flow](/docs/ai-media/flow/) | Generating multi-shot video from your own photos and clips |
 | [Best in Class](/docs/ai-media/best-in-class-2026-09/) | Checking which model leads a task before you commit to one |
+| [Open-Weight Picks](/docs/ai-media/open-weights-2026-09/) | Picking a model you can download, run and ship on |
 
 ## Two things to settle before you publish anything
 
