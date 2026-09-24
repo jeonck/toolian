@@ -153,4 +153,5 @@ before you push a fork.
 
 ## Next
 
-To write down what you automated → [Linux Desktop](/docs/linux-desktop/)
+A scheduler that plans the whole task, not just when it runs →
+[OpenWorker](/docs/automation/openworker/)
