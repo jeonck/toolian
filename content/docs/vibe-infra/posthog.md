@@ -87,5 +87,4 @@ different questions, three tools, and only the last one changes what you build n
 
 ## Next
 
-When something breaks, you want to hear it from a tool, not a user →
-[Sentry](/docs/vibe-infra/sentry/)
+To know which link brought them in the first place → [Dub](/docs/vibe-infra/dub/)

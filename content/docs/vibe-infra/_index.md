@@ -36,6 +36,7 @@ before your launch day traffic finds it for you.
 | Background jobs and cron | [Inngest](/docs/vibe-infra/inngest/) | Free indefinitely at side-project volume |
 | Search | [Meilisearch](/docs/vibe-infra/meilisearch/) | Free to self-host; paid cloud |
 | Product analytics and flags | [PostHog](/docs/vibe-infra/posthog/) | 1M events/month, plus replay and flag allowances |
+| Links and attribution | [Dub](/docs/vibe-infra/dub/) | Paid from $90/month — or self-host the AGPLv3 source |
 | Error monitoring | [Sentry](/docs/vibe-infra/sentry/) | 5,000 errors/month, 1 user |
 | Real-time voice agents | [LiveKit](/docs/vibe-infra/livekit/) | 1,000 agent minutes/month; BAA is Enterprise-only |
 | Payments, global | [Lemon Squeezy](/docs/vibe-infra/lemon-squeezy/) | $0 up front, 5% + $0.50 per sale |
