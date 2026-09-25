@@ -73,5 +73,4 @@ management and an architecture that scales.
 
 ## Next
 
-Changes made with AI need version control around them →
-[Git & Collaboration](/docs/git/)
+When one agent becomes a dozen and you need a control plane → [Paperclip](/docs/ai/paperclip/)

@@ -66,19 +66,25 @@ A `dub-links` server exists separately for link management.
 
 ## What it costs
 
-| Plan | Price | New links/mo | Domains | Users | Analytics retention |
-|---|---|---|---|---|---|
-| Business | $90/mo | 10K | 100 | 10 | 3 years |
-| Advanced | $300/mo | 50K | 250 | 20 | 5 years |
-| Enterprise | Custom | Unlimited | Unlimited | Unlimited | Unlimited |
+**There is a free plan**, no credit card: 1,000 tracked events a month, up to 3 custom
+domains, unlimited destination edits, and the full analytics breakdown (geo, device,
+browser, referrer). The API works on it at 60 requests/minute — enough to build against.
 
-API access and conversion tracking are on every paid plan (rate limits 1,200/min →
-3,000/min); SSO is Enterprise only. Partner payout ceilings scale $2.5K → $15K →
-unlimited per month.
+| Plan | Tracked events/mo | API rate limit | Notable unlock |
+|---|---|---|---|
+| Free | 1,000 | 60/min | 3 domains, no analytics API |
+| Pro | 50,000 | 600/min | Analytics API, 10 domains |
+| Business | 250,000 | 1,200/min | Events stream, webhooks, **Dub Partners** |
+| Advanced | 1,000,000 | 3,000/min | Higher payout ceilings |
+| Enterprise | Custom | Custom | SSO/SAML, domain registration API |
 
-Note the shape of that table: unlike most of this category, Dub's entry price is a real
-monthly bill, not a free tier you grow out of. Check dub.co for current free/trial terms
-before you plan around it.
+Business is $90/mo and Advanced $300/mo; partner payout ceilings run $2.5K → $15K →
+unlimited per month. A one-off 14-day trial unlocks paid features with its own caps
+(100 links/mo, 5,000 analytics events, 50 partners, $500/mo payouts).
+
+The jump to notice is **Dub Partners starting at Business ($90/mo)**. Short links,
+analytics, and conversion tracking are reachable from free; the affiliate program is the
+part you pay real money for.
 
 ## Self-hosting
 
@@ -98,7 +104,7 @@ against the Bitly problem repeating.
 |---|---|
 | Product links you generate programmatically | One personal link in a bio — use anything free |
 | Knowing which channel produced revenue, not clicks | Pure web analytics — [PostHog](/docs/vibe-infra/posthog/) already does that |
-| Launching a referral or affiliate program without building one | Pre-revenue side projects on a $0 budget |
+| Launching a referral or affiliate program without building one | High link volume on the free plan — 1,000 events goes fast |
 | Mobile apps needing deep links that survive install | Teams already deep in an enterprise martech stack |
 
 ## Next
