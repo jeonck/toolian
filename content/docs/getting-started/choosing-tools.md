@@ -41,6 +41,34 @@ of the regret.
 - **Undocumented aliases.** A pile of aliases only you know leaves you helpless on
   anyone else's machine. Scripts you share should use the real commands.
 
+## Where to find candidates
+
+The six questions above assume you already have something to evaluate. When you don't,
+the usual sources, roughly in order of how much you should trust them:
+
+| Source | Good for | Watch out for |
+|---|---|---|
+| A colleague who already uses it daily | The honest version, including the annoyances | Sample size of one |
+| The tool's own GitHub issues | What breaks in real use, and whether anyone answers | Survivorship — happy users don't file issues |
+| Awesome-* lists and `topic:` search on GitHub | Breadth in a narrow niche | Unmaintained entries linger for years |
+| Directories like [Startup Stash](https://startupstash.com/) | A fast map of an unfamiliar category — CRM, analytics, compliance | **Listings are paid.** Ranking is placement, not judgement |
+| Product Hunt and HN "Show" posts | Discovering something new exists | Launch-day enthusiasm, no long-term signal |
+
+[Startup Stash](https://startupstash.com/) is worth naming because it covers the SaaS
+categories a developer-focused site like this one doesn't — sales tooling, GDPR
+compliance, e-commerce platforms, video conferencing. It's organised by category, so
+"what are the five things people use for X" takes a minute rather than an afternoon.
+
+But read it as a **candidate list, not a recommendation**. Vendors pay to be listed and
+to be featured, so position on the page reflects a marketing budget rather than how the
+thing performs on the six questions above. That's true of essentially every directory in
+this space; it's only a problem if you forget it. Use the directory to build the
+shortlist, then do the evaluation yourself.
+
+The same caution applies in reverse to this site. Toolian is one person's read on a
+few hundred tools — no money changes hands, but it is still a set of opinions, not a
+survey. Anything you're about to depend on deserves half an hour of your own.
+
 ## Next
 
 With a bar in place, move on to
