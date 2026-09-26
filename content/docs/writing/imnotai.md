@@ -124,5 +124,4 @@ Pairs naturally with [Markdown](/docs/writing/markdown/) for drafting and
 
 ## Next
 
-Everything so far builds the thing. One category left, on putting it online →
-[Vibe Coding Infra](/docs/vibe-infra/)
+When the document to produce is a whole book → [Book Writer](/docs/writing/book-writer/)
