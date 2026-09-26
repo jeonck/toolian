@@ -1,5 +1,5 @@
 ---
-weight: 12080
+weight: 150900
 title: "Drift"
 description: "A free desktop video editor with an MCP server, so an agent can work the timeline beside you."
 icon: "movie_edit"

@@ -1,5 +1,5 @@
 ---
-weight: 11110
+weight: 141200
 title: "Resend"
 description: "Transactional email with an API you can call in one line — and the DNS records that decide whether it lands in the inbox."
 icon: "mail"

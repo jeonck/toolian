@@ -1,5 +1,5 @@
 ---
-weight: 1040
+weight: 10400
 title: "Dotfiles"
 description: "Collecting your shell, editor, and Git configuration into one Git repository you can restore anywhere."
 icon: "settings_backup_restore"

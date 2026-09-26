@@ -1,5 +1,5 @@
 ---
-weight: 5140
+weight: 52900
 title: "Vibe-Trading"
 description: "An open-source research workspace where finance questions become runnable backtests — 90 skills, agent teams, and an audit trail."
 icon: "insights"

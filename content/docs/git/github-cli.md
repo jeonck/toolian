@@ -1,5 +1,5 @@
 ---
-weight: 6020
+weight: 60200
 title: "GitHub CLI (gh)"
 description: "Creating, reviewing, and merging PRs, managing issues, and watching Actions from the terminal."
 icon: "terminal"

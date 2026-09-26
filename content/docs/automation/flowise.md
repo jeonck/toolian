@@ -1,5 +1,5 @@
 ---
-weight: 9060
+weight: 110600
 title: "Flowise"
 description: "Building an AI agent or RAG pipeline by dragging nodes onto a canvas instead of writing the glue code."
 icon: "account_tree"

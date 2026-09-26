@@ -1,5 +1,5 @@
 ---
-weight: 8140
+weight: 81500
 title: "SonarQube"
 description: "A quality gate in the pipeline — bugs, smells, coverage, and duplication measured on the code you just changed."
 icon: "rule"

@@ -1,5 +1,5 @@
 ---
-weight: 4030
+weight: 40300
 title: "JetBrains IDEs"
 description: "Getting the most out of the refactoring and debugging in IntelliJ, PyCharm, and GoLand."
 icon: "build"

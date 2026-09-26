@@ -1,5 +1,5 @@
 ---
-weight: 12095
+weight: 151200
 title: "Open-Weight Picks"
 description: "The same question as the best-in-class snapshot, restricted to models you can download — where the licence matters more than the benchmark, and half the names in circulation are wrong."
 icon: "lock_open"

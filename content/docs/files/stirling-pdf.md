@@ -1,5 +1,5 @@
 ---
-weight: 3090
+weight: 31000
 title: "Stirling PDF"
 description: "Fifty-plus PDF operations — merge, split, OCR, redact, sign, convert — running on your own machine instead of a stranger's upload form."
 icon: "picture_as_pdf"

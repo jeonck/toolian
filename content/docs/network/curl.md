@@ -1,5 +1,5 @@
 ---
-weight: 7010
+weight: 70100
 title: "curl"
 description: "The HTTP client that exists everywhere. Only the flags you actually use."
 icon: "cable"

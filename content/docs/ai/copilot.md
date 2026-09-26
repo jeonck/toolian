@@ -1,5 +1,5 @@
 ---
-weight: 5020
+weight: 50200
 title: "GitHub Copilot"
 description: "Inline completion inside your editor. Biggest payoff on repetitive code."
 icon: "auto_fix_high"

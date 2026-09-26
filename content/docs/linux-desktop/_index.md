@@ -1,5 +1,5 @@
 ---
-weight: 95
+weight: 120
 title: "Linux Desktop"
 description: "The desktop side of a Linux workstation — a browser that manages tabs for you, websites as real apps, and a keyboard-driven PDF reader."
 icon: "desktop_windows"

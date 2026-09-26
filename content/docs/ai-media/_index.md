@@ -1,5 +1,5 @@
 ---
-weight: 120
+weight: 150
 title: "AI Media Tools"
 description: "The images, edits, voice, and video a project needs — generation, upscaling, retouching, three takes on speech, offline dictation, and an editor an agent can drive."
 icon: "palette"

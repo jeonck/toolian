@@ -1,5 +1,5 @@
 ---
-weight: 5042
+weight: 50600
 title: "llmfit"
 description: "One command that reads your RAM, GPU, and VRAM and tells you which local models will actually run — before you download 20 GB to find out."
 icon: "straighten"

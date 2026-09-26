@@ -1,5 +1,5 @@
 ---
-weight: 7055
+weight: 70600
 title: "LocalSend"
 description: "AirDrop that doesn't care what the other device is — files between phone and laptop over your own network, no cloud in the middle."
 icon: "share"

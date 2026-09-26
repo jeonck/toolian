@@ -1,5 +1,5 @@
 ---
-weight: 8540
+weight: 90400
 title: "OpenTelemetry"
 description: "One vendor-neutral way to emit traces, metrics, and logs — instrument once, and change backends without touching the code."
 icon: "sensors"

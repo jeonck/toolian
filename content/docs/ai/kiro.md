@@ -1,5 +1,5 @@
 ---
-weight: 5035
+weight: 50400
 title: "Kiro"
 description: "AWS's agentic IDE and CLI, built around writing the spec before the code."
 icon: "checklist"

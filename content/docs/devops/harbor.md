@@ -1,5 +1,5 @@
 ---
-weight: 8160
+weight: 81700
 title: "Harbor"
 description: "A container registry you run yourself — with scanning, signing, replication, and quotas built in rather than bolted on."
 icon: "anchor"

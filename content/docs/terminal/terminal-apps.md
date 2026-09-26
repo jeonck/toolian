@@ -1,5 +1,5 @@
 ---
-weight: 2010
+weight: 20100
 title: "Choosing a Terminal"
 description: "iTerm2, Windows Terminal, Ghostty, Warp — what differs, and what to change first."
 icon: "web_asset"

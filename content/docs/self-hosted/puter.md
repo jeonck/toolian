@@ -1,5 +1,5 @@
 ---
-weight: 13020
+weight: 160200
 title: "Puter"
 description: "A desktop — files, notepad, spreadsheet, app store — running in a browser tab, on a server you control."
 icon: "desktop_windows"

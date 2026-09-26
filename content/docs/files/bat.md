@@ -1,5 +1,5 @@
 ---
-weight: 3030
+weight: 30300
 title: "bat"
 description: "A cat replacement with syntax highlighting, line numbers, and Git change markers."
 icon: "description"

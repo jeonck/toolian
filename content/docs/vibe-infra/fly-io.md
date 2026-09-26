@@ -1,5 +1,5 @@
 ---
-weight: 11020
+weight: 140200
 title: "Fly.io"
 description: "Running your container in several regions at once, close to users — and what it costs now that the free tier is gone."
 icon: "flight"

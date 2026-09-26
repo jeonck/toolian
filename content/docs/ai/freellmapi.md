@@ -1,5 +1,5 @@
 ---
-weight: 5048
+weight: 51100
 title: "FreeLLMAPI"
 description: "Stacking thirty-four providers' free tiers behind one OpenAI-compatible endpoint — with the Docker and Podman startup that actually works."
 icon: "call_split"

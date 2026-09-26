@@ -1,5 +1,5 @@
 ---
-weight: 10020
+weight: 130200
 title: "Joplin"
 description: "Open-source notes with end-to-end encrypted sync, a notebook hierarchy, and an external editor of your choosing."
 icon: "note_alt"

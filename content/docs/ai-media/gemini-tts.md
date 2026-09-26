@@ -1,5 +1,5 @@
 ---
-weight: 12060
+weight: 150600
 title: "Gemini TTS"
 description: "Directing a voice in Google AI Studio — scene, style, and pacing as instructions, free in the browser and available as an API."
 icon: "graphic_eq"

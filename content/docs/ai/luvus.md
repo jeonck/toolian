@@ -1,5 +1,5 @@
 ---
-weight: 5055
+weight: 51400
 title: "Luvus"
 description: "A terminal mission control that runs, watches, resumes, and orchestrates several AI coding agents in one place."
 icon: "dashboard"

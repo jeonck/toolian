@@ -1,5 +1,5 @@
 ---
-weight: 85
+weight: 90
 title: "Observability & Reliability"
 description: "Metrics, dashboards, logs, traces, and load tests — knowing what the system is doing before a user tells you."
 icon: "monitoring"

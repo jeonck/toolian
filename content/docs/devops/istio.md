@@ -1,5 +1,5 @@
 ---
-weight: 8090
+weight: 81000
 title: "Istio"
 description: "A service mesh: mutual TLS, retries, traffic splitting, and per-call telemetry without changing application code."
 icon: "lan"

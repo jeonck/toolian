@@ -1,5 +1,5 @@
 ---
-weight: 9530
+weight: 120300
 title: "Zathura"
 description: "A PDF reader driven entirely from the keyboard, with Vim bindings and a colour inversion that saves your eyes at night."
 icon: "picture_as_pdf"

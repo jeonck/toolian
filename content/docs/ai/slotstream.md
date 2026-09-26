@@ -1,5 +1,5 @@
 ---
-weight: 5045
+weight: 50800
 title: "Slotstream"
 description: "Running a 105 GB mixture-of-experts model on a Mac that doesn't have 105 GB of RAM, by streaming experts from SSD."
 icon: "memory"

@@ -1,5 +1,5 @@
 ---
-weight: 110
+weight: 140
 title: "Vibe Coding Infra"
 description: "The free-tier stack behind a solo-built product — hosting, database, cache, storage, auth, email, jobs, search, analytics, monitoring, and getting paid."
 icon: "cloud"

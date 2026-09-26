@@ -1,5 +1,5 @@
 ---
-weight: 5040
+weight: 50700
 title: "Ollama"
 description: "Running models on your own machine, and what to realistically expect from them."
 icon: "dns"

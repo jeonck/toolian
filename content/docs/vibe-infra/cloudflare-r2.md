@@ -1,5 +1,5 @@
 ---
-weight: 11090
+weight: 141000
 title: "Cloudflare R2"
 description: "S3-compatible object storage with no egress fees — the right home for uploads, images, and backups."
 icon: "cloud_upload"

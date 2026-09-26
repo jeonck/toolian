@@ -1,5 +1,5 @@
 ---
-weight: 87
+weight: 100
 title: "Security"
 description: "Finding problems in your code, secrets, dependencies, running app, and hosts — with tools a developer can run, not a separate department."
 icon: "shield"

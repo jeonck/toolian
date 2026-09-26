@@ -1,5 +1,5 @@
 ---
-weight: 5130
+weight: 52800
 title: "Camofox Browser"
 description: "A browser server for agents: accessibility snapshots instead of HTML, stable element refs, and a Firefox build that ordinary bot detection doesn't reject."
 icon: "travel_explore"

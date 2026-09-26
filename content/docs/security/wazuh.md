@@ -1,5 +1,5 @@
 ---
-weight: 8750
+weight: 100500
 title: "Wazuh"
 description: "Open-source SIEM and host security monitoring — agents on your machines, one place to see what happened, and compliance reports you didn't hand-write."
 icon: "gpp_good"

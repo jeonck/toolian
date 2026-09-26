@@ -1,5 +1,5 @@
 ---
-weight: 12020
+weight: 150200
 title: "Krea"
 description: "A real-time canvas: sketch on the left, watch the finished image redraw on the right as you move."
 icon: "brush"

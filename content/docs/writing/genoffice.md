@@ -1,5 +1,5 @@
 ---
-weight: 10060
+weight: 130600
 title: "GenOffice"
 description: "An open-source office suite with AI built into the document rather than bolted on beside it — and editing that never leaves your machine."
 icon: "grid_view"

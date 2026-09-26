@@ -1,5 +1,5 @@
 ---
-weight: 8205
+weight: 82200
 title: "Pulumi"
 description: "Infrastructure as code in a real programming language, with stacks, encrypted config, and a preview before every change."
 icon: "code_blocks"

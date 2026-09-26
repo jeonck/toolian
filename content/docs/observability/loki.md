@@ -1,5 +1,5 @@
 ---
-weight: 8530
+weight: 90300
 title: "Loki"
 description: "Searchable logs without a full-text index — cheap to run, and queried by the same labels as your metrics."
 icon: "receipt_long"

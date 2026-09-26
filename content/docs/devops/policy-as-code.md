@@ -1,5 +1,5 @@
 ---
-weight: 8100
+weight: 81100
 title: "Policy as Code"
 description: "Kyverno and OPA Gatekeeper — rules the cluster enforces itself, instead of a wiki page nobody reads."
 icon: "gavel"

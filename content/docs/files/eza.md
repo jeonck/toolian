@@ -1,5 +1,5 @@
 ---
-weight: 3040
+weight: 30400
 title: "eza"
 description: "An ls replacement with colour, icons, tree view, and Git status."
 icon: "list"

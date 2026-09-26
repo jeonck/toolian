@@ -1,5 +1,5 @@
 ---
-weight: 11030
+weight: 140300
 title: "Vercel"
 description: "Push-to-deploy hosting for a frontend, with preview URLs per branch — and the licence clause that catches people out."
 icon: "change_history"

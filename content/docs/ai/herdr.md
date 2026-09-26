@@ -1,5 +1,5 @@
 ---
-weight: 5057
+weight: 51600
 title: "herdr"
 description: "tmux rebuilt for the era of several coding agents at once — every pane marked working, blocked or idle, and a socket API the agents themselves can drive."
 icon: "dashboard"

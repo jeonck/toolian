@@ -1,5 +1,5 @@
 ---
-weight: 12030
+weight: 150300
 title: "Magnific"
 description: "Upscaling that invents detail rather than smoothing it — and the control that decides whether that's a feature or a problem."
 icon: "zoom_in"

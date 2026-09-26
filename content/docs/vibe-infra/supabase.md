@@ -1,5 +1,5 @@
 ---
-weight: 11070
+weight: 140800
 title: "Supabase"
 description: "Postgres with auth, file storage, realtime, and generated APIs attached — a backend you configure instead of write."
 icon: "widgets"

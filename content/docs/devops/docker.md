@@ -1,5 +1,5 @@
 ---
-weight: 8010
+weight: 80100
 title: "Docker"
 description: "Container fundamentals for pinning an environment as code — images, containers, Dockerfiles."
 icon: "inventory"

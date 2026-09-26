@@ -1,5 +1,5 @@
 ---
-weight: 3100
+weight: 31100
 title: "PixelRAG"
 description: "Berkeley's visual RAG: index documents as page screenshots instead of parsed text, so tables and charts survive retrieval — plus a plugin that lets Claude look at a page."
 icon: "screenshot_monitor"

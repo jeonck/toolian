@@ -1,5 +1,5 @@
 ---
-weight: 2050
+weight: 20500
 title: "zoxide"
 description: "A cd replacement that remembers where you go and gets you there from a fragment of the name."
 icon: "moving"

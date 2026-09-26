@@ -1,5 +1,5 @@
 ---
-weight: 9010
+weight: 110100
 title: "Raycast (macOS)"
 description: "A Spotlight replacement covering app launching, clipboard history, window management, and snippets."
 icon: "rocket_launch"

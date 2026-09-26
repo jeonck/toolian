@@ -1,5 +1,5 @@
 ---
-weight: 3085
+weight: 30900
 title: "MarkItDown"
 description: "Microsoft's converter that turns PDF, Office, audio, images and a dozen other formats into Markdown an LLM can read — breadth first, fidelity second."
 icon: "text_snippet"

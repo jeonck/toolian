@@ -1,5 +1,5 @@
 ---
-weight: 8720
+weight: 100200
 title: "gitleaks"
 description: "Catching an API key before it reaches Git history — and finding the ones already there."
 icon: "password"

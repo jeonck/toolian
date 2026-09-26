@@ -1,5 +1,5 @@
 ---
-weight: 4040
+weight: 40400
 title: "Editing Skills"
 description: "Multi-cursor, regex replace, LSP, and EditorConfig — the parts that survive changing editors."
 icon: "edit_note"

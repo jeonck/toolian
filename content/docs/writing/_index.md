@@ -1,5 +1,5 @@
 ---
-weight: 100
+weight: 130
 title: "Docs & Notes"
 description: "Tools for writing things down, drawing them out, and dealing with the documents other people send — notes, Markdown, diagrams, and two AI office suites."
 icon: "description"

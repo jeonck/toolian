@@ -1,5 +1,5 @@
 ---
-weight: 12070
+weight: 150800
 title: "OpenWhispr"
 description: "Dictation into any app from a hotkey, with the audio staying on your machine if you want it to."
 icon: "mic"

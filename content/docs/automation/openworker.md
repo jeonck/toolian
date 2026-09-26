@@ -1,5 +1,5 @@
 ---
-weight: 9080
+weight: 110800
 title: "OpenWorker"
 description: "Andrew Ng's desktop AI coworker — you ask for an outcome, it works your real tools, and a three-tier governance model decides what it can do without asking first."
 icon: "engineering"

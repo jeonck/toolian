@@ -1,5 +1,5 @@
 ---
-weight: 4010
+weight: 40100
 title: "VS Code"
 description: "The safest default. The settings and extensions worth touching in the first 30 minutes."
 icon: "code"

@@ -1,5 +1,5 @@
 ---
-weight: 5190
+weight: 53400
 title: "Paperclip"
 description: "An org chart, ticket system, and budget ceiling for a fleet of AI agents — the control plane for when twenty Claude Code tabs stop being manageable."
 icon: "hub"

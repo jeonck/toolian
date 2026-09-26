@@ -1,5 +1,5 @@
 ---
-weight: 8560
+weight: 90600
 title: "Chaos Engineering"
 description: "Breaking things on purpose, in daylight, with Chaos Mesh or LitmusChaos — so the first test of your failover isn't the real one."
 icon: "bolt"

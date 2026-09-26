@@ -1,5 +1,5 @@
 ---
-weight: 8020
+weight: 80200
 title: "Docker Compose"
 description: "Defining your app, database, and cache in one file and starting them with one command."
 icon: "layers"

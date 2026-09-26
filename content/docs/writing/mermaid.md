@@ -1,5 +1,5 @@
 ---
-weight: 10040
+weight: 130400
 title: "Mermaid"
 description: "Diagrams you write as text in a code block — drawings that show up in your diffs."
 icon: "schema"

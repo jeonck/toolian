@@ -1,5 +1,5 @@
 ---
-weight: 8220
+weight: 82400
 title: "Secrets Management"
 description: "Getting credentials out of .env files and repositories — Vault, OpenBao, and the smaller options worth trying first."
 icon: "key"

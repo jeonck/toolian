@@ -1,5 +1,5 @@
 ---
-weight: 5170
+weight: 53200
 title: "DeepEval"
 description: "Pytest for LLM applications — 50+ research-backed metrics, thresholds that fail the build, and a judge you can point at your own criteria."
 icon: "checklist"

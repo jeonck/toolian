@@ -1,5 +1,5 @@
 ---
-weight: 12090
+weight: 151100
 title: "Best in Class, September 2026"
 description: "Which model actually leads each media task right now — transcription, music, 3D, speech, OCR, image, video, code — and where the popular answer is a version behind."
 icon: "leaderboard"

@@ -1,5 +1,5 @@
 ---
-weight: 1010
+weight: 10100
 title: "Rufus"
 description: "Writing a bootable USB stick on Windows — fast, and with the installer customisations that save an hour of clicking."
 icon: "usb"

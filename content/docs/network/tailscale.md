@@ -1,5 +1,5 @@
 ---
-weight: 7050
+weight: 70500
 title: "Tailscale"
 description: "A private network between your machines that ignores NAT, firewalls, and where they happen to be — WireGuard with the hard parts handled."
 icon: "vpn_lock"

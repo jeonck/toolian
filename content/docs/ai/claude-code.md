@@ -1,5 +1,5 @@
 ---
-weight: 5010
+weight: 50100
 title: "Claude Code"
 description: "An agentic coding tool that reads a whole repository and edits files from the terminal."
 icon: "smart_toy"

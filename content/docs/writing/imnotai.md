@@ -1,5 +1,5 @@
 ---
-weight: 10080
+weight: 130800
 title: "imnotai"
 description: "Stripping the AI tells out of Korean prose without touching a single fact — 70 catalogued patterns, a change-rate hard stop, and an honest story about its own false positives."
 icon: "edit_note"

@@ -1,5 +1,5 @@
 ---
-weight: 8130
+weight: 81400
 title: "GitLab CI/CD"
 description: "Repository, pipelines, registry, and releases in one system you can run inside your own network."
 icon: "integration_instructions"

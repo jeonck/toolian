@@ -1,5 +1,5 @@
 ---
-weight: 7030
+weight: 70300
 title: "Bruno and Postman"
 description: "Two GUI clients for saving API requests as collections and sharing them."
 icon: "folder_shared"

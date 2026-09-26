@@ -1,5 +1,5 @@
 ---
-weight: 8240
+weight: 82600
 title: "Falco"
 description: "Runtime threat detection — watching what containers actually do, after every scan has passed."
 icon: "notification_important"

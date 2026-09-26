@@ -1,5 +1,5 @@
 ---
-weight: 11180
+weight: 142100
 title: "iwinv"
 description: "A Korean cloud with a Seoul data centre, ₩5,600/month VMs, GPU boxes, a real CLI, and an MCP server you can drive from Claude Code."
 icon: "dns"

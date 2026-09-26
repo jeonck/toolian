@@ -1,5 +1,5 @@
 ---
-weight: 5085
+weight: 52000
 title: "Frontend Design Skills"
 description: "Five skills that give an agent taste — aesthetic direction, a UI audit, motion fixes, and a design-decision library."
 icon: "palette"

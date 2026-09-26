@@ -1,5 +1,5 @@
 ---
-weight: 8070
+weight: 80800
 title: "Kustomize"
 description: "Environment differences as patches over plain manifests — no templating language, and it's already in kubectl."
 icon: "layers"

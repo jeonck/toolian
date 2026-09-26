@@ -1,5 +1,5 @@
 ---
-weight: 8570
+weight: 90700
 title: "OpenCost"
 description: "Telling which team, namespace, and workload spent the money — Kubernetes cost allocation you can self-host."
 icon: "savings"

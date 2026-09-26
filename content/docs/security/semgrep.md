@@ -1,5 +1,5 @@
 ---
-weight: 8710
+weight: 100100
 title: "Semgrep"
 description: "Static analysis with patterns that look like the code they match — thousands of ready rules, and your own in ten minutes."
 icon: "policy"

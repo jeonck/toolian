@@ -1,5 +1,5 @@
 ---
-weight: 12040
+weight: 150400
 title: "Clipdrop"
 description: "Background removal, object removal, relighting, and text removal — each one click, each free within a daily allowance."
 icon: "auto_fix_high"

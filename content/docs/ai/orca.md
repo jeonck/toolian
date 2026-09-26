@@ -1,5 +1,5 @@
 ---
-weight: 5056
+weight: 51500
 title: "Orca"
 description: "A desktop IDE that gives each agent task its own git worktree, terminal, browser tab, and diff to review."
 icon: "grid_view"

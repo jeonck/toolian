@@ -1,5 +1,5 @@
 ---
-weight: 4020
+weight: 40200
 title: "Neovim"
 description: "A modal editor driven entirely from the keyboard. Worth the investment if you work on servers often."
 icon: "keyboard"

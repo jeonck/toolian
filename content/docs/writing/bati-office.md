@@ -1,5 +1,5 @@
 ---
-weight: 10070
+weight: 130700
 title: "BatiOffice"
 description: "One free desktop app for Word, Excel, PowerPoint, HWP, and PDF — with AI editing that reaches the format Korean offices actually use."
 icon: "description"

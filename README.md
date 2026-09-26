@@ -44,7 +44,7 @@ Create `content/docs/<category>/<page>.md`. The `weight` in the front matter **m
 unique across the whole site** and follows this formula:
 
 ```
-weight = 1000 × (category position) + 10 × (position within the category)
+weight = 10000 × (category position) + 100 × (position within the category)
 ```
 
 Lotus Docs computes previous/next navigation by sorting every page under `/docs/` by

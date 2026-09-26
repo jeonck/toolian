@@ -1,5 +1,5 @@
 ---
-weight: 5046
+weight: 50900
 title: "edge0"
 description: "The same SSD-streaming trick as Slotstream, aimed the other way — a 35B model held to roughly 1–3 GB of live memory, with a router that prefetches experts before they're needed."
 icon: "sd_storage"

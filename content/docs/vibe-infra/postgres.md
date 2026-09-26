@@ -1,5 +1,5 @@
 ---
-weight: 11050
+weight: 140600
 title: "PostgreSQL"
 description: "The default database for a new project, and how the Neon and Supabase free tiers differ once you're past the signup."
 icon: "database"

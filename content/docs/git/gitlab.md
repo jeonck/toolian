@@ -1,5 +1,5 @@
 ---
-weight: 6050
+weight: 60500
 title: "GitLab"
 description: "The forge that tries to be the whole toolchain — repositories, reviews, CI, registry, and security scanning in one system you can self-manage."
 icon: "account_tree"

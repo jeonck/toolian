@@ -1,5 +1,5 @@
 ---
-weight: 3010
+weight: 30100
 title: "ripgrep"
 description: "Much faster than grep, and it respects .gitignore without being asked."
 icon: "manage_search"

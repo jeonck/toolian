@@ -1,5 +1,5 @@
 ---
-weight: 3020
+weight: 30200
 title: "fd"
 description: "Find files by name without remembering find's syntax."
 icon: "folder_open"

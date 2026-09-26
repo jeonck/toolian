@@ -1,5 +1,5 @@
 ---
-weight: 5125
+weight: 52700
 title: "Browser Use"
 description: "An agent that opens pages, clicks, types, and fills forms — the library most of the AI-browsing world is built on."
 icon: "ads_click"

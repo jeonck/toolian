@@ -1,5 +1,5 @@
 ---
-weight: 5050
+weight: 51300
 title: "Freebuff"
 description: "A coding agent with no subscription, no credits, and no API key — funded by ads, which is the part to read carefully."
 icon: "auto_awesome_motion"

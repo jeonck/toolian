@@ -1,5 +1,5 @@
 ---
-weight: 6010
+weight: 60100
 title: "The Daily Git Workflow"
 description: "Branching, committing, and rebasing in practice — plus how to undo your mistakes."
 icon: "account_tree"

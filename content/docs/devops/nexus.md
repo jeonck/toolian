@@ -1,5 +1,5 @@
 ---
-weight: 8150
+weight: 81600
 title: "Nexus Repository"
 description: "One place your builds pull dependencies from and push artifacts to — a caching proxy, a private registry, and a chokepoint you control."
 icon: "inventory"

@@ -1,5 +1,5 @@
 ---
-weight: 5030
+weight: 50300
 title: "Cursor"
 description: "A VS Code fork that puts AI editing front and centre — and imports your existing setup."
 icon: "bolt"

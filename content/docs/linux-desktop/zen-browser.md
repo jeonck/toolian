@@ -1,5 +1,5 @@
 ---
-weight: 9510
+weight: 120100
 title: "Zen Browser"
 description: "A Firefox fork built around vertical tabs, workspaces, and split view — for the days that end with forty tabs open."
 icon: "tab"

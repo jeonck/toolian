@@ -1,5 +1,5 @@
 ---
-weight: 5080
+weight: 51900
 title: "Agency Agents"
 description: "A library of 230+ ready-made subagent definitions across seventeen divisions — and why you should install about six of them."
 icon: "groups"

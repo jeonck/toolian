@@ -1,5 +1,5 @@
 ---
-weight: 9030
+weight: 110300
 title: "Make and Makefiles"
 description: "Gathering every project command into one file so everything becomes `make test`."
 icon: "play_arrow"

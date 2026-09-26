@@ -1,5 +1,5 @@
 ---
-weight: 8080
+weight: 80900
 title: "cert-manager"
 description: "TLS certificates issued and renewed automatically inside the cluster, so nobody has to remember an expiry date."
 icon: "verified_user"

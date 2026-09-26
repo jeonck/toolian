@@ -1,5 +1,5 @@
 ---
-weight: 11040
+weight: 140500
 title: "Cloudflare Workers"
 description: "Code that runs in every Cloudflare city with no server to keep warm — plus Pages, KV, D1, and Queues around it."
 icon: "bolt"

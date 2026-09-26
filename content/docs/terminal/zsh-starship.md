@@ -1,5 +1,5 @@
 ---
-weight: 2020
+weight: 20200
 title: "zsh and Starship"
 description: "Completion and history settings, plus a prompt that shows your branch and language versions."
 icon: "chevron_right"

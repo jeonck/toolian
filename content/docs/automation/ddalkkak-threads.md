@@ -1,5 +1,5 @@
 ---
-weight: 9070
+weight: 110700
 title: "Ddalkkak Threads Factory"
 description: "Drafting Threads posts with a logged-in Claude Code CLI and publishing them on a schedule through Meta's official API — locally, on Windows, with the safety switch on by default."
 icon: "schedule_send"

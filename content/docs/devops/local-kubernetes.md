@@ -1,5 +1,5 @@
 ---
-weight: 8040
+weight: 80400
 title: "Local Kubernetes"
 description: "A throwaway cluster on your laptop with kind, k3d, or minikube — and a fast inner loop with Tilt or Skaffold."
 icon: "developer_board"

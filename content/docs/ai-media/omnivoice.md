@@ -1,5 +1,5 @@
 ---
-weight: 12065
+weight: 150700
 title: "OmniVoice"
 description: "Zero-shot voice cloning and voice design across 600+ languages, running on your own GPU under Apache 2.0."
 icon: "record_voice_over"

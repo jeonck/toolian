@@ -1,5 +1,5 @@
 ---
-weight: 9050
+weight: 110500
 title: "n8n"
 description: "A self-hostable automation tool that wires services and APIs together as nodes."
 icon: "account_tree"

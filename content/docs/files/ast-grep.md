@@ -1,5 +1,5 @@
 ---
-weight: 3060
+weight: 30600
 title: "ast-grep"
 description: "Search and rewrite code by its syntax tree, so a pattern matches structure instead of characters."
 icon: "account_tree"

@@ -1,5 +1,5 @@
 ---
-weight: 5047
+weight: 51000
 title: "Open WebUI"
 description: "The ChatGPT-shaped front end for models you host yourself — and for every API key you already have."
 icon: "chat"

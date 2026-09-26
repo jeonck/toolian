@@ -1,5 +1,5 @@
 ---
-weight: 11130
+weight: 141400
 title: "Meilisearch"
 description: "Typo-tolerant, instant search in one binary — the middle ground between SQL LIKE and running Elasticsearch."
 icon: "manage_search"

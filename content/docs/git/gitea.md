@@ -1,5 +1,5 @@
 ---
-weight: 6030
+weight: 60300
 title: "Gitea"
 description: "A GitHub-shaped forge you host yourself — repositories, pull requests, issues, a registry, and CI, from one small binary."
 icon: "dns"

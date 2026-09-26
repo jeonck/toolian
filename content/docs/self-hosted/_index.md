@@ -1,5 +1,5 @@
 ---
-weight: 130
+weight: 160
 title: "Self-Hosted"
 description: "Services you run on your own hardware instead of subscribing to — a photo library that replaces a cloud plan, and a whole desktop in a browser tab."
 icon: "home_storage"

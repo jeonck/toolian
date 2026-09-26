@@ -1,5 +1,5 @@
 ---
-weight: 11060
+weight: 140700
 title: "Neon"
 description: "Serverless Postgres that scales to zero and branches like Git — a database per pull request, in a second."
 icon: "storage"

@@ -1,5 +1,5 @@
 ---
-weight: 90
+weight: 110
 title: "Automation & Shortcuts"
 description: "Launchers, system utilities, Makefiles, schedulers, and no-code workflows — handing repetition to a machine."
 icon: "bolt"

@@ -1,5 +1,5 @@
 ---
-weight: 8055
+weight: 80600
 title: "Radar"
 description: "A 30 MB Go binary that gives a Kubernetes cluster a topology map, an event timeline, GitOps drift, a 36-check audit, and an MCP server — k9s with a graph."
 icon: "radar"

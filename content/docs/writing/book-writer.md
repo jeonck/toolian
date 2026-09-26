@@ -1,5 +1,5 @@
 ---
-weight: 10090
+weight: 130900
 title: "Book Writer"
 description: "A Claude Code harness of 11 agents that takes a topic and returns a finished EPUB — research, plan, chapters, fact-check, acceptance gate, cover, build."
 icon: "auto_stories"

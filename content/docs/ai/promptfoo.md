@@ -1,5 +1,5 @@
 ---
-weight: 5160
+weight: 53100
 title: "promptfoo"
 description: "Running your prompts as a test matrix from the command line, then pointing 50+ attack categories at the result — MIT licensed, local, and now owned by OpenAI."
 icon: "rule"

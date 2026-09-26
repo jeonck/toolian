@@ -1,5 +1,5 @@
 ---
-weight: 5087
+weight: 52100
 title: "book-to-skill"
 description: "Turning a technical book, a docs folder, or a stack of papers into a skill your agent loads a chapter of when it needs one."
 icon: "menu_book"

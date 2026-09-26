@@ -1,5 +1,5 @@
 ---
-weight: 5090
+weight: 52200
 title: "OpenMontage"
 description: "Turning a coding agent into a video production pipeline — research, script, assets, edit, render — from one sentence."
 icon: "movie"

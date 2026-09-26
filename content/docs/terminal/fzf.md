@@ -1,5 +1,5 @@
 ---
-weight: 2040
+weight: 20400
 title: "fzf"
 description: "An interactive filter for history, files, and branches. Five minutes to install, useful every day."
 icon: "filter_alt"

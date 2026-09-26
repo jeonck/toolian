@@ -1,5 +1,5 @@
 ---
-weight: 9520
+weight: 120200
 title: "Webapp Manager"
 description: "Turning a website into a real desktop application — its own window, its own icon, its own place in Alt-Tab."
 icon: "web_asset"

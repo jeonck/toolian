@@ -1,5 +1,5 @@
 ---
-weight: 1030
+weight: 10300
 title: "Package Managers"
 description: "Installing, updating, and removing CLI tools with Homebrew, winget, and apt."
 icon: "inventory_2"

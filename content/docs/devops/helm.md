@@ -1,5 +1,5 @@
 ---
-weight: 8060
+weight: 80700
 title: "Helm"
 description: "Packaging a Kubernetes application as one versioned unit, and installing it with the values that differ per environment."
 icon: "package_2"

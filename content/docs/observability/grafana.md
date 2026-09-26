@@ -1,5 +1,5 @@
 ---
-weight: 8520
+weight: 90200
 title: "Grafana"
 description: "Dashboards over whatever you already store — and the discipline that keeps them useful after the first week."
 icon: "dashboard"

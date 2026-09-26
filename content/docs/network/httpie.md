@@ -1,5 +1,5 @@
 ---
-weight: 7020
+weight: 70200
 title: "HTTPie"
 description: "A human-friendly HTTP client. Especially terse for JSON work."
 icon: "http"

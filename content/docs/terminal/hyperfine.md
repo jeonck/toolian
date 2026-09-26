@@ -1,5 +1,5 @@
 ---
-weight: 2060
+weight: 20600
 title: "hyperfine"
 description: "Benchmarking a command properly — many runs, warmup, statistics, and a straight answer about which is faster."
 icon: "speed"

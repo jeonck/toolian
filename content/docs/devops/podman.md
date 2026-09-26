@@ -1,5 +1,5 @@
 ---
-weight: 8030
+weight: 80300
 title: "Podman"
 description: "Running containers without a root daemon — and why an organisation might require it instead of Docker."
 icon: "inventory_2"

@@ -1,5 +1,5 @@
 ---
-weight: 11140
+weight: 141500
 title: "PostHog"
 description: "Product analytics, session replay, and feature flags in one tool — with a free tier big enough to be the only one you need."
 icon: "insights"

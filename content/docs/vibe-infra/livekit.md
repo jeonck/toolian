@@ -1,5 +1,5 @@
 ---
-weight: 11155
+weight: 141800
 title: "LiveKit"
 description: "The real-time voice agent stack — LiveKit for transport, plus STT, LLM, TTS, and telephony — with what each piece costs and which ones will sign a HIPAA BAA."
 icon: "graphic_eq"

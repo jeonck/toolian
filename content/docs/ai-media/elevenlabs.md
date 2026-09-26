@@ -1,5 +1,5 @@
 ---
-weight: 12050
+weight: 150500
 title: "ElevenLabs"
 description: "Script to natural speech in seconds, voice cloning from a short sample — and the consent rules that come with it."
 icon: "record_voice_over"

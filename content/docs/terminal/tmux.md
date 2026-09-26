@@ -1,5 +1,5 @@
 ---
-weight: 2030
+weight: 20300
 title: "tmux"
 description: "Sessions that survive a dropped SSH connection, split panes, and per-task windows — the minimum command set."
 icon: "grid_view"

@@ -1,5 +1,5 @@
 ---
-weight: 10010
+weight: 130100
 title: "Obsidian"
 description: "Personal knowledge management on top of local Markdown files, linked together."
 icon: "menu_book"

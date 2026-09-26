@@ -1,5 +1,5 @@
 ---
-weight: 5049
+weight: 51200
 title: "Needle"
 description: "An 8–29 MB foundation model that does tool calls, typed extraction and embeddings on phones, robots and microcontrollers — with a confidence score you can route on."
 icon: "memory_alt"

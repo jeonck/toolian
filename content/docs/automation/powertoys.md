@@ -1,5 +1,5 @@
 ---
-weight: 9020
+weight: 110200
 title: "PowerToys (Windows)"
 description: "Microsoft's free utility bundle — window layouts, a launcher, key remapping, and screen OCR."
 icon: "widgets"

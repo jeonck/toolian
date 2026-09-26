@@ -1,5 +1,5 @@
 ---
-weight: 8730
+weight: 100300
 title: "Sigstore"
 description: "Signing artifacts without managing keys — keyless signatures, a public transparency log, and a verify step your cluster can enforce."
 icon: "fingerprint"

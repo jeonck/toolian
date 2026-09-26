@@ -1,5 +1,5 @@
 ---
-weight: 3070
+weight: 30700
 title: "MinerU"
 description: "Turning PDFs, scans, and Office files into LLM-ready Markdown — layout, tables, and formulas kept, not flattened."
 icon: "document_scanner"

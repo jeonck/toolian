@@ -1,5 +1,5 @@
 ---
-weight: 8230
+weight: 82500
 title: "Trivy"
 description: "Scanning images, dependencies, and infrastructure code for known vulnerabilities and misconfigurations, in one command."
 icon: "security"

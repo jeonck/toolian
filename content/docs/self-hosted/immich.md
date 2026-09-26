@@ -1,5 +1,5 @@
 ---
-weight: 13010
+weight: 160100
 title: "Immich"
 description: "Your own Google Photos — phone backup, albums, face recognition, and search by what's in the picture, on your hardware."
 icon: "photo_library"

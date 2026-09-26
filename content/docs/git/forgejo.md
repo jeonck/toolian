@@ -1,5 +1,5 @@
 ---
-weight: 6040
+weight: 60400
 title: "Forgejo"
 description: "The community-owned fork of Gitea — copyleft, run by a non-profit, and the one building federation between forges."
 icon: "diversity_3"

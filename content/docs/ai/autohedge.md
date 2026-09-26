@@ -1,5 +1,5 @@
 ---
-weight: 5150
+weight: 53000
 title: "AutoHedge"
 description: "A four-agent pipeline — thesis, quant, risk, execution — that trades a Solana wallet on its own."
 icon: "account_balance"

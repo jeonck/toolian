@@ -1,5 +1,5 @@
 ---
-weight: 7040
+weight: 70400
 title: "Exposing a Local Server"
 description: "Turning localhost into a temporary public URL for webhook testing and phone checks."
 icon: "swap_horiz"

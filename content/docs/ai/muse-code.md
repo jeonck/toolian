@@ -1,5 +1,5 @@
 ---
-weight: 5036
+weight: 50500
 title: "Muse Code"
 description: "Meta's terminal coding agent — persistent subagents in isolated worktrees, rewind on double-Esc, a single static binary — and a default billing tier that trains on your code."
 icon: "terminal"

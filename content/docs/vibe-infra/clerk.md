@@ -1,5 +1,5 @@
 ---
-weight: 11100
+weight: 141100
 title: "Clerk"
 description: "Sign-in, sessions, and user management as a drop-in — and the reasons not to write auth yourself."
 icon: "lock_person"

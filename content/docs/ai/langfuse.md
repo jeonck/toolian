@@ -1,5 +1,5 @@
 ---
-weight: 5180
+weight: 53300
 title: "Langfuse"
 description: "Self-hosted tracing and evaluation for LLM apps — every call, cost and score on a timeline you own, MIT licensed and uncapped."
 icon: "timeline"
