@@ -21,7 +21,7 @@ before your launch day traffic finds it for you.
 
 | Slot | Pick | Free tier in one line |
 |---|---|---|
-| Backend + frontend hosting | [Railway](/docs/vibe-infra/railway/) | $5 trial credit, then $1/month — real apps need Hobby at $5 |
+| Backend + frontend hosting | [Railway](/docs/vibe-infra/railway/) | $5 trial credit, then $1/month — plus `ssh railway.new` for a 60-minute VM with no account |
 | Multi-region containers | [Fly.io](/docs/vibe-infra/fly-io/) | None — pay-as-you-go from about $2/month |
 | Frontend-only hosting | [Vercel](/docs/vibe-infra/vercel/) | 100 GB bandwidth, non-commercial projects only |
 | The whole stack on one platform | [The Cloudflare Stack](/docs/vibe-infra/cloudflare-stack/) | No bandwidth, seat, or per-project billing |

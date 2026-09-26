@@ -32,6 +32,41 @@ $1/month runs an experiment, not a service that stays awake. Treat Railway as *f
 prove the idea, then $5/month to keep it alive* — and be glad the ceiling appears as a
 paused service rather than a surprise invoice.
 
+## A disposable VM with no account at all
+
+Separate from the hosting product, and worth knowing about on its own:
+
+```bash
+ssh railway.new
+```
+
+That's the whole thing. No signup, no card — a 2 vCPU / 2 GB Linux box comes up in about
+1.4 seconds in the region nearest you, with **Claude Code, Codex, OpenCode, Cursor CLI,
+Grok, pi, and Railway's own `agent`** already installed, plus Node, Python, `gh`, `mise`,
+the Railway CLI, and Chromium with Playwright. Serve anything on `$PORT` (8080) and a
+preview URL works from the first second.
+
+| Limit | Value |
+|---|---|
+| Build window | **60 minutes** |
+| Claim window | 24 hours — then the box and its files are deleted |
+| Boxes | Up to 3 per IP per day, identified by SSH key |
+| Preview URL before claiming | Answers only the IP that created the box |
+| AI budget | Shared per IP, per day |
+| Network | IPv4 only for now |
+
+**This is not a free always-on server.** It's a 60-minute workspace. But the interesting
+part isn't the free compute — it's the direction of the flow. An agent gets a real
+machine with a public URL, does the work, and *then* you decide whether to keep it: open
+the claim link in the welcome message, sign up, and the VM, its files, and its URL move
+into your account. Nothing is claimed up front and nothing is charged for an experiment
+you abandon.
+
+Good uses: handing an agent a clean room for something you'd rather not run on your
+laptop, reproducing a bug on a Linux box from a Mac, demoing a branch to someone with a
+URL, or trying a runtime you don't want to install. Just remember the two clocks — 60
+minutes of work, 24 hours to claim — and that anything unclaimed is gone.
+
 ## Deploy from the dashboard
 
 The path with the fewest steps:
