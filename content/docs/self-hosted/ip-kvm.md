@@ -104,5 +104,5 @@ queries are the safe half; make them the default and let the rest ask permission
 
 ## Next
 
-You've been through every category. To start again, pick another from the
-[overview](/docs/).
+And one build that is purely for the pleasure of it →
+[Fugleramme](/docs/self-hosted/fugleramme/)
