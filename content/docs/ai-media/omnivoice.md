@@ -126,5 +126,5 @@ defence, and for voice it's a bad one.
 
 ## Next
 
-The other direction — turning what you say into text →
-[OpenWhispr](/docs/ai-media/openwhispr/)
+The same model, wrapped in an app with dubbing, dictation and an MCP server →
+[VoiceStudio](/docs/ai-media/voicestudio/)
