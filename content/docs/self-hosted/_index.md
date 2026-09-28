@@ -23,6 +23,8 @@ a nice interface.
 | [Immich](/docs/self-hosted/immich/) | Google Photos or iCloud Photos |
 | [Puter](/docs/self-hosted/puter/) | A cloud drive plus the small apps around it |
 | [IP KVM](/docs/self-hosted/ip-kvm/) | A trip to wherever the machine physically lives |
+| [Fugleramme](/docs/self-hosted/fugleramme/) | Nothing — it's here for the pleasure of it |
+| [OpenMuse](/docs/self-hosted/openmuse/) | A subscription personal-assistant app |
 
 Several tools elsewhere in this guide are self-hosted too — [Stirling
 PDF](/docs/files/stirling-pdf/) for documents, [Open WebUI](/docs/ai/open-webui/) in front

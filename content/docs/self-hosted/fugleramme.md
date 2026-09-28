@@ -100,5 +100,5 @@ it concrete.
 
 ## Next
 
-You've been through every category. To start again, pick another from the
-[overview](/docs/).
+An agent with its own browser, terminal, and files, on your hardware →
+[OpenMuse](/docs/self-hosted/openmuse/)
