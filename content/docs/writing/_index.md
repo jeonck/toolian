@@ -13,5 +13,6 @@ This category covers two note apps for accumulating personal knowledge — one b
 plain files, one open source with encrypted sync — the Markdown syntax that works
 everywhere, diagrams you write as code, and a whiteboard for the sketches that refuse to
 be formalised. It closes with the other half of the job — the Word, Excel, PowerPoint and
-HWP files other people send you, and two office suites that edit them locally with AI
-built in.
+HWP files other people send you, two office suites that edit them locally with AI
+built in, a harness that writes a whole book, and an SDK for when the spreadsheet belongs
+inside your own product.

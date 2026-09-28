@@ -127,5 +127,5 @@ one.
 
 ## Next
 
-Everything so far builds the thing. One category left, on putting it online →
-[Vibe Coding Infra](/docs/vibe-infra/)
+When the document belongs inside the product you're building →
+[Univer](/docs/writing/univer/)
