@@ -84,5 +84,5 @@ it's the correct habit for every prompt library you install.
 
 ## Next
 
-Knowledge instead of roles — five skills that give an agent taste →
-[Frontend Design Skills](/docs/ai/frontend-design-skills/)
+A whole SDLC instead of a role — twelve skills with shared IDs and an independent auditor →
+[Agentic SDLC Kit](/docs/ai/agentic-sdlc-kit/)
