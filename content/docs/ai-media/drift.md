@@ -123,4 +123,5 @@ video that should rebuild itself.
 
 ## Next
 
-Generating the footage rather than cutting it → [Google Flow](/docs/ai-media/flow/)
+The same idea for stills, down to a 500+ command registry an agent can drive →
+[PhotoCraft](/docs/ai-media/photocraft/)
