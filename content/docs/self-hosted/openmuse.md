@@ -120,5 +120,5 @@ If what you want is a control plane for *many* agents rather than one personal o
 
 ## Next
 
-You've been through every category. To start again, pick another from the
-[overview](/docs/).
+The self-hosted shape of an AI job-search tool, for when you'd rather not live in a CLI →
+[Resume Matcher](/docs/self-hosted/resume-matcher/)

@@ -26,7 +26,7 @@ reference; it's the minimum you need to get a tool into your hands.
 2. [Terminal & Shell](/docs/terminal/) — terminal apps, prompts, tmux, fzf, zoxide, hyperfine
 3. [Files & Search](/docs/files/) — ripgrep, fd, bat, eza, jq, ast-grep, MinerU, Docling, Stirling PDF, MarkItDown, PixelRAG
 4. [Editors & IDEs](/docs/editor/) — VS Code, Neovim, JetBrains, portable editing skills
-5. [AI Coding Tools](/docs/ai/) — Claude Code, Copilot, Cursor, Kiro, Muse Code, local LLMs, SSD streaming, on-device models, Open WebUI, mission controls including herdr, design skills, subagents, browsers, tools and search, evals and tracing
+5. [AI Coding Tools](/docs/ai/) — Claude Code, Copilot, Cursor, Kiro, Muse Code, local LLMs, SSD streaming, on-device models, Open WebUI, mission controls including herdr, design skills, subagents, browsers, tools and search, evals and tracing, a job-search agent
 6. [Git & Collaboration](/docs/git/) — Git workflow, gh, Gitea, Forgejo, GitLab, lazygit, delta, hunk, pre-commit
 7. [Network & APIs](/docs/network/) — curl, HTTPie, Bruno, tunnelling, Tailscale, LocalSend, AutoCLI
 8. [Containers & Deploys](/docs/devops/) — Docker, Podman, Kubernetes, Helm/Kustomize, Istio, six CI/CD tools, Nexus and Harbor, Terraform, Ansible, secrets, scanning, Backstage
@@ -37,7 +37,7 @@ reference; it's the minimum you need to get a tool into your hands.
 13. [Docs & Notes](/docs/writing/) — Obsidian, Joplin, Markdown, Mermaid, Excalidraw, GenOffice, BatiOffice, imnotai
 14. [Vibe Coding Infra](/docs/vibe-infra/) — Railway, Fly.io, Vercel, Workers, Neon, Supabase, Upstash, R2, Clerk, Resend, Inngest, search, PostHog, payments
 15. [AI Media Tools](/docs/ai-media/) — Raphael, Krea, Magnific, Clipdrop, ElevenLabs, Gemini TTS, OmniVoice, OpenWhispr, Drift, Google Flow, best-in-class and open-weight snapshots
-16. [Self-Hosted](/docs/self-hosted/) — Immich, Puter, IP KVM
+16. [Self-Hosted](/docs/self-hosted/) — Immich, Puter, IP KVM, Fugleramme, OpenMuse, Resume Matcher
 
 ## How to read this
 

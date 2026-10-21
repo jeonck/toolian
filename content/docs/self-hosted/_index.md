@@ -25,6 +25,7 @@ a nice interface.
 | [IP KVM](/docs/self-hosted/ip-kvm/) | A trip to wherever the machine physically lives |
 | [Fugleramme](/docs/self-hosted/fugleramme/) | Nothing — it's here for the pleasure of it |
 | [OpenMuse](/docs/self-hosted/openmuse/) | A subscription personal-assistant app |
+| [Resume Matcher](/docs/self-hosted/resume-matcher/) | A paid resume-tailoring and ATS-scoring service |
 
 Several tools elsewhere in this guide are self-hosted too — [Stirling
 PDF](/docs/files/stirling-pdf/) for documents, [Open WebUI](/docs/ai/open-webui/) in front
