@@ -27,6 +27,7 @@ work an editing timeline.
 | [ElevenLabs](/docs/ai-media/elevenlabs/) | Turning a script into speech, or cloning a voice |
 | [Gemini TTS](/docs/ai-media/gemini-tts/) | Directing a read — scene, style, and pacing — free in AI Studio |
 | [OmniVoice](/docs/ai-media/omnivoice/) | Cloning or designing a voice locally, in 600+ languages |
+| [Fish Audio Drama 3](/docs/ai-media/drama-3/) | Directing a scripted, multi-character scene, open-weight |
 | [OpenWhispr](/docs/ai-media/openwhispr/) | Dictating into any app from a hotkey, offline if you want |
 | [Drift](/docs/ai-media/drift/) | Editing video, with an MCP server so an agent can edit too |
 | [PhotoCraft](/docs/ai-media/photocraft/) | A real Photoshop rewrite, scriptable headlessly or over MCP |

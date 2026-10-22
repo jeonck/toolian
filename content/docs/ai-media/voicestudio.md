@@ -100,5 +100,5 @@ offline, or you want an agent to make audio unattended.
 
 ## Next
 
-The other direction — turning what you say into text →
-[OpenWhispr](/docs/ai-media/openwhispr/)
+A heavier open-weight model built for scripted, multi-character scenes →
+[Fish Audio Drama 3](/docs/ai-media/drama-3/)
