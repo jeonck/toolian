@@ -94,4 +94,5 @@ but start with one.
 
 ## Next
 
-Specialists instead of a generalist → [Agency Agents](/docs/ai/agency-agents/)
+The same idea, but for anything you drop in it, across 20+ assistants →
+[Graphify](/docs/ai/graphify/)

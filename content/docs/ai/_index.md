@@ -15,7 +15,7 @@ model locally, one for running a model far larger than your RAM, an ad-funded ag
 that costs nothing, and three mission controls for driving several agents at once — along
 with the situations each one suits, and what each one does with your code.
 
-The pages after them are the layer that has grown up around those agents: two ways to
+The pages after them are the layer that has grown up around those agents: three ways to
 give one a pre-built map of your repository so it stops re-reading the same files, a
 library of ready-made specialist subagents, a twelve-skill pipeline for the whole build
 lifecycle, a job-search agent that runs the same way, five skills that hand one some
