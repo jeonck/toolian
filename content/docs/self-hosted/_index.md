@@ -26,6 +26,7 @@ a nice interface.
 | [Fugleramme](/docs/self-hosted/fugleramme/) | Nothing — it's here for the pleasure of it |
 | [OpenMuse](/docs/self-hosted/openmuse/) | A subscription personal-assistant app |
 | [Resume Matcher](/docs/self-hosted/resume-matcher/) | A paid resume-tailoring and ATS-scoring service |
+| [DeepTutor](/docs/self-hosted/deeptutor/) | A subscription AI tutoring platform |
 
 Several tools elsewhere in this guide are self-hosted too — [Stirling
 PDF](/docs/files/stirling-pdf/) for documents, [Open WebUI](/docs/ai/open-webui/) in front

@@ -87,5 +87,5 @@ the coding-agent provider above, reached a different way.
 
 ## Next
 
-You've been through every category. To start again, pick another from the
-[overview](/docs/).
+One app doing one job well; the opposite shape is a whole learning platform →
+[DeepTutor](/docs/self-hosted/deeptutor/)
