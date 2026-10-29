@@ -111,4 +111,5 @@ signing in.
 
 ## Next
 
-To write down what you automated → [Linux Desktop](/docs/linux-desktop/)
+A much smaller, single-purpose bot — recording and transcribing a Discord meeting →
+[HearHear](/docs/automation/hearhear/)
