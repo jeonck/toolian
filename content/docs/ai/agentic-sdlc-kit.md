@@ -157,5 +157,5 @@ You can also start mid-pipeline against an existing codebase, or run only
 
 ## Next
 
-The same CLI, pointed at finding you a job instead of building software →
-[career-ops](/docs/ai/career-ops/)
+The minimalist opposite — two files instead of twelve skills →
+[sdd-app-template](/docs/ai/sdd-app-template/)
